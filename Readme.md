@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Левченко](https://up.htmlacademy.ru/adaptive/15/user/506463).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Мирзоян](https://up.htmlacademy.ru/adaptive/15/user/302093).
 
 ---
 
