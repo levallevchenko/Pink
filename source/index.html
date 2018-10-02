@@ -5,8 +5,169 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <a class="page-header__logo logo"  href="index.html">
+      <img class="logo__image" src="http://placehold.it/150x100">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper" >
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-page-main">
+      <h1 class="visually-hidden">Приложение "Pink"</h1>
+      <section class="wall wall--main">
+        <img src="http://placehold.it/150x100">
+      </section>
+      <section class="download">
+        <a class="download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <div class="download__apps-wrapper">
+          <ul class="download__apps apps-list">
+            <li class="apps-list__item">
+              <a href="https://www.apple.com/ru/itunes/">
+                <span class="visually-hidden">Apple</span>
+                <img src="http://placehold.it/150x100" alt="Apple">
+              </a>
+            </li>
+            <li class="apps-list__item">
+              <a href="https://play.google.com/store?hl=ru">
+                <span class="visually-hidden">Android</span>
+                <img src="http://placehold.it/150x100" alt="Android">
+              </a>
+            </li>
+            <li class="apps-list__item">
+              <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">
+                <span class="visually-hidden">Windows</span>
+                <img src="http://placehold.it/150x100" alt="Windows">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="download__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <h3 class="visually-hidden">Преимущества приложения</h3>
+        <p class="advantages__statement">Устали от серости мегаполиса?</p>
+        <p class="advantages__statement">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3>Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3>Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3>Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментруйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <cite class="reviews__autor-name">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item">
+            <cite class="reviews__autor-name"></cite>
+            <p class="reviews__text"></p>
+          </blockquote>
+          <blockquote class="reviews__item">
+            <cite class="reviews__autor-name"></cite>
+            <p class="reviews__text"></p>
+          </blockquote>
+        </div>
+      </section>
+      <section class="rates">
+        <h3 class="visually-hidden">Тарифы</h3>
+        <table class="rates__list">
+          <tr class="rates__row">
+            <th class="rates__data" colspan="2">Стандарт<br>3,99 usd</th>
+          </tr>
+          <tr class="rates__row">
+            <td class="rates__data">Розовый фильтр</td>
+            <td class="rates__data"></td>
+          </tr>
+          <tr class="rates__row">
+            <td class="rates__data">Смайлики</td>
+            <td class="rates__data"></td>
+          </tr>
+          <tr class="rates__row">
+            <td class="rates__data">Комментарии</td>
+            <td class="rates__data"></td>
+          </tr>
+        </table>
+        <table class="rates__list">
+          <tr class="rates__row">
+            <td class="rates__data"></td>
+            <td class="rates__data"></td>
+          </tr>
+          <tr class="rates__row">
+            <td class="rates__data"></td>
+            <td class="rates__data"></td>
+          </tr>
+          <tr class="rates__row">
+            <td class="rates__data"></td>
+            <td class="rates__data"></td>
+          </tr>
+          <tr class="rates__row">
+            <td class="rates__data"></td>
+            <td class="rates__data"></td>
+          </tr>
+        </table>
+        <table class="rates__list">
+          <tr class="rates__row">
+            <td class="rates__data"></td>
+            <td class="rates__data"></td>
+          </tr>
+          <tr class="rates__row">
+            <td class="rates__data"></td>
+            <td class="rates__data"></td>
+          </tr>
+          <tr class="rates__row">
+            <td class="rates__data"></td>
+            <td class="rates__data"></td>
+          </tr>
+          <tr class="rates__row">
+            <td class="rates__data"></td>
+            <td class="rates__data"></td>
+          </tr>
+        </table>
+      </section>
+      <section class="contacts">
+        <h3 class="visually-hidden">Контакты</h3>
+        <p class="contacts__questions">Остались вопросы?<br>Свяжитесь с нами!</p>
+        <h4 class="contacts__request">Звоните:</h4>
+        <a class="contacts__info" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+        <h4 class="contacts__request">Пишите:</h4>
+        <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <h4 class="contacts__request">Приезжайте в гости:</h4>
+        <a class="contacts__info" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург">ул.Большая Конюшенная, 19/8</a>
+      </section>
+    </main>
+    <footer class="main-page-footer">
+      <section class="map">
+        <h3 class="visually-hidden">Карта</h3>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002912!2d30.320858715826557!3d59.938719169054494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538162131210" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+    </footer>
   </body>
 </html>
