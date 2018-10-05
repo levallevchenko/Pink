@@ -3,27 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo"  href="index.html">
-      <img class="logo__image" src="http://placehold.it/150x100">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип сайта">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper" >
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__item-link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__item-link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__item-link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+              <a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -32,28 +34,28 @@
     <main class="main-page-main">
       <h1 class="visually-hidden">Приложение "Pink"</h1>
       <section class="wall wall--main">
-        <img src="http://placehold.it/150x100">
+        <img src="img/iphone-hand-mobile@1x.png">
       </section>
       <section class="download">
         <a class="download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
         <div class="download__apps-wrapper">
           <ul class="download__apps apps-list">
             <li class="apps-list__item">
-              <a href="https://www.apple.com/ru/itunes/">
+              <a class="apps-list__link" href="https://www.apple.com/ru/itunes/">
                 <span class="visually-hidden">Apple</span>
-                <img src="http://placehold.it/150x100" alt="Apple">
+                <img class="apps-list__img" src="img/logo-apple.svg" alt="Apple">
               </a>
             </li>
             <li class="apps-list__item">
-              <a href="https://play.google.com/store?hl=ru">
+              <a class="apps-list__link" href="https://play.google.com/store?hl=ru">
                 <span class="visually-hidden">Android</span>
-                <img src="http://placehold.it/150x100" alt="Android">
+                <img class="apps-list__img" src="img/logo-android.svg" alt="Android">
               </a>
             </li>
             <li class="apps-list__item">
-              <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">
+              <a class="apps-list__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">
                 <span class="visually-hidden">Windows</span>
-                <img src="http://placehold.it/150x100" alt="Windows">
+                <img class="apps-list__img" src="img/logo-microsoft.svg" alt="Windows">
               </a>
             </li>
           </ul>
@@ -66,16 +68,19 @@
         <p class="advantages__statement">Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3>Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <h3 class="advantages__caption">Поднимает настроение</h3>
+            <p class="advantages__paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item">
-            <h3>Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <h3 class="advantages__caption" >Меняет мир вокруг</h3>
+            <p class="advantages__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
-            <h3>Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментруйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <h3 class="advantages__caption">Заводит новых друзей</h3>
+            <p class="advantages__paragraph">Ставьте лайки, комментруйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+          <li class="advantages__item--phone">
+            <img src="img/iphone-screen-mobile@1x.png">
           </li>
         </ul>
       </section>
@@ -83,15 +88,15 @@
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__list">
           <blockquote class="reviews__item">
-            <cite class="reviews__autor-name">Николай Петров</cite>
+            <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
           <blockquote class="reviews__item">
-            <cite class="reviews__autor-name"></cite>
+            <cite class="reviews__author-name"></cite>
             <p class="reviews__text"></p>
           </blockquote>
           <blockquote class="reviews__item">
-            <cite class="reviews__autor-name"></cite>
+            <cite class="reviews__author-name"></cite>
             <p class="reviews__text"></p>
           </blockquote>
         </div>
@@ -99,8 +104,8 @@
       <section class="rates">
         <h3 class="visually-hidden">Тарифы</h3>
         <table class="rates__list">
-          <tr class="rates__row">
-            <th class="rates__data" colspan="2">Стандарт<br>3,99 usd</th>
+          <tr class="rates__row--head">
+            <th class="rates__data" colspan="2">Стандарт<br><span class="rates__data--light">3,99 usd</span></th>
           </tr>
           <tr class="rates__row">
             <td class="rates__data">Розовый фильтр</td>
@@ -156,11 +161,11 @@
         <h3 class="visually-hidden">Контакты</h3>
         <p class="contacts__questions">Остались вопросы?<br>Свяжитесь с нами!</p>
         <h4 class="contacts__request">Звоните:</h4>
-        <a class="contacts__info" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+        <a class="contacts__info" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
         <h4 class="contacts__request">Пишите:</h4>
         <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         <h4 class="contacts__request">Приезжайте в гости:</h4>
-        <a class="contacts__info" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург">ул.Большая Конюшенная, 19/8</a>
+        <a class="contacts__info" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург">ул. Большая Конюшенная, 19/8</a>
       </section>
     </main>
     <footer class="main-page-footer">
