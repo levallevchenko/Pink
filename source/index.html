@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="page-header">
@@ -16,7 +17,7 @@
         <div class="main-nav__wrapper" >
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__item-link">Главная</a>
+              <a class="site-list__item-link" href="/">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__item-link" href="photo.html">Фотографии</a>
@@ -79,7 +80,7 @@
             <h3 class="advantages__caption">Заводит новых друзей</h3>
             <p class="advantages__paragraph">Ставьте лайки, комментруйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
-          <li class="advantages__item--phone">
+          <li class="advantages__item advantages__item--phone">
             <img src="img/iphone-screen-mobile@1x.png">
           </li>
         </ul>
@@ -104,8 +105,8 @@
       <section class="rates">
         <h3 class="visually-hidden">Тарифы</h3>
         <table class="rates__list">
-          <tr class="rates__row--head">
-            <th class="rates__data" colspan="2">Стандарт<br><span class="rates__data--light">3,99 usd</span></th>
+          <tr class="rates__row rates__row--head">
+            <th class="rates__data" colspan="2">Стандарт<br><span class="rates__data rates__data--price">3,99 usd</span></th>
           </tr>
           <tr class="rates__row">
             <td class="rates__data">Розовый фильтр</td>
