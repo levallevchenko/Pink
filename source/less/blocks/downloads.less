@@ -1,5 +1,10 @@
 .download {
-  font-family: "Open Sans", Arial, sans-serif;
+  .width-mob();
+  .font();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
@@ -9,7 +14,7 @@
 }
 
 .download__button {
-  font-family: "Open Sans", Arial, sans-serif;
+  .font();
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
@@ -17,10 +22,11 @@
 
 .download__apps-wrapper {
   display: flex;
-  //align-items: baseline;
+  justify-content: space-around;
 }
 
-download__availability {
+.download__availability {
   line-height: 24px;
   display: inline-block;
+  text-align: center;
 }

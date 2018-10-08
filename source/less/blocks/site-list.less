@@ -1,9 +1,8 @@
 .site-list {
-  .list-style-none();
+  .width-mob();
+  .reset-list();
   .font();
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .site-list__item {
@@ -18,4 +17,13 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .site-list {
+  display: flex;
+  justify-content: space-between;
+  width: 640px;
+  margin: 0 auto;
+  }
 }

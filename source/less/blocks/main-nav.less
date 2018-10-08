@@ -1,3 +1,18 @@
-.main-nav__list {
-  background-color: #324979;
+.main-nav {
+  .width-mob();
 }
+
+.main-nav__list {
+  background-color: @text;
+}
+
+
+@media (min-width: 1200px) {
+  .main-nav {
+    background-color: @text;
+    width: auto;
+    margin: 0;
+  }
+}
+
+

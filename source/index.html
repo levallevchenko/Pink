@@ -12,9 +12,9 @@
       <a class="page-header__logo logo"  href="index.html">
         <img src="img/logo-pink-white-mobile.svg" alt="Логотип сайта">
       </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper" >
+        <!-- <div class="main-nav__wrapper" > -->
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__item-link" href="/">Главная</a>
@@ -29,7 +29,7 @@
               <a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
             </li>
           </ul>
-        </div>
+        <!-- </div> -->
       </nav>
     </header>
     <main class="main-page-main">
@@ -81,7 +81,7 @@
             <p class="advantages__paragraph">Ставьте лайки, комментруйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
           <li class="advantages__item advantages__item--phone">
-            <img src="img/iphone-screen-mobile@1x.png">
+            <img class="advantages__img" src="img/iphone-screen-mobile@1x.png">
           </li>
         </ul>
       </section>
@@ -106,7 +106,7 @@
         <h3 class="visually-hidden">Тарифы</h3>
         <table class="rates__list">
           <tr class="rates__row rates__row--head">
-            <th class="rates__data" colspan="2">Стандарт<br><span class="rates__data rates__data--price">3,99 usd</span></th>
+            <th class="rates__data rates__data--head" colspan="2">Стандарт<br><span class="rates__data rates__data--price">3,99 usd</span></th>
           </tr>
           <tr class="rates__row">
             <td class="rates__data">Розовый фильтр</td>
@@ -173,6 +173,9 @@
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
         <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002912!2d30.320858715826557!3d59.938719169054494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538162131210" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p class="map__img">
+          <img src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="645">
+        </p>
       </section>
     </footer>
   </body>

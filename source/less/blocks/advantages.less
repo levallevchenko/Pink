@@ -1,17 +1,23 @@
 .advantages {
-  font-family: "Open Sans", Arial, sans-serif;
+  .width-mob();
+  .font();
+  overflow: hidden;
+  padding-top: 40px;
+  text-align: center;
 }
 
 .advantages__statement {
+  margin: 0;
+  margin-bottom: 26px;
   font-size: 24px;
   font-weight: 300;
+  line-height: 30px;
   color: @text;
 }
 
 .advantages__list {
-  margin: 0;
-  padding-top: 20px;
-  list-style: none;
+  .reset-list();
+  padding-top: 48px;
   background-color: @bg-light;
 }
 
@@ -24,6 +30,7 @@
 
 .advantages__caption {
   margin: 0;
+  margin-bottom: 13px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 600px;
@@ -31,6 +38,13 @@
 
 .advantages__paragraph {
   font-size: 14px;
+  line-height: 24px;
+  margin: 0 24px;
+  margin-bottom: 30px;
+}
+
+.advantages__img {
+  margin-bottom: -46px;
 }
 
 

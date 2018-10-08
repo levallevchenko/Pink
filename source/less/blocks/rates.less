@@ -1,3 +1,7 @@
+.rates {
+  .width-mob();
+}
+
 .rates__list {
   border-collapse: collapse;
 }
@@ -11,7 +15,7 @@
 }
 
 .rates__data {
-  font-family: "Open Sans", Arial, sans-serif;
+  .font();
   text-transform: uppercase;
   padding: 22px;
   border-bottom: 2px solid #e5e5e5;
@@ -19,9 +23,11 @@
   border-left: 2px solid #e5e5e5;
   &--head {
     font-weight: 600;
+    border-right: 0;
+    border-left: 0;
   }
 
-  &--light {
+  &--price {
     font-weight: 300;
   }
 }
