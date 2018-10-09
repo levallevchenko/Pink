@@ -1,0 +1,42 @@
+.form {
+  .width-mob();
+}
+
+.form__fieldset {
+  .fieldset();
+  display: flex;
+  padding: 20px;
+  &--checklist {
+    .fieldset();
+    position: relative;
+    padding: 37px;
+    background-color: @bg-light;
+  }
+}
+
+.form__input-label {
+  .pink-caption();
+}
+
+.form__legend {
+  .pink-caption();
+  position: absolute;
+}
+
+.form__required span {
+  .pink-caption();
+}
+
+.form__list {
+  .reset-list();
+  padding-top: 40px;
+}
+
+.form__required {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.form__textarea {
+  margin-top: 30px;
+}

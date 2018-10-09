@@ -1,0 +1,30 @@
+.rates {
+  .width-mob();
+}
+
+.rates__list {
+  border-collapse: collapse;
+}
+
+.rates__row {
+  &--head {
+    background-color: @text;
+    color: #ffffff;
+  }
+}
+
+.rates__data {
+  text-transform: uppercase;
+  padding: 22px;
+  border-bottom: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  &--head {
+    font-weight: 600;
+    border-right: 0;
+    border-left: 0;
+  }
+  &--price {
+    font-weight: 300;
+  }
+}

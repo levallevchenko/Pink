@@ -3,27 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo"  href="index.html">
-      <img class="logo__image" src="http://placehold.it/150x100">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип сайта">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper" >
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
             <li class="site-list__item site-list__item--active">
-              <a>Конкурс</a>
+              <a class="site-list__item-link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+              <a class="site-list__item-link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -35,12 +39,12 @@
         <h3 class="wall__name">Конкурс на самое безбашенное путешествие с Пинк</h3>
       </section>
       <section class="appeal">
-        <p class="appeal__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="appeal__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </section>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
-        <h3 class="vissualy-hidden">Заполните форму для участия в конкурсе</h3>
-        <fieldset class="form__name">
-          <legend class="vissually-hidden">Ваше имя</legend>
+        <h3 class="visually-hidden">Заполните форму для участия в конкурсе</h3>
+        <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Ваше имя</legend>
           <label class="form__input-label">Фамилия:
             <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
           </label>
@@ -51,43 +55,43 @@
             <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
           </label>
         </fieldset>
-        <fieldset class="form__travels">
+        <fieldset class="form__fieldset form__fieldset--checklist">
           <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-          <ul>
-             <li>
-              <label class="form__travels-label">
+          <ul class="form__list">
+            <li>
+              <label class="form__label-checkbox">
                 <input class="form__checkbox" type="checkbox" name="selfie" checked><span class="form__checkbox-indicator"></span>Сделал селфи с акулой
               </label>
             </li>
-             <li>
-              <label class="form_checkbox--label">
+            <li>
+              <label class="form__label-checkbox">
                 <input class="form__checkbox" type="checkbox" name="sunburned" checked><span class="form__checkbox-indicator"></span>Обгорел на пляже
               </label>
             </li>
-             <li>
-              <label class="form__checkbox-label">
+            <li>
+              <label class="form__label-checkbox">
                 <input class="form__checkbox" type="checkbox" name="Chuck"><span class="form__checkbox-indicator"></span>Видел Чака Норриса
               </label>
             </li>
-             <li>
-              <label class="form__checkbox-label">
+            <li>
+              <label class="form__label-checkbox">
                 <input class="form__checkbox" type="checkbox" name="souvenirs"><span class="form__checkbox-indicator"></span>Накупил сувениров
               </label>
             </li>
-             <li>
-              <label class="form__checkbox-label">
+            <li>
+              <label class="form__label-checkbox">
                 <input class="form__checkbox" type="checkbox" name="turret" checked><span class="form__checkbox-indicator"></span>Удержал башню
               </label>
             </li>
-             <li>
-              <label class="form__checkbox-label">
+            <li>
+              <label class="form__label-checkbox">
                 <input class="form__checkbox" type="checkbox" name="hotel"><span class="form__checkbox-indicator"></span>Разгромил отель
               </label>
             </li>
-           </ul>
+          </ul>
         </fieldset>
-        <fieldset class="form__contacts">
-          <legend class="vissualy-hidden">
+        <fieldset class="form__fieldset">
+          <legend class="visually-hidden">
             Ваши контакты
           </legend>
           <label class="form__input-label">Номер телефона
@@ -97,9 +101,9 @@
             <input class="form__input" type="email" name="email" placeholder="Введите почту*" required>
           </label>
         </fieldset>
-        <fieldset class="form__device">
+        <fieldset class="form__fieldset--checklist">
           <legend class="form__legend">С каким приложение путешествовали?</legend>
-          <ul>
+          <ul class="form__list">
             <li>
               <label class="form__label-checkbox">
                 <input class="form__radio" type="radio" name="iOS" checked>
@@ -120,19 +124,18 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__comment">
-          <legend class="vissually-hidden">Ваш комментарий</legend>
-          <label class="form__legend">Опишите свои эмоции
-            <textarea class="form__textarea" rows="8" cols="20" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </label>
+        <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Ваш комментарий</legend>
+          <label class="form__legend" for="comment">Опишите свои эмоции</label>
+            <textarea class="form__textarea" rows="8" cols="20" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button type="submit">Отправить форму</button>
-        <p class="form__required">*—Обязательные поля</p>
+        <button class="form__button" type="submit">Отправить форму</button>
+        <p class="form__required"><span>*</span> — Обязательные поля</p>
         </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo"  href="index.html">
-      <img class="logo__image--glasses" src="http://placehold.it/150x100">
+      <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
       </a>
       <div class="footer-social">
         <ul class="footer-social__list">
@@ -142,7 +145,7 @@
               <img src="http://placehold.it/150x100">
             </a>
           </li>
-          <li class="foothttp://placehold.it/150x100-social__item">
+          <li class="footer-social__item">
             <a href="https://www.facebook.com/">
               <span class="visually-hidden">Фейсбук</span>
               <img src="http://placehold.it/150x100">
@@ -156,7 +159,9 @@
           </li>
         </ul>
       </div>
-      <b class="page-footer__created-by">Разработано <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/150x100" aria-label="Html-Academy"></a></b>
+      <p class="page-footer__created-by">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/150x100" aria-label="Html-Academy"></a>
+      </p>
     </footer>
   </body>
 </html>
