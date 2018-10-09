@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -125,12 +126,11 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Ваш комментарий</legend>
-          <label class="form__legend">Опишите свои эмоции
-            <textarea class="form__textarea" rows="8" cols="20" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </label>
+          <label class="form__legend" for="comment">Опишите свои эмоции</label>
+            <textarea class="form__textarea" rows="8" cols="20" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="form__button" type="submit">Отправить форму</button>
-        <p class="form__required"><span class="form__pink">*</span> — Обязательные поля</p>
+        <p class="form__required"><span>*</span> — Обязательные поля</p>
         </form>
     </main>
     <footer class="page-footer">
