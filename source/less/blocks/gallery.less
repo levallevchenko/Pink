@@ -5,11 +5,28 @@
 }
 
 .gallery__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
   background-color: @bg-light;
 }
 
 .gallery__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
+  position: relative;
+}
+
+.gallery__favorite {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 6px 21px;
+  background-color: @pink;
 }
 
 .gallery__author-name {
@@ -26,6 +43,14 @@
 
 .gallery__text {
   margin: 0;
+}
+
+.gallery__photo-link {
+  display: inline-block;
+}
+
+.gallery__image {
+  vertical-align: middle;
 }
 
 .gallery__like {

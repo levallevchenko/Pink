@@ -1,0 +1,35 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .width-tab();
+    min-height: 234px;
+    padding: 96px 20px;
+    background-image: url("../../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 36%;
+    background-position: 20px 58px;
+  }
+
+  .effect__wrapper {
+    width: 310px;
+    text-align: left;
+  }
+
+  .effect__caption {
+    font-size: 30px;
+    line-height: 35px;
+    width: 160px;
+  }
+
+  .effect__more {
+    font-size: 14px;
+    color: @pink;
+    text-decoration: underline;
+  }
+}

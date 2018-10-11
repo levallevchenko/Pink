@@ -46,8 +46,8 @@
         <h3 class="visually-hidden">Галерея</h3>
         <div class="gallery__list">
           <blockquote class="gallery__item">
-            <a href="img/panorama-desktop@1x.jpg">
-              <img src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
+            <a class="gallery__link" href="img/panorama-desktop@1x.jpg">
+              <img class="gallery__image" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
             </a>
             <div class="gallery__wrapper">
               <span class="gallery__favorite">Панорама дня</span>
@@ -62,8 +62,8 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-car-desktop@1x.jpg">
-              <img src="img/photo-car-mobile@1x.jpg" alt="Фото с машиной">
+            <a class="gallery__photo-link" href="img/photo-car-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" alt="Фото с машиной">
             </a>
             <div class="gallery__wrapper">
               <cite class="gallery__author-name">Левон</cite>
@@ -75,8 +75,8 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-drumset-desktop@1x.jpg">
-              <img src="img/photo-drumset-mobile@1x.jpg"
+            <a class="gallery__photo-link" href="img/photo-drumset-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg"
               alt="Фото с барабанами">
             </a>
             <div class="gallery__wrapper">
@@ -89,8 +89,8 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-window-desktop@1x.jpg">
-              <img src="img/photo-window-mobile@1x.jpg" alt="Фото с окном">
+            <a class="gallery__photo-link" href="img/photo-window-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" alt="Фото с окном">
             </a>
             <div class="gallery__wrapper">
               <cite class="gallery__author-name">Борис</cite>
@@ -102,8 +102,8 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-fair-desktop@1x.jpg">
-              <img src="img/photo-fair-mobile@1x.jpg" alt="Фото с бахчой">
+            <a class="gallery__photo-link" href="img/photo-fair-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото с бахчой">
             </a>
             <div class="gallery__wrapper">
               <cite class="gallery__author-name">Сергей</cite>
@@ -115,8 +115,8 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-pov-desktop@1x.jpg">
-              <img src="img/photo-pov-mobile@1x.jpg" alt="Фото в горах">
+            <a class="gallery__photo-link" href="img/photo-pov-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото в горах">
             </a>
             <div class="gallery__wrapper">
               <cite class="gallery__author-name">Максим</cite>
@@ -128,8 +128,8 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-wing-desktop@1x.jpg">
-              <img src="img/photo-wing-mobile@1x.jpg" alt="Фото с крылом самолета">
+            <a class="gallery__photo-link" href="img/photo-wing-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото с крылом самолета">
             </a>
             <div class="gallery__wrapper">
               <cite class="gallery__author-name">Надежда</cite>
@@ -147,20 +147,20 @@
       </section>
       <section class="my-photo">
         <h3 class="visually-hidden">Ваше фото</h3>
-        <a href="img/photo-road-desktop@1x.jpg">
+        <a class="gallery__photo-link" href="img/photo-road-desktop@1x.jpg">
           <img class="my-photo__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
         </a>
         <div class="my-photo__wrapper">
           <button class="my-photo__tool my-photo__tool--active" type="button">
-            <svg class="my-photo__tool-img my-photo__tool-img--active">
+            <svg class="my-photo__tool-img my-photo__tool-img--active" width="44" height="44">
             </svg>
           </button>
           <button class="my-photo__tool" type="button">
-            <svg class="my-photo__tool-img">
+            <svg class="my-photo__tool-img" width="48" height="43">
             </svg>
           </button>
           <button class="my-photo__tool" type="button">
-            <svg class="my-photo__tool-img">
+            <svg class="my-photo__tool-img" width="32" height="32">
             </svg>
           </button>
         </div>
@@ -174,33 +174,32 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo"  href="index.html">
-      <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
+        <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
       </a>
       <div class="footer-social">
         <ul class="footer-social__list">
           <li class="footer-social__item">
             <a href="https://twitter.com/">
               <span class="visually-hidden">Твиттер</span>
-              <img src="img/icon-twitter.svg">
-            </a>
+              <svg class="footer-social__icon" width="48" height="43">
           </li>
           <li class="footer-social__item">
             <a href="https://www.facebook.com/">
               <span class="visually-hidden">Фейсбук</span>
-              <img src="http://placehold.it/150x100">
+               <svg class="footer-social__icon" width="48" height="43">
             </a>
           </li>
           <li class="footer-social__item">
             <a href="https://www.youtube.com/">
               <span class="visually-hidden">Ютуб</span>
-              <img src="http://placehold.it/150x100">
+              <svg class="footer-social__icon" width="48" height="43">
             </a>
           </li>
         </ul>
       </div>
       <p class="page-footer__created-by">Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" aria-label="Html-Academy">
+          <svg class="page-footer__academy-icon" width="48" height="43"aria-label="Html-Academy"></svg>
         </a>
       </p>
     </footer>

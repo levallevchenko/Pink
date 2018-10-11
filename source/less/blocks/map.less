@@ -4,4 +4,20 @@
 
 .map__iframe {
   max-width: 100%;
+  max-height: 199px;
+}
+
+ .map__img {
+    display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    .width-tab();
+  }
+
+  .map__iframe {
+    width: 100%;
+    max-height: 378px;
+  }
 }

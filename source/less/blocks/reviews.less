@@ -1,6 +1,6 @@
 .reviews {
   .width-mob();
-  padding: 40px 0;
+  padding: 42px 0;
   line-height: 30px;
   text-align: center;
 }
@@ -10,11 +10,29 @@
 }
 
 .reviews__author-name {
+  display: inline-block;
+  margin-bottom: 13px;
   font-style: normal;
   font-weight: 600;
+  color: #000000;
 }
 
 .reviews__text {
   font-size: 14px;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    .width-tab();
+  }
+
+  .reviews__author-name {
+  order: 2;
+  }
+
+  .reviews__text {
+    order: 1;
+    font-size: 18px;
+  }
 }

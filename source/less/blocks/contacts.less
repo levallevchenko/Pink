@@ -5,9 +5,14 @@
   text-align: center;
 }
 
+.contacts__list {
+  .reset-list();
+}
+
 .contacts__questions {
   margin: 0;
   margin-bottom: 44px;
+  font-size: 24px;
   line-height: 30px;
   color: @bg;
 }
@@ -26,4 +31,26 @@
   font-size: 24px;
   text-decoration: none;
   color: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    .width-tab();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__questions {
+    font-size: 40px;
+    line-height: 48px;
+    align-self: center;
+  }
 }

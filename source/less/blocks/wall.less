@@ -1,16 +1,14 @@
 .wall {
-  width: 320px;
-  margin: 0 auto;
-  min-height: 237px;
-  padding-top: 40px;
+  position: relative;
+  .width-mob();
+  min-height: 110px;
   padding-bottom: 60px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-size: cover;
-  background-position: 100% 20%;
+  background-position: 0 -66px;
   background-repeat: no-repeat;
   &--main {
     min-height: 396px;
-    padding-top: 111px;
     padding-bottom: 0;
   }
 }
@@ -18,6 +16,42 @@
 .wall__name {
   margin: 0;
   font-size: 24px;
-  font-weight: 300; //почему-то не реагирует;
+  font-weight: 300;
   color: #ffffff;
+}
+
+.wall__img {
+  position: absolute;
+  bottom: 0;
+  &--tab,
+  &--desk {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .wall {
+    .width-tab();
+    min-height: 618px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-size: 187%;
+    background-position: center -115px;
+  }
+
+  .wall__img {
+    &--tab {
+      display: inline;
+    }
+    &--mob {
+    display: none;
+    }
+  }
+
+  .wall__name {
+    width: 188px;
+    font-size: 40px;
+    padding: 90px 78px;
+    line-height: 48px;
+    text-align: center;
+  }
 }

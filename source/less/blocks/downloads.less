@@ -1,19 +1,22 @@
 .download {
   .width-mob();
+  min-height: 254px;
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   color: #ffffff;
   text-decoration: none;
-  padding-top: 28px;
-  padding-bottom: 33px;
   background-color: #1d2631;
 }
 
 .download__button {
   color: #ffffff;
   text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  padding: 10px 45px;
 }
 
 .download__apps-wrapper {
@@ -26,4 +29,14 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    .width-tab();
+    position: absolute;
+    top: 267px;
+    background: transparent;
+  }
 }

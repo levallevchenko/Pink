@@ -1,15 +1,37 @@
 .my-photo {
   .width-mob();
+  display: flex;
+  flex-direction: column;
   background-color: @bg-light;
-  padding: 20px;
   font-weight: 600;
 }
 
+.my-photo__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .my-photo__post {
+  text-align: center;
   text-decoration: none;
   color: @pink;
   &--cancel {
   text-decoration: none;
   color: #dddfe0;
+  }
+}
+
+.my-photo__image {
+  vertical-align: middle;
+  margin: 20px;
+}
+
+.my-photo__post {
+  display: inline-block;
+  border: 3px solid @pink;
+  border-radius: 30px;
+  padding: 10px 45px;
+  &--cancel {
+    border-color: #dddfe0;
   }
 }
