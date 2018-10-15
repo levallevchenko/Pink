@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale-added=1">
   </head>
   <body>
     <header class="page-header">
@@ -42,9 +42,13 @@
           </ul>
         </div>
       </nav>
-      <section class="wall">
-        <h3 class="wall__name">Фотографии пользователей</h3>
-      </section>
+      <div class="page-header__wrapper">
+        <section class="wall">
+          <div class="wall__wrapper">
+            <h3 class="wall__name">Фотографии пользователей</h3>
+          </div>
+        </section>
+      </div>
     </header>
     <main class="photo-page-main">
       <h1 class="visually-hidden">Страница с фотографиями пользователей</h1>
@@ -55,11 +59,11 @@
       <section class="gallery">
         <h3 class="visually-hidden">Галерея</h3>
         <div class="gallery__list">
-          <blockquote class="gallery__item">
-            <a class="gallery__link" href="img/panorama-desktop@1x.jpg">
+          <blockquote class="gallery__item gallery__item--best">
+            <a class="gallery__photo-link gallery__photo-link--best" href="img/panorama-desktop@1x.jpg">
               <img class="gallery__image" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <span class="gallery__favorite">Панорама дня</span>
               <cite class="gallery__author-name">Анна</cite>
               <time  class="gallery__time" datetime="2018-11-24T18:05:18">(5 минут назад)</time>
@@ -75,7 +79,7 @@
             <a class="gallery__photo-link" href="img/photo-car-desktop@1x.jpg">
               <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" alt="Фото с машиной">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Левон</cite>
               <time class="gallery__time" datetime="2018-11-24T13:00:23">(5 часов назад)</time>
               <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -89,7 +93,7 @@
               <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg"
               alt="Фото с барабанами">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Антон</cite>
               <time class="gallery__time" datetime="2018-11-24T05:57:33">(12 часов назад)</time>
               <p class="gallery__text">Соседи будут рады!</p>
@@ -102,7 +106,7 @@
             <a class="gallery__photo-link" href="img/photo-window-desktop@1x.jpg">
               <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" alt="Фото с окном">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Борис</cite>
               <time class="gallery__time" datetime="2018-11-23T21:03:15">(20 часов назад)</time>
               <p class="gallery__text">Здесь могла быт ваша цитата о высоком и вечном.</p>
@@ -115,7 +119,7 @@
             <a class="gallery__photo-link" href="img/photo-fair-desktop@1x.jpg">
               <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото с бахчой">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Сергей</cite>
               <time class="gallery__time" datetime="2018-11-23T18:05:18">(25 часов назад)</time>
               <p class="gallery__text">Самая кубанская в мире!</p>
@@ -128,7 +132,7 @@
             <a class="gallery__photo-link" href="img/photo-pov-desktop@1x.jpg">
               <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото в горах">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Максим</cite>
               <time class="gallery__time" datetime="2018-11-22T18:05:18">(40 часов назад)</time>
               <p class="gallery__text">Где снег-то?</p>
@@ -141,7 +145,7 @@
             <a class="gallery__photo-link" href="img/photo-wing-desktop@1x.jpg">
               <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото с крылом самолета">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Надежда</cite>
               <time class="gallery__time" datetime="2018-11-24T18:05:18">(45 часов назад)</time>
               <p class="gallery__text">Всем GM и взаимные лайки!</p>
@@ -157,61 +161,77 @@
       </section>
       <section class="my-photo">
         <h3 class="visually-hidden">Ваше фото</h3>
-        <a class="gallery__photo-link" href="img/photo-road-desktop@1x.jpg">
-          <img class="my-photo__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
-        </a>
         <div class="my-photo__wrapper">
-          <button class="my-photo__tool my-photo__tool--active" type="button">
-            <svg class="my-photo__tool-img my-photo__tool-img--active" width="44" height="44">
-            </svg>
-          </button>
-          <button class="my-photo__tool" type="button">
-            <svg class="my-photo__tool-img" width="48" height="43">
-            </svg>
-          </button>
-          <button class="my-photo__tool" type="button">
-            <svg class="my-photo__tool-img" width="32" height="32">
-            </svg>
-          </button>
+          <a class="gallery__photo-link" href="img/photo-road-desktop@1x.jpg">
+            <img class="my-photo__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+          </a>
+          <div class="my-photo__tools">
+            <div class="my-photo__tools-list">
+              <button class="my-photo__tool my-photo__tool--active" type="button">
+                <svg class="my-photo__tool-img my-photo__tool-img--active" width="44" height="44">
+                </svg>
+              </button>
+              <div class="my-photo__scale">
+                <div class="my-photo__bar"></div>
+                <button class="my-photo__range-toggle" type="button"></button>
+              </div>
+              <button class="my-photo__tool" type="button">
+                <svg class="my-photo__tool-img" width="48" height="43">
+                </svg>
+              </button>
+              <div class="my-photo__scale my-photo__scale--added">
+                <div class="my-photo__bar"></div>
+                <button class="my-photo__range-toggle" type="button"></button>
+              </div>
+              <button class="my-photo__tool" type="button">
+                <svg class="my-photo__tool-img" width="32" height="32">
+                </svg>
+              </button>
+              <div class="my-photo__scale my-photo__scale--added">
+                <div class="my-photo__bar"></div>
+                <button class="my-photo__range-toggle" type="button"></button>
+              </div>
+            </div>
+            <div class="my-photo__post">
+              <a class="my-photo__post-button" href="photo.html">Запостить</a>
+              <a  class="my-photo__post-button my-photo__post-button--cancel" href="photo.html">Отмена</a>
+            </div>
+          </div>
         </div>
-        <div class="my-photo__scale">
-          <div class="my-photo__bar"></div>
-          <button class="my-photo__range-toggle" type="button"></button>
-        </div>
-        <a class="my-photo__post" href="photo.html">Запостить</a>
-        <a  class="my-photo__post my-photo__post--cancel" href="photo.html">Отмена</a>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo"  href="index.html">
-        <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
-      </a>
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a href="https://twitter.com/">
-              <span class="visually-hidden">Твиттер</span>
-              <svg class="footer-social__icon" width="48" height="43">
-          </li>
-          <li class="footer-social__item">
-            <a href="https://www.facebook.com/">
-              <span class="visually-hidden">Фейсбук</span>
-               <svg class="footer-social__icon" width="48" height="43">
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a href="https://www.youtube.com/">
-              <span class="visually-hidden">Ютуб</span>
-              <svg class="footer-social__icon" width="48" height="43">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p class="page-footer__created-by">Разработано
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="page-footer__academy-icon" width="48" height="43"aria-label="Html-Academy"></svg>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo logo"  href="index.html">
+          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
         </a>
-      </p>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="https://twitter.com/">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="footer-social__icon" width="48" height="43">
+            </li>
+            <li class="footer-social__item">
+              <a href="https://www.facebook.com/">
+                <span class="visually-hidden">Фейсбук</span>
+                 <svg class="footer-social__icon" width="48" height="43">
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="https://www.youtube.com/">
+                <span class="visually-hidden">Ютуб</span>
+                <svg class="footer-social__icon" width="48" height="43">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="page-footer__created-by">Разработано
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="page-footer__academy-icon" width="48" height="43"aria-label="Html-Academy"></svg>
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

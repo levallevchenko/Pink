@@ -1,6 +1,8 @@
 .appeal {
-  .width-mob();
-  padding: 47px;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 49px;
   font-size: 14px;
   line-height: 30px;
 }
@@ -8,4 +10,12 @@
 .appeal__text {
   margin: 0;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .appeal {
+    .width-tab();
+    padding: 68px;
+    font-size: 18px;
+  }
 }

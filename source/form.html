@@ -42,9 +42,13 @@
           </ul>
         </div>
       </nav>
-      <section class="wall">
-        <h3 class="wall__name">Конкурс на самое безбашенное путешествие с Пинк</h3>
-      </section>
+      <div class="page-header__wrapper">
+        <section class="wall">
+          <div class="wall__wrapper">
+            <h3 class="wall__name">Конкурс на самое безбашенное путешествие с Пинк</h3>
+          </div>
+        </section>
+      </div>
     </header>
     <main class="form-page-main">
       <h1 class="visually-hidden">Страница с конкурсом</h1>
@@ -66,39 +70,41 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--checklist">
-          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="form__list">
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="selfie" checked><span class="form__checkbox-indicator"></span>Сделал селфи с акулой
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="sunburned" checked><span class="form__checkbox-indicator"></span>Обгорел на пляже
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="Chuck"><span class="form__checkbox-indicator"></span>Видел Чака Норриса
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="souvenirs"><span class="form__checkbox-indicator"></span>Накупил сувениров
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="turret" checked><span class="form__checkbox-indicator"></span>Удержал башню
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="hotel"><span class="form__checkbox-indicator"></span>Разгромил отель
-              </label>
-            </li>
-          </ul>
+          <div class="form__checkbox-wrapper">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form__list">
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="selfie" checked><span class="form__checkbox-indicator"></span>Сделал селфи с акулой
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="sunburned" checked><span class="form__checkbox-indicator"></span>Обгорел на пляже
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="Chuck"><span class="form__checkbox-indicator"></span>Видел Чака Норриса
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="souvenirs"><span class="form__checkbox-indicator"></span>Накупил сувениров
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="turret" checked><span class="form__checkbox-indicator"></span>Удержал башню
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="hotel"><span class="form__checkbox-indicator"></span>Разгромил отель
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">
@@ -112,67 +118,73 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset--checklist">
-          <legend class="form__legend">С каким приложение путешествовали?</legend>
-          <ul class="form__list">
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__radio" type="radio" name="iOS" checked>
-                <span class="form__radio-indicator"></span>Pink для iOS
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__radio" type="radio" name="android">
-                <span class="form__radio-indicator"></span>Pink на Android
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__radio" type="radio" name="windows">
-                <span class="form__radio-indicator"></span>Windows Phone
-              </label>
-            </li>
-          </ul>
+          <div class="form__checkbox-wrapper">
+            <legend class="form__legend">С каким приложение путешествовали?</legend>
+            <ul class="form__list">
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__radio" type="radio" name="iOS" checked>
+                  <span class="form__radio-indicator"></span>Pink для iOS
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__radio" type="radio" name="android">
+                  <span class="form__radio-indicator"></span>Pink на Android
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__radio" type="radio" name="windows">
+                  <span class="form__radio-indicator"></span>Windows Phone
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Ваш комментарий</legend>
           <label class="form__legend" for="comment">Опишите свои эмоции</label>
             <textarea class="form__textarea" rows="8" cols="20" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="form__button" type="submit">Отправить форму</button>
-        <p class="form__required"><span>*</span> — Обязательные поля</p>
+        <div class="form__send">
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p class="form__required"><span>*</span> — Обязательные поля</p>
+        </div>
         </form>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo"  href="index.html">
-        <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
-      </a>
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a href="https://twitter.com/">
-              <span class="visually-hidden">Твиттер</span>
-              <svg class="footer-social__icon" width="48" height="43">
-          </li>
-          <li class="footer-social__item">
-            <a href="https://www.facebook.com/">
-              <span class="visually-hidden">Фейсбук</span>
-               <svg class="footer-social__icon" width="48" height="43">
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a href="https://www.youtube.com/">
-              <span class="visually-hidden">Ютуб</span>
-              <svg class="footer-social__icon" width="48" height="43">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p class="page-footer__created-by">Разработано
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="page-footer__academy-icon" width="48" height="43"aria-label="Html-Academy"></svg>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo logo"  href="index.html">
+          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
         </a>
-      </p>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="https://twitter.com/">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="footer-social__icon" width="48" height="43">
+            </li>
+            <li class="footer-social__item">
+              <a href="https://www.facebook.com/">
+                <span class="visually-hidden">Фейсбук</span>
+                 <svg class="footer-social__icon" width="48" height="43">
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="https://www.youtube.com/">
+                <span class="visually-hidden">Ютуб</span>
+                <svg class="footer-social__icon" width="48" height="43">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="page-footer__created-by">Разработано
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="page-footer__academy-icon" width="48" height="43"aria-label="Html-Academy"></svg>
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

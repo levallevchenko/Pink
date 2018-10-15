@@ -1,12 +1,11 @@
-.form {
-  .width-mob();
-}
-
 .form__fieldset {
   .fieldset();
+  .width-mob();
   display: flex;
   padding: 20px;
   &--checklist {
+    width: auto;
+    margin: 0;
     .fieldset();
     position: relative;
     padding: 37px;
@@ -14,13 +13,31 @@
   }
 }
 
+.form__checkbox-wrapper {
+  .width-mob();
+}
+
 .form__input-label {
+  width: 280px;
   .pink-caption();
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  color: @text;
 }
 
 .form__legend {
   .pink-caption();
-  position: absolute;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 18px;
 }
 
 .form__required span {
@@ -35,8 +52,30 @@
 .form__required {
   text-transform: uppercase;
   font-size: 14px;
+  text-align: center;
 }
 
 .form__textarea {
   margin-top: 30px;
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.form__send {
+  .width-mob();
+}
+
+.form__button {
+  width: 100%;
+  padding: 20px;
+  background-color: @green;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+
 }

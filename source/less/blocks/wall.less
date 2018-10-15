@@ -1,28 +1,32 @@
 .wall {
-  position: relative;
-  .width-mob();
-  min-height: 110px;
   padding-bottom: 60px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-position: 0 -66px;
-  background-repeat: no-repeat;
+  text-align: center;
   &--main {
-    min-height: 396px;
     padding-bottom: 0;
+    background-color: @bg;
   }
+}
+
+.wall__wrapper {
+  .width-mob();
+  position: relative;
 }
 
 .wall__name {
   margin: 0;
+  padding-top: 30px;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+  &--main {
+    display: none;
+  }
 }
 
 .wall__img {
   position: absolute;
-  bottom: 0;
+  bottom: 270px;
+  left: -20px;
   &--tab,
   &--desk {
     display: none;
@@ -32,15 +36,16 @@
 @media (min-width: @tablet-width) {
   .wall {
     .width-tab();
+    &--main {
     min-height: 618px;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
-    background-size: 187%;
-    background-position: center -115px;
+    }
   }
 
   .wall__img {
     &--tab {
       display: inline;
+      bottom: -1px;
+      left: -20px;
     }
     &--mob {
     display: none;
@@ -53,5 +58,22 @@
     padding: 90px 78px;
     line-height: 48px;
     text-align: center;
+    &--main {
+    display: inline;
+    }
   }
+}
+
+@media (min-width: @desktop-width) {
+  .wall__img {
+    &--desk {
+      display: inline;
+      bottom: -125px;
+      left: 147px;
+    }
+    &--tab {
+    display: none;
+    }
+  }
+
 }
