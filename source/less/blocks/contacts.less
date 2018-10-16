@@ -37,11 +37,15 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
-    .width-tab();
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .contacts__wrapper {
+  width: 620px;
   }
 
   .contacts__list {
@@ -54,5 +58,39 @@
     font-size: 40px;
     line-height: 48px;
     align-self: center;
+    margin-bottom: 55px;
+  }
+
+  .contacts__item {
+    margin-bottom: 27px;
+    width: 295px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    padding: 65px 0;
+  }
+
+  .contacts__wrapper {
+    width: 960px;
+  }
+
+  .contacts__questions {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 67px;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 2;
+  }
+
+  .contacts__item:nth-child(3) {
+    order: 1;
+  }
+
+  .contacts__request {
+  margin-bottom: 36px;
   }
 }

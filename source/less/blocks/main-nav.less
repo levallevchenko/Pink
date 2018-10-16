@@ -19,7 +19,7 @@
   border: none;
 }
 
-.main-nav--closed .main-nav__wrapper {
+.main-nav--closed .main-nav__list-wrapper {
   display: none;
 }
 
@@ -27,20 +27,39 @@
   .main-nav {
     min-height: 110px;
   }
+
+  .main-nav__logo-wrapper {
+    .width-tab();
+    padding: 40px 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
     background-color: rgba(0, 0, 0, 0.3);
+    width: auto;
+  }
+
+  .main-nav__wrapper {
+    width: 960px;
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .main-nav__logo-wrapper {
-    width: 960px;
-    border: none;
+    margin: 0;
+    width: 283px;
+
   }
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--closed .main-nav__list-wrapper{
+    display: flex;
   }
 }

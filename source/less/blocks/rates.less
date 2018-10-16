@@ -1,5 +1,6 @@
 .rates {
   overflow: auto;
+  background-color: @bg-light;
 }
 
 .rates__list {
@@ -28,4 +29,10 @@
 
 .rates__data span {
   font-weight: 300;
+}
+
+@media (min-width: @desktop-width) {
+  .rates {
+    padding-top: 70px;
+  }
 }

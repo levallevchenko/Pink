@@ -4,19 +4,27 @@
 
 @media (min-width: @tablet-width) {
   .effect {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #ffffff;
+  }
+
+  .effect__wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     .width-tab();
     min-height: 234px;
-    padding: 96px 20px;
+    padding: 98px 0;
     background-image: url("../../img/icon-timer.svg");
     background-repeat: no-repeat;
-    background-size: 36%;
-    background-position: 20px 58px;
+    background-size: 239px auto;
+    background-position: 20px 61px;
   }
 
-  .effect__wrapper {
+  .effect__info {
     width: 310px;
     text-align: left;
   }
@@ -27,9 +35,46 @@
     width: 160px;
   }
 
+  .effect__paragraph {
+    margin-bottom: 8px;
+  }
+
   .effect__more {
+    margin: 0;
     font-size: 14px;
     color: @pink;
     text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @bg-light;
+  }
+
+  .effect__wrapper {
+  width: 960px;
+  padding: 0;
+  background-size: 300px auto;
+  background-position: 10px 44px;
+  }
+
+  .effect__info {
+    width: 585px;
+    padding-top: 135px;
+    padding-bottom: 113px;
+    padding-left: 365px;
+  }
+
+  .effect__caption {
+    width: auto;
+  }
+
+  .effect__paragraph {
+    margin-bottom: 32px;
+  }
+
+  .effect__more {
+    font-size: 18px;
   }
 }
