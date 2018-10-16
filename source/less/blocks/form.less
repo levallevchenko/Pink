@@ -6,7 +6,6 @@
   &--checklist {
     width: auto;
     margin: 0;
-    .fieldset();
     position: relative;
     padding: 37px;
     background-color: @bg-light;
@@ -78,4 +77,30 @@
   font-size: 18px;
   font-weight: 600;
 
+}
+
+@media (min-width: @tablet-width) {
+  .form__input-label {
+  width: 620px;
+  flex-direction: row;
+  align-items: center;
+  }
+
+  .form__input {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  .form__fieldset {
+    border: 2px solid #e5e5e5;
+    &--checklist {
+      background-color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__input-label {
+  width: 940px;
+  }
 }

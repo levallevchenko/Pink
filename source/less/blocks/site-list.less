@@ -1,6 +1,10 @@
 .site-list {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
   .reset-list();
   text-align: center;
+  background-color: @text;
 }
 
 .site-list__item {
@@ -21,6 +25,7 @@
     width: 650px;
     display: flex;
     justify-content: space-between;
+    background-color: transparent;
   }
 
   .site-list__item {
