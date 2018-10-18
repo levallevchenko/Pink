@@ -5,17 +5,57 @@
   padding-bottom: 49px;
   font-size: 14px;
   line-height: 30px;
+  &--form {
+    padding-bottom: 10px;
+  }
 }
 
 .appeal__text {
   margin: 0;
   text-align: center;
+  &--added {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .appeal {
-    .width-tab();
-    padding: 68px;
+    width: auto;
+    padding: 92px 0;
     font-size: 18px;
+    &--form {
+      padding: 40px 0;
+    }
+  }
+
+  .appeal__wrapper {
+    .width-tab();
+  }
+
+  .appeal__text {
+    width: 495px;
+    margin: 0 auto;
+    &--added {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .appeal--form {
+    padding: 92px 0;
+    padding-bottom: 73px;
+  }
+
+  .appeal__wrapper {
+    width: 600px;
+    text-align: center;
+    &--form {
+      width: 800px;
+    }
+  }
+
+  .appeal__text {
+    display: inline;
   }
 }

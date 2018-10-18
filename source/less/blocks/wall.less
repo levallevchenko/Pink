@@ -36,29 +36,34 @@
 @media (min-width: @tablet-width) {
   .wall {
     width: 620px;
-    &--main {
     background-color: transparent;
     margin: 0 auto;
-    min-height: 555px;
     padding-top: 28px;
     padding-bottom: 36px;
+    &--main {
+      min-height: 555px;
     }
   }
 
-  .wall__wrapper--index {
+  .wall__wrapper {
+    width: 620px;
+    &--index {
     z-index: 2;
     width: 300px;
     margin-left: 0;
+    }
   }
 
   .wall__name {
-    font-size: 40px;
-    line-height: 48px;
-    padding: 0 36px;
-    padding-top: 70px;
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0 48px;
+    padding-top: 40px;
     margin-bottom: 31px;
     text-align: center;
     &--main {
+    font-size: 40px;
+    line-height: 48px;
     display: block;
     padding: 0 36px;
     padding-top: 65px;
@@ -94,10 +99,18 @@
     display: none;
     }
   }
+
+  .wall__wrapper--form {
+    width: 845px;
+  }
+
   .wall__name {
     font-size: 50px;
     line-height: 60px;
-    padding-top: 80px;
+    padding-top: 35px;
     margin-bottom: 52px;
+    &--main {
+      padding-top: 80px;
+    }
   }
 }

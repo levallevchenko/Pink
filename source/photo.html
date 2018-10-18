@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="page-header">
-     <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo logo"  href="index.html">
@@ -55,8 +55,10 @@
     <main class="photo-page-main">
       <h1 class="visually-hidden">Страница с фотографиями пользователей</h1>
       <section class="appeal">
-        <p class="appeal__text">Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?</p>
+        <div class="appeal__wrapper">
+          <p class="appeal__text">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?</p>
+        </div>
       </section>
       <section class="gallery">
         <h3 class="visually-hidden">Галерея</h3>
@@ -159,7 +161,9 @@
         </div>
       </section>
       <section class="appeal">
-        <p class="appeal__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="appeal__wrapper">
+          <p class="appeal__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
       </section>
       <section class="my-photo">
         <h3 class="visually-hidden">Ваше фото</h3>
@@ -212,25 +216,26 @@
             <li class="footer-social__item">
               <a href="https://twitter.com/">
                 <span class="visually-hidden">Твиттер</span>
-                <svg class="footer-social__icon" width="48" height="43">
+                <svg class="footer-social__icon" width="48" height="43"></svg>
+              </a>
             </li>
             <li class="footer-social__item">
               <a href="https://www.facebook.com/">
                 <span class="visually-hidden">Фейсбук</span>
-                 <svg class="footer-social__icon" width="48" height="43">
+                <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
             <li class="footer-social__item">
               <a href="https://www.youtube.com/">
                 <span class="visually-hidden">Ютуб</span>
-                <svg class="footer-social__icon" width="48" height="43">
+                <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
           </ul>
         </div>
         <p class="page-footer__created-by">Разработано
           <a href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="page-footer__academy-icon" width="48" height="43"aria-label="Html-Academy"></svg>
+            <svg class="page-footer__academy-icon" width="48" height="43" aria-label="Html-Academy"></svg>
           </a>
         </p>
       </div>
