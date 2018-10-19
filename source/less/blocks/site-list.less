@@ -1,11 +1,13 @@
 .site-list {
-  .width-mob();
+  position: absolute;
+  width: 100%;
+  z-index: 3;
   .reset-list();
   text-align: center;
+  background-color: @text;
 }
 
 .site-list__item {
-  background-color: @text;
   text-transform: uppercase;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #010101;
@@ -16,4 +18,19 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    position: relative;
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+
+  .site-list__item {
+    border: none;
+    text-transform: none;
+  }
 }

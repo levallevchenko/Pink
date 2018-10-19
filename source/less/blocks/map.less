@@ -1,7 +1,26 @@
 .map {
-  .width-mob();
+  width: auto;
+  margin: 0;
 }
 
 .map__iframe {
   max-width: 100%;
+  max-height: 199px;
+}
+
+.map__img {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .map__iframe {
+    width: 100%;
+    max-height: 378px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__iframe {
+    max-height: 504px;
+  }
 }

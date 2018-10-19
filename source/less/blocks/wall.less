@@ -1,23 +1,116 @@
 .wall {
-  width: 320px;
-  margin: 0 auto;
-  min-height: 237px;
-  padding-top: 40px;
   padding-bottom: 60px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-position: 100% 20%;
-  background-repeat: no-repeat;
+  text-align: center;
   &--main {
-    min-height: 396px;
-    padding-top: 111px;
     padding-bottom: 0;
+    background-color: @bg;
   }
+}
+
+.wall__wrapper {
+  .width-mob();
+  position: relative;
 }
 
 .wall__name {
   margin: 0;
+  padding-top: 30px;
   font-size: 24px;
-  font-weight: 300; //почему-то не реагирует;
+  font-weight: 300;
   color: #ffffff;
+  &--main {
+    display: none;
+  }
+}
+
+.wall__img {
+  position: absolute;
+  bottom: 270px;
+  left: -20px;
+  &--tab,
+  &--desk {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .wall {
+    width: 620px;
+    background-color: transparent;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 36px;
+    &--main {
+      min-height: 555px;
+    }
+  }
+
+  .wall__wrapper {
+    width: 620px;
+    &--index {
+    z-index: 2;
+    width: 300px;
+    margin-left: 0;
+    }
+  }
+
+  .wall__name {
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0 48px;
+    padding-top: 40px;
+    margin-bottom: 31px;
+    text-align: center;
+    &--main {
+    font-size: 40px;
+    line-height: 48px;
+    display: block;
+    padding: 0 36px;
+    padding-top: 65px;
+    margin-bottom: 31px;
+    }
+  }
+
+  .wall__img {
+    &--tab {
+      z-index: -1;
+      display: inline;
+      bottom: -111px;
+      left: -40px;
+    }
+    &--mob {
+    display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wall {
+    width: 960px;
+  }
+
+  .wall__img {
+    &--desk {
+      display: inline;
+      bottom: -123px;
+      left: 26px;
+    }
+    &--tab {
+    display: none;
+    }
+  }
+
+  .wall__wrapper--form {
+    width: 845px;
+  }
+
+  .wall__name {
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 35px;
+    margin-bottom: 52px;
+    &--main {
+      padding-top: 80px;
+    }
+  }
 }

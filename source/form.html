@@ -10,40 +10,59 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo"  href="index.html">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип сайта">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__item-link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-            </li>
-          </ul>
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo logo"  href="index.html">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+                <g>
+                  <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                  <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                  <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                  <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+                </g>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <div class="main-nav__list-wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__item-link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <div class="page-header__wrapper">
+        <section class="wall">
+          <div class="wall__wrapper wall__wrapper--form">
+            <h3 class="wall__name">Конкурс на самое безбашенное путешествие с Пинк</h3>
+          </div>
+        </section>
+      </div>
     </header>
     <main class="form-page-main">
       <h1 class="visually-hidden">Страница с конкурсом</h1>
-      <section class="wall">
-        <h3 class="wall__name">Конкурс на самое безбашенное путешествие с Пинк</h3>
-      </section>
-      <section class="appeal">
-        <p class="appeal__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <section class="appeal appeal--form">
+        <div class="appeal__wrapper appeal__wrapper--form">
+          <p class="appeal__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="appeal__text appeal__text--added">Пожалуйста, заполните форму ниже:</p>
+        </div>
       </section>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <h3 class="visually-hidden">Заполните форму для участия в конкурсе</h3>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--name">
           <legend class="visually-hidden">Ваше имя</legend>
           <label class="form__input-label">Фамилия:
             <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
@@ -56,112 +75,142 @@
           </label>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--checklist">
-          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="form__list">
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="selfie" checked><span class="form__checkbox-indicator"></span>Сделал селфи с акулой
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="sunburned" checked><span class="form__checkbox-indicator"></span>Обгорел на пляже
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="Chuck"><span class="form__checkbox-indicator"></span>Видел Чака Норриса
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="souvenirs"><span class="form__checkbox-indicator"></span>Накупил сувениров
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="turret" checked><span class="form__checkbox-indicator"></span>Удержал башню
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__checkbox" type="checkbox" name="hotel"><span class="form__checkbox-indicator"></span>Разгромил отель
-              </label>
-            </li>
-          </ul>
+          <div class="form__wrapper">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form__list form__list--progress">
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="selfie" checked><span class="form__checkbox-indicator"></span>Сделал селфи с акулой
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="sunburned" checked><span class="form__checkbox-indicator"></span>Обгорел на пляже
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="Chuck"><span class="form__checkbox-indicator"></span>Видел Чака Норриса
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="souvenirs"><span class="form__checkbox-indicator"></span>Накупил сувениров
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="turret" checked><span class="form__checkbox-indicator"></span>Удержал башню
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__checkbox" type="checkbox" name="hotel"><span class="form__checkbox-indicator"></span>Разгромил отель
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <div class="form__wrapper form__wrapper--contacts">
+            <legend class="visually-hidden">
+              Ваши контакты
+            </legend>
+            <label class="form__input-label form__input-label--tel" for="tel">Номер телефона</label>
+              <input class="form__input form__input--contacts" type="tel" id="tel" name="phone" placeholder="Номер, пожалуйста">
+            <label class="form__input-label form__input-label--email" for="email">Адрес почты</label>
+              <input class="form__input form__input--contacts" type="email" id="email" name="email" placeholder="Введите почту*" required>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset
+        form__fieldset--checklist form__fieldset--apps">
+          <div class="form__wrapper form__wrapper--apps">
+            <legend class="form__legend">С каким приложение путешествовали?</legend>
+            <ul class="form__list">
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__radio" type="radio" name="iOS" checked>
+                  <span class="form__radio-indicator"></span>Pink для iOS
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__radio" type="radio" name="android">
+                  <span class="form__radio-indicator"></span>Pink на Android
+                </label>
+              </li>
+              <li>
+                <label class="form__label-checkbox">
+                  <input class="form__radio" type="radio" name="windows">
+                  <span class="form__radio-indicator"></span>Windows Phone
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="visually-hidden">
-            Ваши контакты
-          </legend>
-          <label class="form__input-label">Номер телефона
-            <input class="form__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
-          </label>
-          <label class="form__input-label">Адрес почты
-            <input class="form__input" type="email" name="email" placeholder="Введите почту*" required>
-          </label>
+          <div class="form__wrapper">
+            <legend class="visually-hidden">Ваш комментарий</legend>
+            <label class="form__legend" for="comment">Опишите свои эмоции</label>
+              <textarea class="form__textarea" rows="8" cols="20" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
         </fieldset>
-        <fieldset class="form__fieldset--checklist">
-          <legend class="form__legend">С каким приложение путешествовали?</legend>
-          <ul class="form__list">
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__radio" type="radio" name="iOS" checked>
-                <span class="form__radio-indicator"></span>Pink для iOS
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__radio" type="radio" name="android">
-                <span class="form__radio-indicator"></span>Pink на Android
-              </label>
-            </li>
-            <li>
-              <label class="form__label-checkbox">
-                <input class="form__radio" type="radio" name="windows">
-                <span class="form__radio-indicator"></span>Windows Phone
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Ваш комментарий</legend>
-          <label class="form__legend" for="comment">Опишите свои эмоции</label>
-            <textarea class="form__textarea" rows="8" cols="20" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
-        <button class="form__button" type="submit">Отправить форму</button>
-        <p class="form__required"><span>*</span> — Обязательные поля</p>
+        <div class="form__send">
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p class="form__required"><span>*</span> — Обязательные поля</p>
+        </div>
         </form>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo"  href="index.html">
-      <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
-      </a>
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a href="https://twitter.com/">
-              <span class="visually-hidden">Твиттер</span>
-              <img src="http://placehold.it/150x100">
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a href="https://www.facebook.com/">
-              <span class="visually-hidden">Фейсбук</span>
-              <img src="http://placehold.it/150x100">
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a href="https://www.youtube.com/">
-              <span class="visually-hidden">Ютуб</span>
-              <img src="http://placehold.it/150x100">
-            </a>
-          </li>
-        </ul>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo logo"  href="index.html">
+          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
+        </a>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="https://twitter.com/">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="footer-social__icon" width="48" height="43"></svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="https://www.facebook.com/">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="footer-social__icon" width="48" height="43"></svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="https://www.youtube.com/">
+                <span class="visually-hidden">Ютуб</span>
+                <svg class="footer-social__icon" width="48" height="43"></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="page-footer__created-by">Разработано
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="page-footer__academy-icon" width="48" height="43" aria-label="Html-Academy"></svg>
+          </a>
+        </p>
       </div>
-      <p class="page-footer__created-by">Разработано
-        <a href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/150x100" aria-label="Html-Academy"></a>
-      </p>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

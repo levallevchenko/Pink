@@ -6,50 +6,68 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale-added=1">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo"  href="index.html">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип сайта">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper" >
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__item-link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-            </li>
-          </ul>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo logo"  href="index.html">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+                <g>
+                  <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                  <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                  <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                  <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+                </g>
+              </svg>
+            </a>
+            <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <div class="main-nav__list-wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__item-link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <div class="page-header__wrapper">
+        <section class="wall">
+          <div class="wall__wrapper">
+            <h3 class="wall__name">Фотографии пользователей</h3>
+          </div>
+        </section>
+      </div>
     </header>
     <main class="photo-page-main">
       <h1 class="visually-hidden">Страница с фотографиями пользователей</h1>
-      <section class="wall">
-        <h3 class="wall__name">Фотографии пользователей</h3>
-      </section>
       <section class="appeal">
-        <p class="appeal__text">Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?</p>
+        <div class="appeal__wrapper">
+          <p class="appeal__text">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?</p>
+        </div>
       </section>
       <section class="gallery">
         <h3 class="visually-hidden">Галерея</h3>
         <div class="gallery__list">
-          <blockquote class="gallery__item">
-            <a href="img/panorama-desktop@1x.jpg">
-              <img src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
+          <blockquote class="gallery__item gallery__item--best">
+            <a class="gallery__photo-link gallery__photo-link--best" href="img/panorama-desktop@1x.jpg">
+              <img class="gallery__image" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <span class="gallery__favorite">Панорама дня</span>
               <cite class="gallery__author-name">Анна</cite>
               <time  class="gallery__time" datetime="2018-11-24T18:05:18">(5 минут назад)</time>
@@ -62,10 +80,10 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-car-desktop@1x.jpg">
-              <img src="img/photo-car-mobile@1x.jpg" alt="Фото с машиной">
+            <a class="gallery__photo-link" href="img/photo-car-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" alt="Фото с машиной">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Левон</cite>
               <time class="gallery__time" datetime="2018-11-24T13:00:23">(5 часов назад)</time>
               <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -75,11 +93,11 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-drumset-desktop@1x.jpg">
-              <img src="img/photo-drumset-mobile@1x.jpg"
+            <a class="gallery__photo-link" href="img/photo-drumset-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg"
               alt="Фото с барабанами">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Антон</cite>
               <time class="gallery__time" datetime="2018-11-24T05:57:33">(12 часов назад)</time>
               <p class="gallery__text">Соседи будут рады!</p>
@@ -89,10 +107,10 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-window-desktop@1x.jpg">
-              <img src="img/photo-window-mobile@1x.jpg" alt="Фото с окном">
+            <a class="gallery__photo-link" href="img/photo-window-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" alt="Фото с окном">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Борис</cite>
               <time class="gallery__time" datetime="2018-11-23T21:03:15">(20 часов назад)</time>
               <p class="gallery__text">Здесь могла быт ваша цитата о высоком и вечном.</p>
@@ -102,10 +120,10 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-fair-desktop@1x.jpg">
-              <img src="img/photo-fair-mobile@1x.jpg" alt="Фото с бахчой">
+            <a class="gallery__photo-link" href="img/photo-fair-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото с бахчой">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Сергей</cite>
               <time class="gallery__time" datetime="2018-11-23T18:05:18">(25 часов назад)</time>
               <p class="gallery__text">Самая кубанская в мире!</p>
@@ -115,10 +133,10 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-pov-desktop@1x.jpg">
-              <img src="img/photo-pov-mobile@1x.jpg" alt="Фото в горах">
+            <a class="gallery__photo-link" href="img/photo-pov-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото в горах">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Максим</cite>
               <time class="gallery__time" datetime="2018-11-22T18:05:18">(40 часов назад)</time>
               <p class="gallery__text">Где снег-то?</p>
@@ -128,10 +146,10 @@
             </div>
           </blockquote>
           <blockquote class="gallery__item">
-            <a href="img/photo-wing-desktop@1x.jpg">
-              <img src="img/photo-wing-mobile@1x.jpg" alt="Фото с крылом самолета">
+            <a class="gallery__photo-link" href="img/photo-wing-desktop@1x.jpg">
+              <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото с крылом самолета">
             </a>
-            <div class="gallery__wrapper">
+            <div class="gallery__description">
               <cite class="gallery__author-name">Надежда</cite>
               <time class="gallery__time" datetime="2018-11-24T18:05:18">(45 часов назад)</time>
               <p class="gallery__text">Всем GM и взаимные лайки!</p>
@@ -143,66 +161,100 @@
         </div>
       </section>
       <section class="appeal">
-        <p class="appeal__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="appeal__wrapper">
+          <p class="appeal__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
       </section>
       <section class="my-photo">
         <h3 class="visually-hidden">Ваше фото</h3>
-        <a href="img/photo-road-desktop@1x.jpg">
-          <img class="my-photo__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
-        </a>
         <div class="my-photo__wrapper">
-          <button class="my-photo__tool my-photo__tool--active" type="button">
-            <svg class="my-photo__tool-img my-photo__tool-img--active">
-            </svg>
-          </button>
-          <button class="my-photo__tool" type="button">
-            <svg class="my-photo__tool-img">
-            </svg>
-          </button>
-          <button class="my-photo__tool" type="button">
-            <svg class="my-photo__tool-img">
-            </svg>
-          </button>
+          <a class="gallery__photo-link" href="img/photo-road-desktop@1x.jpg">
+            <img class="my-photo__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+          </a>
+          <div class="my-photo__tools">
+            <div class="my-photo__tools-list">
+              <button class="my-photo__tool my-photo__tool--active" type="button">
+                <svg class="my-photo__tool-img my-photo__tool-img--active" width="44" height="44">
+                </svg>
+              </button>
+              <div class="my-photo__scale">
+                <div class="my-photo__bar"></div>
+                <button class="my-photo__range-toggle" type="button"></button>
+              </div>
+              <button class="my-photo__tool" type="button">
+                <svg class="my-photo__tool-img" width="48" height="43">
+                </svg>
+              </button>
+              <div class="my-photo__scale my-photo__scale--added">
+                <div class="my-photo__bar"></div>
+                <button class="my-photo__range-toggle" type="button"></button>
+              </div>
+              <button class="my-photo__tool" type="button">
+                <svg class="my-photo__tool-img" width="32" height="32">
+                </svg>
+              </button>
+              <div class="my-photo__scale my-photo__scale--added">
+                <div class="my-photo__bar"></div>
+                <button class="my-photo__range-toggle" type="button"></button>
+              </div>
+            </div>
+            <div class="my-photo__post">
+              <a class="my-photo__post-button" href="photo.html">Запостить</a>
+              <a  class="my-photo__post-button my-photo__post-button--cancel" href="photo.html">Отмена</a>
+            </div>
+          </div>
         </div>
-        <div class="my-photo__scale">
-          <div class="my-photo__bar"></div>
-          <button class="my-photo__range-toggle" type="button"></button>
-        </div>
-        <a class="my-photo__post" href="photo.html">Запостить</a>
-        <a  class="my-photo__post my-photo__post--cancel" href="photo.html">Отмена</a>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo"  href="index.html">
-      <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
-      </a>
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a href="https://twitter.com/">
-              <span class="visually-hidden">Твиттер</span>
-              <img src="img/icon-twitter.svg">
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a href="https://www.facebook.com/">
-              <span class="visually-hidden">Фейсбук</span>
-              <img src="http://placehold.it/150x100">
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a href="https://www.youtube.com/">
-              <span class="visually-hidden">Ютуб</span>
-              <img src="http://placehold.it/150x100">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p class="page-footer__created-by">Разработано
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" aria-label="Html-Academy">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo logo"  href="index.html">
+          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
         </a>
-      </p>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="https://twitter.com/">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="footer-social__icon" width="48" height="43"></svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="https://www.facebook.com/">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="footer-social__icon" width="48" height="43"></svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a href="https://www.youtube.com/">
+                <span class="visually-hidden">Ютуб</span>
+                <svg class="footer-social__icon" width="48" height="43"></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="page-footer__created-by">Разработано
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="page-footer__academy-icon" width="48" height="43" aria-label="Html-Academy"></svg>
+          </a>
+        </p>
+      </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

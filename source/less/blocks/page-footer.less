@@ -2,7 +2,46 @@
   .width-mob();
   font-size: 14px;
   padding: 41px;
+  &--index {
+    display: none;
+  }
+}
+
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.page-footer__academy-icon {
+  background-color: #b2b2b2;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: auto;
+    padding: 36px 0;
+    &--index {
+      display: block;
+    }
+  }
+
+  .page-footer__wrapper {
+    margin: 0 auto;
+    width: 620px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 44px 0;
+    font-size: 18px;
+  }
+
+  .page-footer__wrapper {
+    width: 940px;
+  }
 }
