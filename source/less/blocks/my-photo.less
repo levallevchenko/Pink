@@ -18,6 +18,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    min-height: 216px;
+}
+
+.my-photo__tool {
+  width: 40px;
+  height: 40px;
 }
 
 .my-photo__post {
@@ -35,9 +41,25 @@
   text-align: center;
   text-decoration: none;
   color: @pink;
-  &--cancel {
+  &:hover {
+    background-color: @pink;
+    color: #ffffff;
+  }
+  &:active {
+    color: #e06989;
+  }
+}
+.my-photo__post-button--cancel {
   color: #dddfe0;
   border-color: #dddfe0;
+  &:hover {
+    background-color: #ffffff;
+    border-color: #b5b9be;
+    color: #b5b9be;
+  }
+  &:active {
+    background-color: #b5b9be;
+    color: #cbced2;
   }
 }
 
@@ -47,12 +69,39 @@
 }
 
 .my-photo__scale {
-  width: 200px;
+  position: relative;
+  width: 202px;
   &--added {
     display: none;
   }
 }
 
+.my-photo__bar {
+  width: 100%;
+  height: 2px;
+  background-color: @text;
+}
+
+.my-photo__range-toggle {
+  position: absolute;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  top: -6px;
+  left: 145px;
+  &--fill {
+    left: 24px;
+  }
+  &--contrast {
+    left: 95px;
+  }
+  &:hover {
+    background-color: @pink;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .my-photo {
@@ -75,7 +124,7 @@
 
   .my-photo__tools {
     flex-direction: column;
-    flex-basis: 300px;
+    flex-basis: 262px;
     justify-content: space-between;
   }
 

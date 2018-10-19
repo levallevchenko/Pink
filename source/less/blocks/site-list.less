@@ -18,6 +18,12 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
+  &:hover {
+    color: @pink;
+    }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -32,5 +38,16 @@
   .site-list__item {
     border: none;
     text-transform: none;
+    &--active {
+    border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  .site-list__item-link {
+    &:active {
+      color: #6a757f;
+    }
   }
 }
+
+

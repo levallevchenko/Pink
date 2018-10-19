@@ -1,38 +1,134 @@
 .rates {
+  text-transform: uppercase;
   overflow: auto;
   background-color: @bg-light;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 }
+
+.rates__table-wrapper {
+    padding-top: 91px;
+    padding-bottom: 99px;
+  }
 
 .rates__list {
   border-collapse: collapse;
 }
 
-.rates__row {
-  &--head {
-    background-color: @text;
+.rates__list-head {
     color: #ffffff;
+    font-weight: 600;
+}
+
+.rates__item-head {
+  position: relative;
+  box-sizing: border-box;
+  background-color: @text;
+  min-width: 278px;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-left: 2px solid #e5e5e5;
+  &:nth-child(2) {
+    border: none;
+  }
+}
+
+.rates__item-head--hit {
+  background-image: url("../../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  &::before {
+  content: "хит";
+  position: absolute;
+  height: 10px;
+  width: 28px;
+  top: 20px;
+  left: 7px;
+  font-size: 14px;
+  line-height: 14px;
+  transform: rotate(-45deg);
   }
 }
 
 .rates__data {
-  text-transform: uppercase;
-  padding: 22px;
-  border-bottom: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
-  border-left: 2px solid #e5e5e5;
-  &--head {
-    font-weight: 600;
-    border-right: 0;
-    border-left: 0;
-  }
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  padding-left: 22px;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  border: 2px solid #e5e5e5;
+  border-top: none;
 }
 
-.rates__data span {
+.rates__empty {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.rates__item-head p {
   font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .rates__table-wrapper {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 71px;
+  }
+
+  .rates__item-head {
+    font-size: 16px;
+    min-width: 0;
+    padding-top: 12px;
+    padding-bottom: 7px;
+  }
+
+  .rates__item-head p {
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .rates__data {
+    font-size: 0;
+    line-height: 0;
+    min-width: 154px;
+    padding: 7px 15px;
+  }
+
+  .rates__empty {
+    min-width: 154px;
+    padding: 22px 15px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    font-size: 14px;
+    text-transform: none;
+
+    &--head {
+      background-color: #f2f2f2;
+      border: none;
+      border-bottom: 2px solid #e5e5e5;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .rates {
     padding-top: 70px;
+  }
+
+  .rates__table-wrapper {
+
   }
 }

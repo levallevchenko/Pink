@@ -28,13 +28,13 @@
           </div>
           <div class="main-nav__list-wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item">
                 <a class="site-list__item-link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__item-link" href="photo.html">Фотографии</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a class="site-list__item-link">Конкурс</a>
               </li>
               <li class="site-list__item">
@@ -78,34 +78,34 @@
           <div class="form__wrapper">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form__list form__list--progress">
-              <li>
+              <li class="form__item-checkbox">
                 <label class="form__label-checkbox">
-                  <input class="form__checkbox" type="checkbox" name="selfie" checked><span class="form__checkbox-indicator"></span>Сделал селфи с акулой
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="selfie" checked><span class="form__checkbox-indicator"></span>Сделал селфи с акулой
                 </label>
               </li>
-              <li>
+              <li class="form__item-checkbox">
                 <label class="form__label-checkbox">
-                  <input class="form__checkbox" type="checkbox" name="sunburned" checked><span class="form__checkbox-indicator"></span>Обгорел на пляже
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="sunburned" checked><span class="form__checkbox-indicator"></span>Обгорел на пляже
                 </label>
               </li>
-              <li>
+              <li class="form__item-checkbox">
                 <label class="form__label-checkbox">
-                  <input class="form__checkbox" type="checkbox" name="Chuck"><span class="form__checkbox-indicator"></span>Видел Чака Норриса
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="Chuck"><span class="form__checkbox-indicator"></span>Видел Чака Норриса
                 </label>
               </li>
-              <li>
+              <li class="form__item-checkbox">
                 <label class="form__label-checkbox">
-                  <input class="form__checkbox" type="checkbox" name="souvenirs"><span class="form__checkbox-indicator"></span>Накупил сувениров
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="souvenirs"><span class="form__checkbox-indicator"></span>Накупил сувениров
                 </label>
               </li>
-              <li>
+              <li class="form__item-checkbox">
                 <label class="form__label-checkbox">
-                  <input class="form__checkbox" type="checkbox" name="turret" checked><span class="form__checkbox-indicator"></span>Удержал башню
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="turret" checked><span class="form__checkbox-indicator"></span>Удержал башню
                 </label>
               </li>
-              <li>
+              <li class="form__item-checkbox">
                 <label class="form__label-checkbox">
-                  <input class="form__checkbox" type="checkbox" name="hotel"><span class="form__checkbox-indicator"></span>Разгромил отель
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="hotel"><span class="form__checkbox-indicator"></span>Разгромил отель
                 </label>
               </li>
             </ul>
@@ -128,22 +128,25 @@
           <div class="form__wrapper form__wrapper--apps">
             <legend class="form__legend">С каким приложение путешествовали?</legend>
             <ul class="form__list">
-              <li>
-                <label class="form__label-checkbox">
-                  <input class="form__radio" type="radio" name="iOS" checked>
-                  <span class="form__radio-indicator"></span>Pink для iOS
+              <li class="form__item-checkbox">
+                <label class="form__label-checkbox form__label-checkbox--radio">
+                  <input class="form__radio visually-hidden" type="radio" name="iOS" checked>
+                  <span class="form__checkbox-indicator
+                  form__checkbox-indicator--radio"></span>Pink для iOS
                 </label>
               </li>
-              <li>
-                <label class="form__label-checkbox">
-                  <input class="form__radio" type="radio" name="android">
-                  <span class="form__radio-indicator"></span>Pink на Android
+              <li class="form__item-checkbox">
+                <label class="form__label-checkbox form__label-checkbox--radio">
+                  <input class="form__radio visually-hidden" type="radio" name="android">
+                  <span class="form__checkbox-indicator
+                  form__checkbox-indicator--radio"></span>Pink на Android
                 </label>
               </li>
-              <li>
-                <label class="form__label-checkbox">
-                  <input class="form__radio" type="radio" name="windows">
-                  <span class="form__radio-indicator"></span>Windows Phone
+              <li class="form__item-checkbox">
+                <label class="form__label-checkbox form__label-checkbox--radio">
+                  <input class="form__radio visually-hidden" type="radio" name="windows">
+                  <span class="form__checkbox-indicator
+                  form__checkbox-indicator--radio"></span>Windows Phone
                 </label>
               </li>
             </ul>
@@ -170,19 +173,19 @@
         <div class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item">
-              <a href="https://twitter.com/">
+              <a class="footer-social__link"  href="https://twitter.com/">
                 <span class="visually-hidden">Твиттер</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a href="https://www.facebook.com/">
+              <a class="footer-social__link"  href="https://www.facebook.com/">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a href="https://www.youtube.com/">
+              <a class="footer-social__link"  href="https://www.youtube.com/">
                 <span class="visually-hidden">Ютуб</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>

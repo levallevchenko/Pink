@@ -33,6 +33,14 @@
   font-size: 24px;
   text-decoration: none;
   color: @pink;
+  &:hover {
+    color: @text;
+    border-bottom: 2px solid @text;
+  }
+  &:active {
+    color: #bec2c7;
+    border-bottom: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -45,7 +53,7 @@
   }
 
   .contacts__wrapper {
-  width: 620px;
+    width: 620px;
   }
 
   .contacts__list {
@@ -91,6 +99,6 @@
   }
 
   .contacts__request {
-  margin-bottom: 36px;
+    margin-bottom: 36px;
   }
 }

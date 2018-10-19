@@ -34,6 +34,61 @@
   border-radius: 2px;
   font-size: 18px;
   color: @text;
+  outline: none;
+  &:hover {
+    border: 2px solid @text;
+  }
+  &:focus {
+    border: 2px solid @pink;
+  }
+}
+
+.form__item-checkbox {
+  padding-top: 37px;
+}
+
+.form__checkbox-indicator {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 31px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  &--radio {
+    margin-right: 20px;
+    background-image: none;
+    border-radius: 50%;
+  }
+  &:hover {
+    border-color: @text;
+  }
+  &:active {
+    border-color: @pink;
+  }
+}
+
+.form__checkbox:checked + .form__checkbox-indicator {
+  background-image: url("../../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+.form__radio:checked + .form__checkbox-indicator::before {
+  content: " ";
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin-right: 31px;
+  border-radius: 50%;
+  background-color: @pink;
+  left: 10px;
+  top: 10px;
 }
 
 .form__legend {
@@ -80,6 +135,16 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  outline-color: #1c9b5e;
+  outline-width: 0.5px;
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    background-color: #1c9b5e;
+    color: #61b98f;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -160,18 +225,16 @@
     &--name {
       padding-top: 0;
       margin: 0;
+      width: 434px;
     }
     &--apps {
       margin-right: 0;
       margin-bottom: 93px;
+      width: 434px;
     }
     &--contacts {
       padding-top: 30px;
     }
-  }
-
-  .form__fieldset--name, .form__fieldset--apps {
-    width: 434px;
   }
 
   .form__wrapper {
@@ -180,12 +243,16 @@
       width: 300px;
     }
     &--contacts {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 0;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
+  }
+
+  .form__input {
+    margin-bottom: 22px;
   }
 
   .form__input--contacts {

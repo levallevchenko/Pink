@@ -28,10 +28,10 @@
           </div>
           <div class="main-nav__list-wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item">
                 <a class="site-list__item-link" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a class="site-list__item-link">Фотографии</a>
               </li>
               <li class="site-list__item">
@@ -179,7 +179,8 @@
               </button>
               <div class="my-photo__scale">
                 <div class="my-photo__bar"></div>
-                <button class="my-photo__range-toggle" type="button"></button>
+                <button class="visually-hidden" type="button"></button>
+                <span class="my-photo__range-toggle my-photo__range-toggle--crop"></span>
               </div>
               <button class="my-photo__tool" type="button">
                 <svg class="my-photo__tool-img" width="48" height="43">
@@ -187,7 +188,8 @@
               </button>
               <div class="my-photo__scale my-photo__scale--added">
                 <div class="my-photo__bar"></div>
-                <button class="my-photo__range-toggle" type="button"></button>
+                <button class="visually-hidden" type="button"></button>
+                <span class="my-photo__range-toggle my-photo__range-toggle--fill"></span>
               </div>
               <button class="my-photo__tool" type="button">
                 <svg class="my-photo__tool-img" width="32" height="32">
@@ -195,7 +197,8 @@
               </button>
               <div class="my-photo__scale my-photo__scale--added">
                 <div class="my-photo__bar"></div>
-                <button class="my-photo__range-toggle" type="button"></button>
+                <button class="visually-hidden" type="button"></button>
+                <span class="my-photo__range-toggle my-photo__range-toggle--contrast"></span>
               </div>
             </div>
             <div class="my-photo__post">
@@ -214,19 +217,19 @@
         <div class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item">
-              <a href="https://twitter.com/">
+              <a class="footer-social__link"  href="https://twitter.com/">
                 <span class="visually-hidden">Твиттер</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a href="https://www.facebook.com/">
+              <a class="footer-social__link"  href="https://www.facebook.com/">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a href="https://www.youtube.com/">
+              <a class="footer-social__link"  href="https://www.youtube.com/">
                 <span class="visually-hidden">Ютуб</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
