@@ -21,10 +21,14 @@
 @media (min-width: @tablet-width) {
   .appeal {
     width: auto;
-    padding: 92px 0;
+    padding-top: 92px;
+    padding-bottom: 76px;
     font-size: 18px;
+    &--second {
+      padding-bottom: 70px;
+    }
     &--form {
-      padding: 40px 0;
+      padding-bottom: 40px;
     }
   }
 
@@ -36,12 +40,17 @@
     width: 495px;
     margin: 0 auto;
     &--added {
-      display: block;
+      display: inline;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .appeal {
+    padding-top: 38px;
+    padding-bottom: 65px;
+  }
+
   .appeal--form {
     padding: 92px 0;
     padding-bottom: 73px;
@@ -54,8 +63,7 @@
       width: 800px;
     }
   }
-
   .appeal__text {
-    display: inline;
+    width: 800px
   }
 }

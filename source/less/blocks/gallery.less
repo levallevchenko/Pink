@@ -85,7 +85,8 @@
   .gallery__description {
     width: 242px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     min-height: 119px;
     padding-top: 24px;
@@ -114,5 +115,9 @@
 
   .gallery__item--best {
     flex-basis: 940px;
+  }
+
+  .gallery__image {
+    height: 400px;
   }
 }

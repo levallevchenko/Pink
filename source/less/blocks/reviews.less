@@ -84,13 +84,20 @@
   }
 
   .reviews__list {
+    position: relative;
     width: 960px;
     padding-top: 189px;
     padding-bottom: 8px;
+    &::before {
+    content: "";
+    position: absolute;
     background-image: url("../../img/icon-quotes.svg");
-    background-size: 80px 63px;
     background-repeat: no-repeat;
-    background-position: 50% 73px;
+    width: 80px;
+    height: 65px;
+    top: 71px;
+    left: 441px;
+    }
   }
 
   .reviews__author-name {
