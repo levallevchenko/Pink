@@ -15,10 +15,10 @@
 }
 
 .my-photo__tools-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    min-height: 216px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 216px;
 }
 
 .my-photo__tool {
@@ -148,7 +148,7 @@
     flex-basis: 410px;
   }
 
-   .my-photo__tool {
+  .my-photo__tool {
     width: 62px;
     height: 62px;
   }
@@ -157,8 +157,25 @@
     width: 288px;
   }
 
+  .my-photo__range-toggle {
+    &--crop {
+      left: 71px;
+    }
+    &--fill {
+      left: 247px;
+    }
+    &--contrast {
+      left: 160px;
+    }
+  }
+
   .my-photo__post {
-  flex-direction: row;
-  min-height: 0;
+    flex-direction: row;
+    min-height: 0;
+  }
+
+  .my-photo__post-button {
+    box-sizing: border-box;
+    min-width: 183px;
   }
 }

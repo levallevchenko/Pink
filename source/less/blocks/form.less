@@ -54,48 +54,49 @@
   }
 }
 
-.form__checkbox-indicator {
+.form__label-checkbox::before {
+  content: " ";
   position: relative;
   display: inline-block;
   vertical-align: middle;
   width: 35px;
   height: 35px;
-  margin-right: 31px;
+  margin-right: 13px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
-  &--radio {
-    margin-right: 20px;
-    background-image: none;
+  cursor: pointer;
+}
+
+.form__label-checkbox:hover::before {
+  border-color: @text;
+}
+
+.form__label-checkbox:active::before {
+  border-color: @pink;
+}
+
+.form__label-checkbox--radio {
+  position: relative;
+  &::before {
+    margin-right: 22px;
     border-radius: 50%;
   }
-  &:hover {
-    border-color: @text;
-  }
-  &:active {
-    border-color: @pink;
-  }
 }
 
-.form__checkbox:checked + .form__checkbox-indicator {
-  background-image: url("../../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center 7px;
-}
-
-.form__radio:checked + .form__checkbox-indicator::before {
-  content: " ";
-  position: absolute;
-  display: inline-block;
-  vertical-align: middle;
-  width: 15px;
-  height: 15px;
-  margin-right: 31px;
-  border-radius: 50%;
-  background-color: @pink;
-  left: 10px;
-  top: 10px;
+.form__radio:checked + .form__label-checkbox--radio {
+  &::after {
+    content: " ";
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    background-color: @pink;
+    border-radius: 50%;
+    left: 11px;
+    top: 8px;
+  }
 }
 
 .form__legend {
@@ -228,10 +229,10 @@
 
   .form__input-item {
     &--name {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    margin-bottom: 26px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      margin-bottom: 26px;
     }
   }
 
@@ -366,13 +367,13 @@
   }
 
   .form__list {
-    padding: 0px 75px;
+    padding: 0 75px;
     &--progress {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      padding: 0;
     }
   }
 
@@ -387,24 +388,24 @@
     &:nth-child(2) {
       order: 1;
     }
-     &:nth-child(4) {
+    &:nth-child(4) {
       order: 2;
     }
-     &:nth-child(6) {
+    &:nth-child(6) {
       order: 3;
     }
   }
 
   .form__textarea {
-    width: 780px;
-    min-height: 86px;
+    width: 820px;
+    min-height: 128px;
   }
 
   .form__send {
     width: 940px;
   }
 
-  .form__required--added {
+  span.form__required--added {
     display: inline;
     color: @text;
   }
