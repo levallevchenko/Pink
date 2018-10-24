@@ -24,14 +24,12 @@
 }
 
 .wall__img {
+  max-width: 100%;
+  height: auto;
   position: absolute;
   z-index: -1;
   bottom: 270px;
   left: -20px;
-  &--tab,
-  &--desk {
-    display: none;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -73,15 +71,10 @@
   }
 
   .wall__img {
-    &--tab {
-      z-index: -1;
-      display: inline;
-      bottom: -111px;
-      left: -40px;
-    }
-    &--mob {
-      display: none;
-    }
+    z-index: -1;
+    display: inline;
+    bottom: -111px;
+    left: -40px;
   }
 }
 
@@ -91,14 +84,9 @@
   }
 
   .wall__img {
-    &--desk {
-      display: inline;
-      bottom: -123px;
-      left: 26px;
-    }
-    &--tab {
-      display: none;
-    }
+    display: inline;
+    bottom: -123px;
+    left: 26px;
   }
 
   .wall__wrapper--form {

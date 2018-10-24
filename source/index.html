@@ -47,9 +47,11 @@
         <section class="wall wall--main">
           <div class="wall__wrapper wall__wrapper--index">
             <h3 class="wall__name wall__name--main">Взгляните на жизнь иначе!</h3>
-            <img class="wall__img wall__img--mob" src="img/iphone-hand-mobile@1x.png" width="257" height="285">
-            <img class="wall__img wall__img--tab" src="img/iphone-hand-tablet@1x.png" width="700" height="545">
-            <img class="wall__img wall__img--desk" src="img/iphone-hand-desktop@1x.png" width="1050" height="645">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+              <img class="wall__img wall__img--mob" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x">
+            </picture>
             <section class="download">
               <a class="download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
               <div class="download__apps-wrapper">
@@ -100,7 +102,7 @@
               <li class="advantages__item">
                 <div class="advantages__item-image advantages__item-image--pink"></div>
                 <h3 class="advantages__caption" >Меняет мир вокруг</h3>
-                <p class="advantages__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p class="advantages__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
               </li>
               <li class="advantages__item">
                 <div class="advantages__item-image advantages__item-image--smiley"></div>
@@ -118,7 +120,7 @@
                 <h3 class="advantages__caption effect__caption">Эффект на&nbsp;24 часа!</h3>
                 <p class="advantages__paragraph effect__paragraph">Британские ученые провели исследования и&nbsp;доказали,
                 что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-                <p class="effect__more">Узнать больше об исследовании</p>
+                <a href="/"class="effect__more">Узнать больше об исследовании</a>
               </div>
             </div>
           </section>
@@ -127,18 +129,19 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__list">
-          <blockquote class="reviews__item">
+          <blockquote class="reviews__item
+          reviews__item--current">
             <div class="reviews__author-wrapper">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
             </div>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
-          <blockquote class="reviews__item reviews__item--second-review">
+          <blockquote class="reviews__item">
             <cite class="reviews__author-name"></cite>
             <p class="reviews__text"></p>
           </blockquote>
-          <blockquote class="reviews__item reviews__item--third-review">
+          <blockquote class="reviews__item">
             <cite class="reviews__author-name"></cite>
             <p class="reviews__text"></p>
           </blockquote>
@@ -151,9 +154,9 @@
             <thead class="rates__list-head">
               <tr>
                 <th class="rates__item-head rates__empty rates__empty--head"></th>
-                <th class="rates__item-head">База<br><p>3,99 usd</p></th>
-                <th class="rates__item-head rates__item-head--hit">Стандарт<br><p>3,99 usd</p></th>
-                <th class="rates__item-head">Анлим<br><p>3,99 usd</p></th>
+                <th class="rates__item-head">База<p>1,99 usd</p></th>
+                <th class="rates__item-head rates__item-head--hit">Стандарт<p>3,99 usd</p></th>
+                <th class="rates__item-head">Анлим<p>9,99 usd</p></th>
               </tr>
             </thead>
             <tr class="rates__row">
@@ -192,7 +195,7 @@
             </li>
             <li class="contacts__item">
               <h4 class="contacts__request">Приезжайте в гости:</h4>
-              <a class="contacts__info" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург">ул. Большая Конюшенная, 19/8</a>
+              <a class="contacts__info" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург">ул. Большая Конюшенная,&nbsp;19/8</a>
             </li>
           </ul>
         </div>

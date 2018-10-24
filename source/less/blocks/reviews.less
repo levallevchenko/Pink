@@ -1,5 +1,6 @@
 .reviews {
-  padding: 62px 0;
+  padding: 22px 0;
+  padding-top: 42px;
   line-height: 30px;
   text-align: center;
 }
@@ -9,12 +10,10 @@
 }
 
 .reviews__item {
-  .width-mob();
-  &--second-review {
     position: absolute;
-  }
-  &--third-review {
-    position: absolute;
+  &--current {
+    position: static;
+    .width-mob();
   }
 }
 
@@ -80,12 +79,13 @@
 @media (min-width: @desktop-width) {
   .reviews {
     min-height: 414px;
+    padding-bottom: 0;
     background-image: url("../../img/bg-triangle-white.svg");
   }
 
   .reviews__list {
     position: relative;
-    width: 960px;
+    width: 940px;
     padding-top: 189px;
     padding-bottom: 8px;
     &::before {
@@ -99,6 +99,17 @@
       left: 441px;
     }
   }
+
+  .reviews__item {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+   .reviews__text {
+    padding-top: 0;
+    width: 695px;
+    margin: 0 auto;
+   }
 
   .reviews__author-name {
     font-size: 25px;

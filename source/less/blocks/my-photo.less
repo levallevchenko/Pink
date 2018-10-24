@@ -30,7 +30,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 130px;
+  min-height: 120px;
+  margin-top: -24px;
+  padding-bottom: 42px;
 }
 
 .my-photo__post-button {
@@ -70,7 +72,9 @@
 
 .my-photo__scale {
   position: relative;
-  width: 202px;
+  width: 241px;
+  margin-bottom: auto;
+  order: 1;
   &--added {
     display: none;
   }
@@ -91,7 +95,7 @@
   border-radius: 50%;
   background-color: #f2f2f2;
   top: -6px;
-  left: 145px;
+  left: 193px;
   &--fill {
     left: 24px;
   }
@@ -140,8 +144,18 @@
 }
 
 @media (min-width: @desktop-width) {
-  .my-photo__wrapper {
+  .my-photo {
     width: 940px;
+    margin: 0 auto;
+  }
+
+  .my-photo__wrapper {
+    width: 800px;
+    justify-content: space-between;
+  }
+
+  .my-photo__image {
+    margin: 0 10px;
   }
 
   .my-photo__tools {

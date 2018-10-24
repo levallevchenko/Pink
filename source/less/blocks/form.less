@@ -94,9 +94,25 @@
     height: 15px;
     background-color: @pink;
     border-radius: 50%;
-    left: 11px;
-    top: 8px;
+    left: 12px;
+    top: 7px;
   }
+}
+
+.form__checkbox-indicator {
+   width: 35px;
+   height: 35px;
+   margin-right: 31px;
+   background-color: #ffffff;
+   border: 2px solid #e5e5e5;
+   border-radius: 2px;
+}
+
+.form__checkbox:checked + .form__checkbox-indicator {
+  background-image: url("../../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center 7px;
 }
 
 .form__legend {
@@ -146,8 +162,6 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  outline-color: #1c9b5e;
-  outline-width: 0.5px;
   &:hover {
     background-color: #1c9b5e;
   }
