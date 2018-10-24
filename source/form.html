@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,7 +13,7 @@
         <div class="main-nav__wrapper">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo logo"  href="index.html">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+              <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                 <g>
                   <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
                   <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -55,6 +54,7 @@
     <main class="form-page-main">
       <h1 class="visually-hidden">Страница с конкурсом</h1>
       <section class="appeal appeal--form">
+        <h3 class="visually-hidden">Призыв</h3>
         <div class="appeal__wrapper appeal__wrapper--form">
           <p class="appeal__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="appeal__text appeal__text--added">Пожалуйста, заполните форму ниже:</span>
@@ -76,7 +76,7 @@
             </li>
             <li class="form__input-item form__input-item--name">
               <label class="form__input-label form__input-label--name" for="patronymic">Отчество:</label>
-              <input class="form__input" type="text" name="name" placeholder="Ну и отчество тоже">
+              <input class="form__input" type="text" id="patronymic" name="name" placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
@@ -172,7 +172,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo"  href="index.html">
-          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
+          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта">
         </a>
         <div class="footer-social">
           <ul class="footer-social__list">
