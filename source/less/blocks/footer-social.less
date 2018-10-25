@@ -6,6 +6,7 @@
 }
 
 .footer-social__link {
+  position: relative;
   display: inline-block;
   width: 45px;
   height: 45px;
@@ -15,8 +16,29 @@
   &:hover {
     border-color: @text;
   }
+  &:active {
+    border-color: #e9ebec;
+  }
 }
 
 .footer-social__item {
   background-color: #ffffff;
+}
+
+.footer-social__icon {
+  fill: @pink;
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  &:active {
+    fill: #f1becc;
+  }
+  &--facebook {
+    top: 12px;
+    left: 18px;
+  }
+  &--youtube {
+    top: 15px;
+    left: 17px;
+  }
 }

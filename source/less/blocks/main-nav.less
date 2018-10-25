@@ -27,18 +27,32 @@
   outline: none;
 }
 
-.main-nav--closed .main-nav__toggle {
-  width: 50px;
-  height: 25px;
-  background-image: url("../../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
+.main-nav__cross {
+  fill: #ffffff;
+  &:hover {
+    fill: @pink;
+  }
+   &:active {
+    fill: @pink-active;
+  }
 }
 
-.main-nav--opened .main-nav__toggle {
-  width: 25px;
-  height: 25px;
-  background-image: url("../../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
+.main-nav__burger {
+  fill: #ffffff;
+  &:hover {
+    fill: @pink;
+  }
+  &:active {
+    fill: @pink-active;
+  }
+}
+
+.main-nav--closed .main-nav__cross {
+  display: none;
+}
+
+.main-nav--opened .main-nav__burger {
+ display: none;
 }
 
 .main-nav--closed .main-nav__list-wrapper {
