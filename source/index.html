@@ -13,7 +13,7 @@
         <div class="main-nav__wrapper">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo logo"  href="index.html">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+              <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                 <g>
                   <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
                   <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -47,10 +47,13 @@
         <section class="wall wall--main">
           <div class="wall__wrapper wall__wrapper--index">
             <h3 class="wall__name wall__name--main">Взгляните на жизнь иначе!</h3>
-            <img class="wall__img wall__img--mob" src="img/iphone-hand-mobile@1x.png" width="257" height="285">
-            <img class="wall__img wall__img--tab" src="img/iphone-hand-tablet@1x.png" width="700" height="545">
-            <img class="wall__img wall__img--desk" src="img/iphone-hand-desktop@1x.png" width="1050" height="645">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+              <img class="wall__img wall__img--mob" alt="фото - пример использования приложения" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x">
+            </picture>
             <section class="download">
+              <h3 class="visually-hidden">Скачать приложение</h3>
               <a class="download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
               <div class="download__apps-wrapper">
                 <ul class="download__apps apps-list">
@@ -88,7 +91,7 @@
         Преимущества приложения</h3>
           <div class="advantages__statement-wrapper">
             <p class="advantages__statement">Устали от серости мегаполиса?</p>
-            <p class="advantages__statement advantages__statement--answer">Нам есть, что вам предложить!</p>
+            <p class="advantages__statement advantages__statement--answer">Нам есть, что&nbsp;вам предложить!</p>
           </div>
           <div class="advantages__list-wrapper">
             <ul class="advantages__list">
@@ -100,25 +103,25 @@
               <li class="advantages__item">
                 <div class="advantages__item-image advantages__item-image--pink"></div>
                 <h3 class="advantages__caption" >Меняет мир вокруг</h3>
-                <p class="advantages__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p class="advantages__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
               </li>
               <li class="advantages__item">
                 <div class="advantages__item-image advantages__item-image--smiley"></div>
-                <h3 class="advantages__caption">Заводит новых друзей</h3>
-                <p class="advantages__paragraph">Ставьте лайки, комментруйте, делитесь фотографиями с друзьями и заводите новых</p>
+                <h3 class="advantages__caption">Заводит новых&nbsp;друзей</h3>
+                <p class="advantages__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
               <li class="advantages__item advantages__item--phone">
-                <img class="advantages__img-mob" src="img/iphone-screen-mobile@1x.png">
+                <img class="advantages__img-mob" alt="фото телефона" src="img/iphone-screen-mobile@1x.png">
               </li>
             </ul>
           </div>
           <section class="effect">
             <div class="effect__wrapper">
               <div class="effect__info">
-                <h3 class="advantages__caption effect__caption">Эффект на 24 часа!</h3>
-                <p class="advantages__paragraph effect__paragraph">Британские ученые провели исследования и доказали,
-                что положительный эффект от использования приложения длится целые сутки!</p>
-                <p class="effect__more">Узнать больше об исследовании</p>
+                <h3 class="advantages__caption effect__caption">Эффект на&nbsp;24 часа!</h3>
+                <p class="advantages__paragraph effect__paragraph">Британские ученые провели исследования и&nbsp;доказали,
+                что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+                <a href="/" class="effect__more">Узнать больше об исследовании</a>
               </div>
             </div>
           </section>
@@ -127,7 +130,8 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__list">
-          <blockquote class="reviews__item">
+          <blockquote class="reviews__item
+          reviews__item--current">
             <div class="reviews__author-wrapper">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
@@ -146,31 +150,36 @@
       </section>
       <section class="rates">
         <h3 class="visually-hidden">Тарифы</h3>
-        <table class="rates__list">
-          <tr class="rates__row rates__row--head">
-            <th class="rates__data rates__data--head">База<br><span>3,99 usd</span></th>
-            <th class="rates__data rates__data--head">Стандарт<br><span>3,99 usd</span></th>
-            <th class="rates__data rates__data--head">Анлим<br><span>3,99 usd</span></th>
-          </tr>
-          <tr class="rates__row">
-            <td class="rates__data">Розовый фильтр</td>
-            <td class="rates__data">+</td>
-            <td class="rates__data">+</td>
-            <td class="rates__data">+</td>
-          </tr>
-          <tr class="rates__row">
-            <td class="rates__data">Смайлики</td>
-            <td class="rates__data">-</td>
-            <td class="rates__data">+</td>
-            <td class="rates__data">+</td>
-          </tr>
-          <tr class="rates__row">
-            <td class="rates__data">Комментарии</td>
-            <td class="rates__data">-</td>
-            <td class="rates__data">-</td>
-            <td class="rates__data">+</td>
-          </tr>
-        </table>
+        <div class="rates__table-wrapper">
+          <table class="rates__list">
+            <thead class="rates__list-head">
+              <tr>
+                <th class="rates__item-head rates__empty rates__empty--head"></th>
+                <th class="rates__item-head">База<p>1,99 usd</p></th>
+                <th class="rates__item-head rates__item-head--hit">Стандарт<p>3,99 usd</p></th>
+                <th class="rates__item-head">Анлим<p>9,99 usd</p></th>
+              </tr>
+            </thead>
+            <tr class="rates__row">
+              <td class="rates__data rates__empty">Розовый фильтр</td>
+              <td class="rates__data">Розовый фильтр +</td>
+              <td class="rates__data">Розовый фильтр +</td>
+              <td class="rates__data">Розовый фильтр +</td>
+            </tr>
+            <tr class="rates__row">
+              <td class="rates__data rates__empty">Смайлики</td>
+              <td class="rates__data">Смайлики -</td>
+              <td class="rates__data">Смайлики +</td>
+              <td class="rates__data">Смайлики +</td>
+            </tr>
+            <tr class="rates__row">
+              <td class="rates__data rates__empty">Комментарии</td>
+              <td class="rates__data">Комментарии -</td>
+              <td class="rates__data">Комментарии -</td>
+              <td class="rates__data">Комментарии +</td>
+            </tr>
+          </table>
+        </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -187,14 +196,14 @@
             </li>
             <li class="contacts__item">
               <h4 class="contacts__request">Приезжайте в гости:</h4>
-              <a class="contacts__info" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург">ул. Большая Конюшенная, 19/8</a>
+              <a class="contacts__info" href="https://www.google.ru/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург">ул. Большая Конюшенная,&nbsp;19/8</a>
             </li>
           </ul>
         </div>
       </section>
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002912!2d30.320858715826557!3d59.938719169054494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538162131210" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002912!2d30.320858715826557!3d59.938719169054494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538162131210" width="600" height="450" style="border:0" allowfullscreen></iframe>
         <p class="map__img">
           <img src="img/bg-map-mobile@1x.png" alt="Карта" width="320" height="645">
         </p>
@@ -202,25 +211,25 @@
     </main>
       <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo"  href="index.html">
-          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
+        <a class="page-footer__logo logo" href="index.html">
+          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта">
         </a>
         <div class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item">
-              <a href="https://twitter.com/">
+              <a class="footer-social__link" href="https://twitter.com/">
                 <span class="visually-hidden">Твиттер</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a href="https://www.facebook.com/">
+              <a class="footer-social__link" href="https://www.facebook.com/">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a href="https://www.youtube.com/">
+              <a class="footer-social__link" href="https://www.youtube.com/">
                 <span class="visually-hidden">Ютуб</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>

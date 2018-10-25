@@ -1,4 +1,5 @@
 .wall {
+  font-family: "Open Sans Light", "Arial", sans-serif;
   padding-bottom: 60px;
   text-align: center;
   &--main {
@@ -16,7 +17,6 @@
   margin: 0;
   padding-top: 30px;
   font-size: 24px;
-  font-weight: 300;
   color: #ffffff;
   &--main {
     display: none;
@@ -24,13 +24,10 @@
 }
 
 .wall__img {
+  height: auto;
   position: absolute;
   bottom: 270px;
   left: -20px;
-  &--tab,
-  &--desk {
-    display: none;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -48,9 +45,9 @@
   .wall__wrapper {
     width: 620px;
     &--index {
-    z-index: 2;
-    width: 300px;
-    margin-left: 0;
+      z-index: 2;
+      width: 300px;
+      margin-left: 0;
     }
   }
 
@@ -62,25 +59,20 @@
     margin-bottom: 31px;
     text-align: center;
     &--main {
-    font-size: 40px;
-    line-height: 48px;
-    display: block;
-    padding: 0 36px;
-    padding-top: 65px;
-    margin-bottom: 31px;
+      font-size: 40px;
+      line-height: 48px;
+      display: block;
+      padding: 0 36px;
+      padding-top: 65px;
+      margin-bottom: 31px;
     }
   }
 
   .wall__img {
-    &--tab {
-      z-index: -1;
-      display: inline;
-      bottom: -111px;
-      left: -40px;
-    }
-    &--mob {
-    display: none;
-    }
+    z-index: -1;
+    display: inline;
+    bottom: -111px;
+    left: -40px;
   }
 }
 
@@ -90,14 +82,9 @@
   }
 
   .wall__img {
-    &--desk {
-      display: inline;
-      bottom: -123px;
-      left: 26px;
-    }
-    &--tab {
-    display: none;
-    }
+    display: inline;
+    bottom: -123px;
+    left: 26px;
   }
 
   .wall__wrapper--form {

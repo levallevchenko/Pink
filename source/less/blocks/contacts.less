@@ -14,7 +14,7 @@
 
 .contacts__questions {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 31px;
   font-size: 24px;
   line-height: 30px;
   color: @bg;
@@ -22,17 +22,25 @@
 
 .contacts__request {
   margin: 0;
-  margin-bottom: 14px;
-  line-height: 0;
+  line-height: 27px;
   font-weight: 600;
 }
 
 .contacts__info {
   display: inline-block;
-  margin-bottom: 36px;
+  margin-bottom: 21px;
   font-size: 24px;
+  line-height: 30px;
   text-decoration: none;
   color: @pink;
+  &:hover {
+    color: @text;
+    text-decoration: underline;
+  }
+  &:active {
+    color: #bec2c7;
+    border-bottom: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -45,7 +53,7 @@
   }
 
   .contacts__wrapper {
-  width: 620px;
+    width: 620px;
   }
 
   .contacts__list {
@@ -54,15 +62,19 @@
     justify-content: space-around;
   }
 
+  .contacts__request {
+    line-height: 31px;
+  }
+
   .contacts__questions {
     font-size: 40px;
     line-height: 48px;
     align-self: center;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
   }
 
   .contacts__item {
-    margin-bottom: 27px;
+    margin-bottom: 23px;
     width: 295px;
   }
 }
@@ -79,18 +91,19 @@
   .contacts__questions {
     font-size: 50px;
     line-height: 60px;
-    margin-bottom: 67px;
-  }
-
-  .contacts__item:nth-child(2) {
-    order: 2;
-  }
-
-  .contacts__item:nth-child(3) {
-    order: 1;
+    margin-bottom: 32px;
   }
 
   .contacts__request {
-  margin-bottom: 36px;
+  line-height: 71px;
+  }
+
+  .contacts__item {
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:nth-child(3) {
+      order: 1;
+    }
   }
 }

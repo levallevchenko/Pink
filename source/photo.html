@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale-added=1">
@@ -14,7 +13,7 @@
         <div class="main-nav__wrapper">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo logo"  href="index.html">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+              <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                 <g>
                   <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
                   <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -28,10 +27,10 @@
           </div>
           <div class="main-nav__list-wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item">
                 <a class="site-list__item-link" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a class="site-list__item-link">Фотографии</a>
               </li>
               <li class="site-list__item">
@@ -55,9 +54,10 @@
     <main class="photo-page-main">
       <h1 class="visually-hidden">Страница с фотографиями пользователей</h1>
       <section class="appeal">
+        <h3 class="visually-hidden">Призыв</h3>
         <div class="appeal__wrapper">
-          <p class="appeal__text">Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?</p>
+          <p class="appeal__text appeal__text--photo">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите,&nbsp;как&nbsp;не хватает&nbsp;ваших?</p>
         </div>
       </section>
       <section class="gallery">
@@ -65,12 +65,17 @@
         <div class="gallery__list">
           <blockquote class="gallery__item gallery__item--best">
             <a class="gallery__photo-link gallery__photo-link--best" href="img/panorama-desktop@1x.jpg">
-              <img class="gallery__image" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+                <img class="gallery__image gallery__image--favorite" src="img/panorama-mobile@1x.jpg" alt="Панорама">
+              </picture>
             </a>
-            <div class="gallery__description">
+            <div class="gallery__description gallery__description--best">
               <span class="gallery__favorite">Панорама дня</span>
-              <cite class="gallery__author-name">Анна</cite>
-              <time  class="gallery__time" datetime="2018-11-24T18:05:18">(5 минут назад)</time>
+              <cite class="gallery__author-name">Анна
+                <time  class="gallery__time" datetime="2018-11-24T18:05:18">(5 минут назад)</time>
+              </cite>
               <p class="gallery__text">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <span class="gallery__like"></span>
@@ -79,97 +84,133 @@
               </a>
             </div>
           </blockquote>
-          <blockquote class="gallery__item">
-            <a class="gallery__photo-link" href="img/photo-car-desktop@1x.jpg">
-              <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" alt="Фото с машиной">
-            </a>
-            <div class="gallery__description">
-              <cite class="gallery__author-name">Левон</cite>
-              <time class="gallery__time" datetime="2018-11-24T13:00:23">(5 часов назад)</time>
-              <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <span class="gallery__like-symbol"></span>
-              <a class="gallery__like"> Нравится:<span> 356</span>
+          <div class="gallery__wrapper">
+            <blockquote class="gallery__item">
+              <a class="gallery__photo-link" href="img/photo-car-desktop@1x.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото с машиной">
+                </picture>
               </a>
-            </div>
-          </blockquote>
-          <blockquote class="gallery__item">
-            <a class="gallery__photo-link" href="img/photo-drumset-desktop@1x.jpg">
-              <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg"
-              alt="Фото с барабанами">
-            </a>
-            <div class="gallery__description">
-              <cite class="gallery__author-name">Антон</cite>
-              <time class="gallery__time" datetime="2018-11-24T05:57:33">(12 часов назад)</time>
-              <p class="gallery__text">Соседи будут рады!</p>
-              <span class="gallery__like-symbol"></span>
-              <a class="gallery__like"> Нравится:<span> 666</span>
+              <div class="gallery__description">
+                <cite class="gallery__author-name">Левон
+                  <time class="gallery__time" datetime="2018-11-24T13:00:23">(5 часов назад)</time>
+                </cite>
+                <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <span class="gallery__like-symbol"></span>
+                <a class="gallery__like"> Нравится:<span> 356</span>
+                </a>
+              </div>
+            </blockquote>
+            <blockquote class="gallery__item">
+              <a class="gallery__photo-link" href="img/photo-drumset-desktop@1x.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото с барабанами">
+                </picture>
               </a>
-            </div>
-          </blockquote>
-          <blockquote class="gallery__item">
-            <a class="gallery__photo-link" href="img/photo-window-desktop@1x.jpg">
-              <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" alt="Фото с окном">
-            </a>
-            <div class="gallery__description">
-              <cite class="gallery__author-name">Борис</cite>
-              <time class="gallery__time" datetime="2018-11-23T21:03:15">(20 часов назад)</time>
-              <p class="gallery__text">Здесь могла быт ваша цитата о высоком и вечном.</p>
-              <span class="gallery__like-symbol"></span>
-              <a class="gallery__like"> Нравится:<span> 215</span>
+              <div class="gallery__description">
+                <cite class="gallery__author-name">Антон
+                  <time class="gallery__time" datetime="2018-11-24T05:57:33">(12 часов назад)</time>
+                </cite>
+                <p class="gallery__text">Соседи будут рады!</p>
+                <span class="gallery__like-symbol"></span>
+                <a class="gallery__like"> Нравится:<span> 666</span>
+                </a>
+              </div>
+            </blockquote>
+            <blockquote class="gallery__item">
+              <a class="gallery__photo-link" href="img/photo-window-desktop@1x.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото с окном">
+                </picture>
               </a>
-            </div>
-          </blockquote>
-          <blockquote class="gallery__item">
-            <a class="gallery__photo-link" href="img/photo-fair-desktop@1x.jpg">
-              <img class="gallery__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото с бахчой">
-            </a>
-            <div class="gallery__description">
-              <cite class="gallery__author-name">Сергей</cite>
-              <time class="gallery__time" datetime="2018-11-23T18:05:18">(25 часов назад)</time>
-              <p class="gallery__text">Самая кубанская в мире!</p>
-              <span class="gallery__like-symbol"></span>
-              <a class="gallery__like"> Нравится:<span> 4</span>
+              <div class="gallery__description">
+                <cite class="gallery__author-name">Борис
+                  <time class="gallery__time" datetime="2018-11-23T21:03:15">(20 часов назад)</time>
+                </cite>
+                <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <span class="gallery__like-symbol"></span>
+                <a class="gallery__like"> Нравится:<span> 215</span>
+                </a>
+              </div>
+            </blockquote>
+            <blockquote class="gallery__item">
+              <a class="gallery__photo-link" href="img/photo-fair-desktop@1x.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="gallery__image gallery__image--favorite" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото с бахчой">
+                </picture>
               </a>
-            </div>
-          </blockquote>
-          <blockquote class="gallery__item">
-            <a class="gallery__photo-link" href="img/photo-pov-desktop@1x.jpg">
-              <img class="gallery__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото в горах">
-            </a>
-            <div class="gallery__description">
-              <cite class="gallery__author-name">Максим</cite>
-              <time class="gallery__time" datetime="2018-11-22T18:05:18">(40 часов назад)</time>
-              <p class="gallery__text">Где снег-то?</p>
-              <span class="gallery__like-symbol"></span>
-              <a class="gallery__like"> Нравится:<span> 150</span>
+              <div class="gallery__description">
+                <cite class="gallery__author-name">Сергей
+                  <time class="gallery__time" datetime="2018-11-23T18:05:18">(25 часов назад)</time>
+                </cite>
+                <p class="gallery__text">Самая кубанская в мире!</p>
+                <span class="gallery__like-symbol"></span>
+                <a class="gallery__like"> Нравится:<span> 4</span>
+                </a>
+              </div>
+            </blockquote>
+            <blockquote class="gallery__item">
+              <a class="gallery__photo-link" href="img/photo-pov-desktop@1x.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x ">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x ">
+                  <img class="gallery__image gallery__image--favorite" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото в горах">
+                </picture>
               </a>
-            </div>
-          </blockquote>
-          <blockquote class="gallery__item">
-            <a class="gallery__photo-link" href="img/photo-wing-desktop@1x.jpg">
-              <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото с крылом самолета">
-            </a>
-            <div class="gallery__description">
-              <cite class="gallery__author-name">Надежда</cite>
-              <time class="gallery__time" datetime="2018-11-24T18:05:18">(45 часов назад)</time>
-              <p class="gallery__text">Всем GM и взаимные лайки!</p>
-              <span class="gallery__like-symbol"></span>
-              <a class="gallery__like"> Нравится:<span> 2560</span>
+              <div class="gallery__description">
+                <cite class="gallery__author-name">Максим
+                  <time class="gallery__time" datetime="2018-11-22T18:05:18">(40 часов назад)</time>
+                </cite>
+                <p class="gallery__text">Где снег-то?</p>
+                <span class="gallery__like-symbol"></span>
+                <a class="gallery__like"> Нравится:<span> 150</span>
+                </a>
+              </div>
+            </blockquote>
+            <blockquote class="gallery__item">
+              <a class="gallery__photo-link" href="img/photo-wing-desktop@1x.jpg">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото с крылом самолета">
+                </picture>
               </a>
-            </div>
-          </blockquote>
+              <div class="gallery__description">
+                <cite class="gallery__author-name">Надежда
+                  <time class="gallery__time" datetime="2018-11-24T18:05:18">(45 часов назад)</time>
+                </cite>
+                <p class="gallery__text">Всем GM и взаимные лайки!</p>
+                <span class="gallery__like-symbol"></span>
+                <a class="gallery__like"> Нравится:<span> 2560</span>
+                </a>
+              </div>
+            </blockquote>
+          </div>
         </div>
       </section>
-      <section class="appeal">
+      <section class="appeal appeal--second">
+        <h3 class="visually-hidden">Призыв</h3>
         <div class="appeal__wrapper">
-          <p class="appeal__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="appeal__text appeal__text--photo">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
       <section class="my-photo">
         <h3 class="visually-hidden">Ваше фото</h3>
         <div class="my-photo__wrapper">
           <a class="gallery__photo-link" href="img/photo-road-desktop@1x.jpg">
-            <img class="my-photo__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="my-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Ваше фото">
+            </picture>
           </a>
           <div class="my-photo__tools">
             <div class="my-photo__tools-list">
@@ -179,7 +220,8 @@
               </button>
               <div class="my-photo__scale">
                 <div class="my-photo__bar"></div>
-                <button class="my-photo__range-toggle" type="button"></button>
+                <button class="visually-hidden" type="button"></button>
+                <span class="my-photo__range-toggle my-photo__range-toggle--crop"></span>
               </div>
               <button class="my-photo__tool" type="button">
                 <svg class="my-photo__tool-img" width="48" height="43">
@@ -187,7 +229,8 @@
               </button>
               <div class="my-photo__scale my-photo__scale--added">
                 <div class="my-photo__bar"></div>
-                <button class="my-photo__range-toggle" type="button"></button>
+                <button class="visually-hidden" type="button"></button>
+                <span class="my-photo__range-toggle my-photo__range-toggle--fill"></span>
               </div>
               <button class="my-photo__tool" type="button">
                 <svg class="my-photo__tool-img" width="32" height="32">
@@ -195,7 +238,8 @@
               </button>
               <div class="my-photo__scale my-photo__scale--added">
                 <div class="my-photo__bar"></div>
-                <button class="my-photo__range-toggle" type="button"></button>
+                <button class="visually-hidden" type="button"></button>
+                <span class="my-photo__range-toggle my-photo__range-toggle--contrast"></span>
               </div>
             </div>
             <div class="my-photo__post">
@@ -208,25 +252,25 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo"  href="index.html">
-          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg">
+        <a class="page-footer__logo logo" href="index.html">
+          <img class="logo__image-glasses" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта">
         </a>
         <div class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item">
-              <a href="https://twitter.com/">
+              <a class="footer-social__link"  href="https://twitter.com/">
                 <span class="visually-hidden">Твиттер</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a href="https://www.facebook.com/">
+              <a class="footer-social__link"  href="https://www.facebook.com/">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a href="https://www.youtube.com/">
+              <a class="footer-social__link"  href="https://www.youtube.com/">
                 <span class="visually-hidden">Ютуб</span>
                 <svg class="footer-social__icon" width="48" height="43"></svg>
               </a>

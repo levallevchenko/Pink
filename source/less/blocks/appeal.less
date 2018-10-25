@@ -5,6 +5,10 @@
   padding-bottom: 49px;
   font-size: 14px;
   line-height: 30px;
+  &--second {
+    padding-top: 20px;
+    padding-bottom: 41px;
+  }
   &--form {
     padding-bottom: 10px;
   }
@@ -21,10 +25,15 @@
 @media (min-width: @tablet-width) {
   .appeal {
     width: auto;
-    padding: 92px 0;
+    padding-top: 92px;
+    padding-bottom: 76px;
     font-size: 18px;
+    &--second {
+      padding-top: 46px;
+      padding-bottom: 70px;
+    }
     &--form {
-      padding: 40px 0;
+      padding-bottom: 40px;
     }
   }
 
@@ -36,15 +45,23 @@
     width: 495px;
     margin: 0 auto;
     &--added {
-      display: block;
+      display: inline;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .appeal--form {
-    padding: 92px 0;
-    padding-bottom: 73px;
+  .appeal {
+    padding-top: 93px;
+    padding-bottom: 87px;
+    &--second {
+      padding-top: 40px;
+      padding-bottom: 65px;
+    }
+    &--form {
+      padding: 92px 0;
+      padding-bottom: 73px;
+    }
   }
 
   .appeal__wrapper {
@@ -56,6 +73,9 @@
   }
 
   .appeal__text {
-    display: inline;
+    width: 800px;
+    &--photo {
+      width: 572px;
+    }
   }
 }

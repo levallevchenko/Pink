@@ -12,16 +12,37 @@
   }
 
   .effect__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     .width-tab();
     min-height: 234px;
     padding: 98px 0;
-    background-image: url("../../img/icon-timer.svg");
+    background-image: url("../../img/icon-editor-diagram-fill.svg"), url("../../img/icon-timer.svg"),;
     background-repeat: no-repeat;
-    background-size: 239px auto;
-    background-position: 20px 61px;
+    background-size: 203px auto, 239px auto;
+    background-position: 18px 115px, 0 61px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 175px;
+      height: 175px;
+      top: 130px;
+      left: 32px;
+      background-color: #ffffff;
+      border-radius: 50%;
+    }
+    &::after {
+      position: absolute;
+      content: "24";
+      font-size: 96px;
+      line-height: 96px;
+      font-weight: 700;
+      color: #d22856;
+      top: 163px;
+      left: 64px;
+    }
   }
 
   .effect__info {
@@ -32,7 +53,7 @@
   .effect__caption {
     font-size: 30px;
     line-height: 35px;
-    width: 160px;
+    width: 170px;
   }
 
   .effect__paragraph {
@@ -53,10 +74,21 @@
   }
 
   .effect__wrapper {
-  width: 960px;
-  padding: 0;
-  background-size: 300px auto;
-  background-position: 10px 44px;
+    width: 960px;
+    padding: 0;
+    background-size: 255px auto, 300px auto;
+    background-position: 31px 113px, 10px 44px;
+    &::before {
+      width: 220px;
+      height: 220px;
+      top: 131px;
+      left: 48px;
+    }
+    &::after {
+      font-size: 120px;
+      top: 186px;
+      left: 90px;
+    }
   }
 
   .effect__info {
