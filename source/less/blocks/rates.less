@@ -53,6 +53,7 @@
 }
 
 .rates__data {
+  position: relative;
   box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 13px;
@@ -83,14 +84,21 @@
 
 .rates-yes {
   display: block;
-  margin: 0 auto;
-  stroke: #3dc644;
+  position: absolute;
+  right: 15px;
+  top: 19px;
+  width: 34px;
+  height: auto;
   fill: #3dc644;
 }
 
 .rates-no {
   display: block;
-  margin: 0 auto;
+  position: absolute;
+  width: 40px;
+  height: auto;
+  top: 14px;
+  right: 12px;
   fill: #f25b26;
 }
 
@@ -134,6 +142,18 @@
       border: none;
       border-bottom: 2px solid #e5e5e5;
     }
+  }
+
+  .rates-yes {
+    position: static;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .rates-no {
+    position: static;
+    display: block;
+    margin: 0 auto;
   }
 }
 

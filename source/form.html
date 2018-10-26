@@ -17,7 +17,7 @@
         <polygon fill="#000000" points="297.64,61.905 0,0 595.28,0 "></polygon>
       </symbol><symbol id="bg-triangle-white" viewbox="0 0 1200 94.074">
         <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "></polygon>
-      </symbol><symbol id="htmlacademy" viewbox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path></symbol><symbol id="icon-editor-contrast" viewbox="-35.422 -7.96 31.92 31.92">
+      </symbol><symbol id="htmlacademy" viewbox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path></symbol><symbol id="icon-editor-contrast" viewbox="-35.422 -7.96 31.92 31.92">
         <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"></path>
         <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"></path>
       </symbol><symbol id="icon-editor-crop" viewbox="0 0 48 48">
@@ -265,38 +265,56 @@
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list form__list--progress">
                 <li class="form__item-checkbox">
-                  <label class="form__label-checkbox">
-                    <input class="form__checkbox visually-hidden" type="checkbox" name="selfie" checked="">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="selfie" name="selfie" checked>
+                  <label class="form__label-checkbox" for="selfie">
+                    <svg class="form__checkbox-checked" width="22" height="16">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                     Сделал селфи с акулой
                   </label>
                 </li>
                 <li class="form__item-checkbox">
-                  <label class="form__label-checkbox">
-                    <input class="form__checkbox visually-hidden" type="checkbox" name="sunburned" checked="">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="sunburned" name="sunburned" checked>
+                  <label class="form__label-checkbox" for="sunburned">
+                    <svg class="form__checkbox-checked" width="22" height="16">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                     Обгорел на пляже
                   </label>
                 </li>
                 <li class="form__item-checkbox">
-                  <label class="form__label-checkbox">
-                    <input class="form__checkbox visually-hidden" type="checkbox" name="Chuck">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="Chuck" name="Chuck">
+                  <label class="form__label-checkbox" for="Chuck">
+                    <svg class="form__checkbox-checked" width="22" height="16">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                     Видел Чака Норриса
                   </label>
                 </li>
                 <li class="form__item-checkbox">
-                  <label class="form__label-checkbox">
-                    <input class="form__checkbox visually-hidden" type="checkbox" name="souvenirs">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="souvenirs" name="souvenirs">
+                  <label class="form__label-checkbox" for="souvenirs">
+                    <svg class="form__checkbox-checked" width="22" height="16">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                     Накупил сувениров
                   </label>
                 </li>
                 <li class="form__item-checkbox">
-                  <label class="form__label-checkbox">
-                    <input class="form__checkbox visually-hidden" type="checkbox" name="turret" checked="">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="turret" name="turret" checked>
+                  <label class="form__label-checkbox" for="turret">
+                    <svg class="form__checkbox-checked" width="22" height="16">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                     Удержал башню
                   </label>
                 </li>
                 <li class="form__item-checkbox">
-                  <label class="form__label-checkbox">
-                    <input class="form__checkbox visually-hidden" type="checkbox" name="hotel">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="hotel" name="hotel">
+                  <label class="form__label-checkbox" for="hotel">
+                    <svg class="form__checkbox-checked" width="22" height="16">
+                      <use xlink:href="#icon-yes"></use>
+                    </svg>
                     Разгромил отель
                   </label>
                 </li>
@@ -384,7 +402,9 @@
         </div>
         <p class="page-footer__created-by">Разработано
           <a href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="page-footer__academy-icon" width="48" height="43" aria-label="Html-Academy"></svg>
+            <svg class="page-footer__academy-icon" width="27" height="34">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
           </a>
         </p>
       </div>

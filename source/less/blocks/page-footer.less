@@ -1,7 +1,7 @@
 .page-footer {
   .width-mob();
   font-size: 14px;
-  padding: 41px;
+  padding: 41px 0;
   &--index {
     display: none;
   }
@@ -14,7 +14,15 @@
 }
 
 .page-footer__academy-icon {
-  background-color: #b2b2b2;
+  fill: @pink;
+  left: 80px;
+  top: 18px;
+  &:hover {
+    fill: @text;
+  }
+  &:active {
+    fill: #bec2c7;
+  }
 }
 
 @media (min-width: @tablet-width) {
