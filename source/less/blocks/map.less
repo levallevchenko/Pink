@@ -1,11 +1,32 @@
 .map {
+  position: relative;
   width: auto;
   margin: 0;
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: @pink;
+    border: 11px solid #ffffff;
+    border-radius: 50%;
+    top: 61.5%;
+    left: 48.5%;
+  }
+}
+
+.map__bg-triangle {
+  width: 100%;
+  height: auto;
+  fill: #ffffff;
+  position: absolute;
+  top: -4px;
 }
 
 .map__iframe {
   max-width: 100%;
   max-height: 199px;
+  border: none;
 }
 
 .map__img {
@@ -17,10 +38,19 @@
     width: 100%;
     max-height: 378px;
   }
+  .map__bg-triangle {
+    top: -7;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .map {
+    margin-top: -45px;
+  }
   .map__iframe {
     max-height: 504px;
+  }
+  .map__bg-triangle {
+    top: -14px;
   }
 }

@@ -306,6 +306,20 @@
   }
 }
 
+@media screen and (-moz-images-in-menus: 0) {
+  .form__fieldset {
+    position: relative;
+  }
+  form__legend {
+    position: absolute;
+    left: 50%;
+    top: -12px; /* depends on font size and border */
+    background: white; /* depends on background */
+    transform: translate(-50%, 0);
+  }
+}
+
+
 @media (min-width: @desktop-width) {
   .form {
     width: 940px;
