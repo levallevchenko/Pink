@@ -118,6 +118,15 @@
   width: 241px;
   padding-bottom: 48px;
   order: 1;
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    top: 36px;
+    left: -40px;
+    background-color: #dddfe0;
+  }
   &--added {
     display: none;
   }
@@ -217,6 +226,10 @@
     padding-bottom: 0;
     align-self: center;
     order: 0;
+    &::after {
+      width: 275px;
+      left: -54px;
+    }
     &--added {
       display: block;
     }
@@ -281,6 +294,10 @@
 
   .my-photo__scale {
     width: 288px;
+    &::after {
+      width: 411px;
+      left: -93px;
+    }
   }
 
   .my-photo__range-toggle {
