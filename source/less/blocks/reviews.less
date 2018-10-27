@@ -1,6 +1,7 @@
 .reviews {
   padding: 22px 0;
   padding-top: 42px;
+  padding-bottom: 9px;
   line-height: 30px;
   text-align: center;
 }
@@ -22,7 +23,6 @@
   display: inline-block;
   margin-bottom: 13px;
   font-style: normal;
-  font-weight: 600;
   color: #000000;
 }
 
@@ -36,6 +36,10 @@
 }
 
 .reviews__arrow {
+  display: none;
+}
+
+.reviews__toggle {
   display: none;
 }
 
@@ -128,11 +132,45 @@
   .reviews__arrow {
     display: block;
     position: absolute;
-    top: 213px;
+    top: 0;
+    fill: #d7d9dc;
+    z-index: 7;
     &--left {
       left: 0;
     }
     &--right {
+      right: 0;
+    }
+  }
+
+  .reviews__toggle:hover .reviews__arrow {
+    fill: #7e868f;
+  }
+
+  .reviews__toggle:active .reviews__arrow {
+    fill: #e9ebec;
+  }
+
+  .reviews__toggle {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 213px;
+    width: 45px;
+    height: 42px;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 22px 41px;
+    outline: none;
+    z-index: 1;
+    &--previos {
+      left: 0;
+    }
+    &--next {
       right: 0;
     }
   }

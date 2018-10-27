@@ -15,6 +15,24 @@
   border-bottom: 1px solid #010101;
 }
 
+.main-nav__logo:hover .main-nav__logo-svg {
+  fill: @pink;
+}
+
+.main-nav__logo:active .main-nav__logo-svg {
+  fill: @pink-active;
+}
+
+.main-nav__logo-svg {
+  fill: #ffffff;
+  &--tab {
+    display: none;
+  }
+  &--desk {
+    display: none;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 18px;
@@ -29,22 +47,26 @@
 
 .main-nav__cross {
   fill: #ffffff;
-  &:hover {
-    fill: @pink;
-  }
-  &:active {
-    fill: @pink-active;
-  }
+}
+
+.main-nav__toggle:hover .main-nav__cross {
+  fill: @pink;
+}
+
+.main-nav__toggle:active .main-nav__cross {
+  fill: @pink-active;
 }
 
 .main-nav__burger {
   fill: #ffffff;
-  &:hover {
-    fill: @pink;
-  }
-  &:active {
-    fill: @pink-active;
-  }
+}
+
+.main-nav__toggle:hover .main-nav__burger {
+  fill: @pink;
+}
+
+.main-nav__toggle:active .main-nav__burger {
+  fill: @pink-active;
 }
 
 .main-nav--closed .main-nav__cross {
@@ -89,8 +111,20 @@
     padding: 40px 0;
   }
 
+  .main-nav__logo-svg {
+    &--tab {
+      display: block;
+    }
+    &--mob {
+      display: none;
+    }
+    &--desk {
+      display: none;
+    }
+  }
+
   .main-nav__toggle {
-    top: 40px;
+    top: 43px;
   }
 }
 
@@ -112,6 +146,18 @@
   .main-nav__logo-wrapper {
     margin: 0;
     width: auto;
+  }
+
+  .main-nav__logo-svg {
+    &--desk {
+      display: block;
+    }
+    &--mob {
+      display: none;
+    }
+    &--tab {
+      display: none;
+    }
   }
 
   .main-nav__toggle {

@@ -1,0 +1,35 @@
+.switch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  padding: 33px;
+  padding-left: 50px;
+  width: 81px;
+}
+
+.switch__use-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  font-size: 0;
+  line-height: 0;
+  margin-right: 20px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.switch__service:checked + .switch__use-btn {
+  border: 3px solid @text;
+  background-color: #ffffff;
+  margin-right: 14px;
+}
+
+@media (min-width: @desktop-width) {
+  .switch {
+    display: none;
+  }
+}
