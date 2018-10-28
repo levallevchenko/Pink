@@ -290,20 +290,27 @@
     }
 
     &--email {
+      background-color: red;
       order: 2;
       margin-bottom: 28px;
+      &::after {
+      content: " ";
+      position: absolute;
+      background-image: url(" ../img/icon-mail.svg");
+    }
     }
   }
 
   .form__input {
     margin-left: 20px;
     flex-grow: 1;
+  }
 
-    &--contacts {
-      margin-left: 0;
-      margin-top: 8px;
-      margin-bottom: 11px;
-    }
+  .form__input--contacts {
+    position: relative;
+    margin-left: 0;
+    margin-top: 8px;
+    margin-bottom: 11px;
   }
 
   .form__checkbox-indicator {
@@ -348,12 +355,12 @@
         position: static;
         transform: none;
         padding: 0 29px;
-        width: 32%;
+        width: 43%;
         margin-left: 29%;
       }
 
       &--progress {
-        width: 62%;
+        width: 70%;
         padding: 0 26px;
       }
 
@@ -552,12 +559,12 @@
       width: 80%;
 
       &--contacts {
-        width: 22%;
+        width: 28%;
         margin-left: 36%;
       }
 
       &--progress {
-        width: 42%;
+        width: 49%;
       }
 
       &--textarea {
