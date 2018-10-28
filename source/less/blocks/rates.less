@@ -18,6 +18,7 @@
 }
 
 .rates__list-head {
+  background-color: @text;
   color: #ffffff;
   font-weight: 600;
 }
@@ -25,11 +26,11 @@
 .rates__item-head {
   position: relative;
   box-sizing: border-box;
-  background-color: @text;
   min-width: 278px;
   padding-top: 18px;
   padding-bottom: 21px;
   border-left: 2px solid #e5e5e5;
+
   &:nth-child(2) {
     border: none;
   }
@@ -38,6 +39,7 @@
 .rates__item-head--hit {
   background-image: url("../../img/bg-hit.svg");
   background-repeat: no-repeat;
+
   &::before {
     content: "хит";
     position: absolute;
@@ -51,12 +53,16 @@
   }
 }
 
+.rates__list-body {
+  background-color: #ffffff;
+}
+
 .rates__data {
+  position: relative;
   box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 13px;
   padding-left: 22px;
-  background-color: #ffffff;
   font-size: 14px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
@@ -74,10 +80,30 @@
 }
 
 .rates__item-head p {
-  font-weight: 300;
+  font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 24px;
   margin: 0;
   margin-top: 5px;
+}
+
+.rates-yes {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 19px;
+  width: 34px;
+  height: auto;
+  fill: #3dc644;
+}
+
+.rates-no {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: auto;
+  top: 14px;
+  right: 12px;
+  fill: #f25b26;
 }
 
 @media (min-width: @tablet-width) {
@@ -111,7 +137,6 @@
     min-width: 154px;
     padding: 22px 15px;
     border: 2px solid #e5e5e5;
-    background-color: #ffffff;
     font-size: 14px;
     text-transform: none;
 
@@ -121,11 +146,23 @@
       border-bottom: 2px solid #e5e5e5;
     }
   }
+
+  .rates-yes {
+    position: static;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .rates-no {
+    position: static;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .rates {
-    padding-top: 70px;
+    padding-top: 65px;
   }
 
   .rates__table-wrapper {
@@ -140,6 +177,7 @@
     padding-top: 14px;
     padding-bottom: 19px;
   }
+
   .rates__item-head p {
     font-size: 24px;
   }
@@ -150,6 +188,6 @@
 
   .rates__data {
     min-width: 235px;
-    padding: 29px 21px;
+    padding: 19px 21px;
   }
 }

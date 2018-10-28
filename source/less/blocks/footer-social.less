@@ -1,3 +1,8 @@
+.footer-social {
+  padding: 32px;
+  padding-bottom: 17px;
+}
+
 .footer-social__list {
   .reset-list();
   display: flex;
@@ -6,17 +11,51 @@
 }
 
 .footer-social__link {
+  position: relative;
   display: inline-block;
   width: 45px;
   height: 45px;
   background-color: #ffffff;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+
   &:hover {
     border-color: @text;
+  }
+
+  &:active {
+    border-color: #e9ebec;
   }
 }
 
 .footer-social__item {
   background-color: #ffffff;
+}
+
+.footer-social__icon {
+  fill: @pink;
+  position: absolute;
+  top: 16px;
+  left: 14px;
+
+  &--facebook {
+    top: 12px;
+    left: 18px;
+  }
+
+  &--youtube {
+    top: 15px;
+    left: 17px;
+  }
+}
+
+.footer-social__link:active .footer-social__icon {
+  fill: #f1becc;
+}
+
+@media (min-width: @desktop-width) {
+  .footer-social {
+    padding: 36px;
+    padding-left: 94px;
+  }
 }

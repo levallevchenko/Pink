@@ -8,6 +8,7 @@
 }
 
 .site-list__item {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   text-transform: uppercase;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #010101;
@@ -18,11 +19,13 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
+
   &:hover {
     color: @pink;
   }
+
   &:active {
-    color: rgba(210, 40, 86, 0.3);
+    color: @pink-active;
   }
 }
 
@@ -36,8 +39,10 @@
   }
 
   .site-list__item {
+    font-family: "Open Sans", "Arial", sans-serif;
     border: none;
     text-transform: none;
+
     &--active {
       border-bottom: 2px solid #ffffff;
     }

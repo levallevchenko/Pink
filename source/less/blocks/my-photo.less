@@ -17,13 +17,61 @@
 .my-photo__tools-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  min-height: 216px;
+  padding-top: 23px;
+  min-height: 173px;
 }
 
 .my-photo__tool {
-  width: 40px;
-  height: 40px;
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 0;
+
+  &--crop {
+    margin-left: 36px;
+  }
+
+  &--fill {
+    margin: 0 auto;
+  }
+
+  &--contrast {
+    margin-right: 38px;
+  }
+}
+
+.my-photo__tool-img {
+  fill: #b5b9be;
+  height: auto;
+
+  &--crop {
+    width: 47px;
+    margin-left: auto;
+  }
+
+  &--fill {
+    width: 53px;
+  }
+
+  &--contrast {
+    margin-right: auto;
+  }
+}
+
+.my-photo__tool:hover .my-photo__tool-img {
+  fill: #8d949b;
+}
+
+.my-photo__tool:active .my-photo__tool-img {
+  fill: @pink;
+}
+
+.my-photo__tool--active .my-photo__tool-img {
+  fill: @pink;
 }
 
 .my-photo__post {
@@ -31,11 +79,12 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 120px;
-  margin-top: -24px;
+  padding-top: 6px;
   padding-bottom: 42px;
 }
 
 .my-photo__post-button {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   display: inline-block;
   border: 3px solid @pink;
   border-radius: 30px;
@@ -43,22 +92,27 @@
   text-align: center;
   text-decoration: none;
   color: @pink;
+
   &:hover {
     background-color: @pink;
     color: #ffffff;
   }
+
   &:active {
     color: #e06989;
   }
 }
+
 .my-photo__post-button--cancel {
   color: #dddfe0;
   border-color: #dddfe0;
+
   &:hover {
     background-color: #ffffff;
     border-color: #b5b9be;
     color: #b5b9be;
   }
+
   &:active {
     background-color: #b5b9be;
     color: #cbced2;
@@ -73,8 +127,19 @@
 .my-photo__scale {
   position: relative;
   width: 241px;
-  margin-bottom: auto;
+  padding-bottom: 48px;
   order: 1;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    top: 36px;
+    left: -40px;
+    background-color: #dddfe0;
+  }
+
   &--added {
     display: none;
   }
@@ -96,12 +161,15 @@
   background-color: #f2f2f2;
   top: -6px;
   left: 193px;
+
   &--fill {
     left: 24px;
   }
+
   &--contrast {
     left: 95px;
   }
+
   &:hover {
     background-color: @pink;
   }
@@ -118,12 +186,13 @@
     display: flex;
     width: 620px;
     margin: 0 auto;
-    padding-top: 58px;
-    padding-bottom: 58px;
+    padding-top: 56px;
+    padding-bottom: 55px;
   }
 
   .my-photo__image {
-    margin: 0 20px;
+    margin: 0;
+    margin-right: 45px;
   }
 
   .my-photo__tools {
@@ -135,11 +204,68 @@
   .my-photo__tools-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-right: 5px;
+    padding-top: 7px;
   }
 
-  .my-photo__scale--added {
-    display: block;
+  .my-photo__tool {
+    width: 28px;
+    height: 31px;
+    margin: 0;
+
+    &--fill {
+      margin-top: 10px;
+    }
+  }
+
+  .my-photo__tool-img {
+    fill: @pink;
+
+    &--crop {
+      width: 24px;
+    }
+
+    &--fill {
+      width: 25px;
+    }
+
+    &--contrast {
+      width: 16px;
+    }
+  }
+
+  .my-photo__tool:hover .my-photo__tool-img {
+    fill: @pink-active;
+  }
+
+  .my-photo__scale {
+    width: 203px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-self: center;
+    order: 0;
+
+    &::after {
+      width: 275px;
+      left: -54px;
+    }
+
+    &--added {
+      display: block;
+    }
+  }
+
+  .my-photo__range-toggle {
+    &--crop {
+      left: 147px;
+    }
+  }
+
+  .my-photo__post {
+    padding: 0;
+    min-height: 131px;
   }
 }
 
@@ -158,26 +284,57 @@
     margin: 0 10px;
   }
 
+  .my-photo__tools-list {
+    padding-top: 0;
+    padding-right: 21px;
+    min-height: 185px;
+  }
+
   .my-photo__tools {
     flex-basis: 410px;
   }
 
   .my-photo__tool {
     width: 62px;
-    height: 62px;
+    height: 45px;
+
+    &--crop {
+      margin-top: -3px;
+    }
+  }
+
+  .my-photo__tool-img {
+    &--crop {
+      width: 45px;
+    }
+
+    &--fill {
+      width: 54px;
+    }
+
+    &--contrast {
+      width: 32px;
+    }
   }
 
   .my-photo__scale {
     width: 288px;
+
+    &::after {
+      width: 411px;
+      left: -93px;
+    }
   }
 
   .my-photo__range-toggle {
     &--crop {
       left: 71px;
     }
+
     &--fill {
       left: 247px;
     }
+
     &--contrast {
       left: 160px;
     }

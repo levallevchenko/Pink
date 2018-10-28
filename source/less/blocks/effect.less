@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     background-size: 203px auto, 239px auto;
     background-position: 18px 115px, 0 61px;
+
     &::before {
       position: absolute;
       content: "";
@@ -33,12 +34,13 @@
       background-color: #ffffff;
       border-radius: 50%;
     }
+
     &::after {
+      font-family: "Open Sans Bold", "Arial", sans-serif;
       position: absolute;
       content: "24";
       font-size: 96px;
       line-height: 96px;
-      font-weight: 700;
       color: #d22856;
       top: 163px;
       left: 64px;
@@ -51,6 +53,8 @@
   }
 
   .effect__caption {
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-weight: normal;
     font-size: 30px;
     line-height: 35px;
     width: 170px;
@@ -78,16 +82,18 @@
     padding: 0;
     background-size: 255px auto, 300px auto;
     background-position: 31px 113px, 10px 44px;
+
     &::before {
       width: 220px;
       height: 220px;
       top: 131px;
       left: 48px;
     }
+
     &::after {
       font-size: 120px;
       top: 186px;
-      left: 90px;
+      left: 89px;
     }
   }
 

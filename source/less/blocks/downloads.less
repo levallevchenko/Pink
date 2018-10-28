@@ -11,15 +11,18 @@
 }
 
 .download__button {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   color: #ffffff;
   text-decoration: none;
   border: 3px solid #ffffff;
   border-radius: 30px;
   padding: 10px 35px;
+
   &:hover {
     background-color: #ffffff;
     color: @pink;
   }
+
   &:active {
     color: #f1becc;
   }
@@ -31,11 +34,11 @@
 }
 
 .download__availability {
+  font-family: "Open Sans Light", "Arial", sans-serif;
   display: inline-block;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  font-weight: 300;
 }
 
 @media (min-width: @tablet-width) {
@@ -51,6 +54,10 @@
     margin: 0;
     font-size: 18px;
   }
+
+  .download__apps-wrapper {
+    margin-top: 16px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -60,5 +67,6 @@
 
   .download__button {
     font-size: 21px;
+    padding: 10px 25px;
   }
 }

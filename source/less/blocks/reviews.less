@@ -1,6 +1,7 @@
 .reviews {
   padding: 22px 0;
   padding-top: 42px;
+  padding-bottom: 9px;
   line-height: 30px;
   text-align: center;
 }
@@ -10,7 +11,8 @@
 }
 
 .reviews__item {
-    position: absolute;
+  position: absolute;
+
   &--current {
     position: static;
     .width-mob();
@@ -18,10 +20,10 @@
 }
 
 .reviews__author-name {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   display: inline-block;
   margin-bottom: 13px;
   font-style: normal;
-  font-weight: 600;
   color: #000000;
 }
 
@@ -32,6 +34,14 @@
 .reviews__text {
   font-size: 14px;
   margin: 0;
+}
+
+.reviews__arrow {
+  display: none;
+}
+
+.reviews__toggle {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -81,13 +91,15 @@
     min-height: 414px;
     padding-bottom: 0;
     background-image: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
   }
 
   .reviews__list {
     position: relative;
     width: 940px;
-    padding-top: 189px;
+    padding-top: 185px;
     padding-bottom: 8px;
+
     &::before {
       content: "";
       position: absolute;
@@ -96,7 +108,7 @@
       width: 80px;
       height: 65px;
       top: 71px;
-      left: 441px;
+      left: 434px;
     }
   }
 
@@ -105,17 +117,67 @@
     margin: 0 auto;
   }
 
-   .reviews__text {
+  .reviews__text {
     padding-top: 0;
     width: 695px;
     margin: 0 auto;
-   }
+  }
 
   .reviews__author-name {
-    font-size: 25px;
+    font-size: 24px;
   }
 
   .reviews__author-info {
     font-size: 18px;
+  }
+
+  .reviews__arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    fill: #d7d9dc;
+    z-index: 7;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+
+  .reviews__toggle:hover .reviews__arrow {
+    fill: #7e868f;
+  }
+
+  .reviews__toggle:active .reviews__arrow {
+    fill: #e9ebec;
+  }
+
+  .reviews__toggle {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 213px;
+    width: 45px;
+    height: 42px;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 22px 41px;
+    outline: none;
+    z-index: 1;
+
+    &--previos {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
   }
 }
