@@ -2,16 +2,18 @@
   position: relative;
   width: auto;
   margin: 0;
+
   &::before {
     content: " ";
     position: absolute;
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
     background-color: @pink;
     border: 11px solid #ffffff;
     border-radius: 50%;
-    top: 61.5%;
-    left: 48.5%;
+    top: 45.5%;
+    left: 50%;
+    margin-left: -19px;
   }
 }
 
@@ -20,7 +22,7 @@
   height: auto;
   fill: #ffffff;
   position: absolute;
-  top: -4px;
+  top: -7px;
 }
 
 .map__iframe {
@@ -34,22 +36,35 @@
 }
 
 @media (min-width: @tablet-width) {
+  .map {
+    &::before {
+      top: 50.5%;
+    }
+  }
+
   .map__iframe {
     width: 100%;
     max-height: 378px;
   }
+
   .map__bg-triangle {
-    top: -7;
+    top: -13px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
     margin-top: -45px;
+
+    &::before {
+      top: 61.5%;
+    }
   }
+
   .map__iframe {
     max-height: 504px;
   }
+
   .map__bg-triangle {
     top: -14px;
   }

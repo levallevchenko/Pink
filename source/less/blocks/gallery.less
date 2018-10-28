@@ -19,9 +19,6 @@
   margin: 0;
   padding-bottom: 20px;
   position: relative;
-  &--best {
-    padding-bottom: 51px;
-  }
 }
 
 .gallery__favorite {
@@ -69,30 +66,21 @@
 .gallery__like {
   position: relative;
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 32px;
   text-transform: uppercase;
   font-size: 12px;
   color: @pink;
+
   &::after {
     position: absolute;
     content: "";
     width: 14px;
     height: 14px;
-    right: 0;
+    left: -32px;
     top: 4px;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-  }
-}
-
-.gallery__like-symbol {
-  cursor: pointer;
-  fill: @pink;
-  margin-top: auto;
-  margin-bottom: 7px;
-  &:hover {
-    stroke: @pink;
   }
 }
 
@@ -125,9 +113,17 @@
 
   .gallery__item {
     flex-basis: 300px;
+
     &--best {
-      flex-basis: auto;
+      flex-basis: 100%;
       margin: 0 auto;
+      padding-bottom: 51px;
+    }
+  }
+
+  .gallery__photo-link {
+    &--best {
+      width: 100%;
     }
   }
 
@@ -139,7 +135,9 @@
     padding-left: 29px;
     padding-right: 29px;
     min-height: 155px;
+
     &--best {
+      flex-direction: row;
       width: 620px;
       min-height: 121px;
       box-sizing: border-box;
@@ -157,29 +155,33 @@
   .gallery__image {
     max-width: 100%;
     height: 300px;
+
     &--favorite {
-      width: auto;
+      width: 100%;
       height: auto;
     }
   }
 
   .gallery__like {
+    width: 240px;
     margin-top: auto;
     margin-left: 0;
-    &--best {
-      order: -2;
-      margin-top: 0;
-      margin-left: auto;
-      margin-right: 17px;
+
+    &::after {
+      right: 0;
+      left: unset;
     }
   }
 
-  .gallery__like-symbol {
-    order: 1;
-    &--best {
-      order: -1;
-      margin: 0;
-      margin-top: 5px;
+  .gallery__like--best {
+    width: auto;
+    order: -2;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 33px;
+
+    &::after {
+      right: -31px;
     }
   }
 }
@@ -191,10 +193,6 @@
 
   .gallery__image {
     height: 400px;
-    &--favorite {
-      width: 100%;
-      height: auto;
-    }
   }
 
   .gallery__favorite {
@@ -204,28 +202,22 @@
 
   .gallery__item {
     &--best {
-      flex-basis: 100%;
+      padding-bottom: 50px;
     }
     padding-bottom: 54px;
-  }
-
-  .gallery__photo-link {
-    &--best {
-      width: 100%;
-    }
   }
 
   .gallery__description {
     &--best {
       width: 940px;
-      min-height: 93px;
+      min-height: 96px;
     }
   }
 
   .gallery__like {
     &--best {
       margin-left: auto;
-      margin-right: 15px;
+      margin-right: 32px;
     }
   }
 }

@@ -18,9 +18,11 @@
   background-color: #ffffff;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+
   &:hover {
     border-color: @text;
   }
+
   &:active {
     border-color: #e9ebec;
   }
@@ -35,10 +37,12 @@
   position: absolute;
   top: 16px;
   left: 14px;
+
   &--facebook {
     top: 12px;
     left: 18px;
   }
+
   &--youtube {
     top: 15px;
     left: 17px;
@@ -47,4 +51,11 @@
 
 .footer-social__link:active .footer-social__icon {
   fill: #f1becc;
+}
+
+@media (min-width: @desktop-width) {
+  .footer-social {
+    padding: 36px;
+    padding-left: 94px;
+  }
 }
