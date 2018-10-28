@@ -298,16 +298,13 @@
   .form__input {
     margin-left: 20px;
     flex-grow: 1;
-
-    &--contacts {
-      margin-left: 0;
-      margin-top: 8px;
-      margin-bottom: 11px;
-    }
   }
 
-  .form__checkbox-indicator {
-    margin-right: 22px;
+  .form__input--contacts {
+    position: relative;
+    margin-left: 0;
+    margin-top: 8px;
+    margin-bottom: 11px;
   }
 
   .form__textarea {
@@ -330,7 +327,7 @@
     width: 300px;
   }
 
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .form__fieldset {
       position: relative;
     }
@@ -348,12 +345,12 @@
         position: static;
         transform: none;
         padding: 0 29px;
-        width: 32%;
+        width: 43%;
         margin-left: 29%;
       }
 
       &--progress {
-        width: 62%;
+        width: 70%;
         padding: 0 26px;
       }
 
@@ -369,7 +366,7 @@
         width: 32%;
       }
     }
-  }
+  }*/
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .form__fieldset {
@@ -547,17 +544,17 @@
     color: @text;
   }
 
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
     .form__fieldset .form__legend {
       width: 80%;
 
       &--contacts {
-        width: 22%;
+        width: 28%;
         margin-left: 36%;
       }
 
       &--progress {
-        width: 42%;
+        width: 49%;
       }
 
       &--textarea {
@@ -569,7 +566,7 @@
         width: 26%;
       }
     }
-  }
+  }*/
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .form__fieldset .form__legend {
