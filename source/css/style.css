@@ -302,19 +302,25 @@ template {
   display: none;
 }
 @font-face {
+  font-weight: normal;
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff");
-  src: url("../fonts/opensans.woff2");
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff");
 }
 @font-face {
-  font-family: "Open Sans Light";
-  src: url("../fonts/opensanslight.woff");
-  src: url("../fonts/opensanslight.woff2");
+  font-weight: lighter;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensanslight.woff") format("woff");
 }
 @font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/opensansbold.woff");
-  src: url("../fonts/opensansbold.woff2");
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff");
 }
 body {
   min-width: 320px;
@@ -323,6 +329,7 @@ body {
   font-size: 18px;
   line-height: 27px;
   font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
   color: #283645;
   font-style: normal;
 }
@@ -582,7 +589,7 @@ body {
   background-color: #283645;
 }
 .site-list__item {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #010101;
@@ -612,7 +619,7 @@ body {
     background-color: transparent;
   }
   .site-list__item {
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: normal;
     border: none;
     text-transform: none;
   }
@@ -624,7 +631,7 @@ body {
   }
 }
 .wall {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: lighter;
   padding-bottom: 60px;
   text-align: center;
 }
@@ -736,7 +743,7 @@ body {
   background-color: #1d2631;
 }
 .download__button {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
   color: #ffffff;
   text-decoration: none;
   border: 3px solid #ffffff;
@@ -758,7 +765,7 @@ body {
       justify-content: space-around;
 }
 .download__availability {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: lighter;
   display: inline-block;
   font-size: 14px;
   line-height: 24px;
@@ -832,7 +839,7 @@ body {
   background-color: #ffffff;
 }
 .advantages__statement {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: lighter;
   margin: 0;
   margin-bottom: 28px;
   font-size: 24px;
@@ -864,8 +871,7 @@ body {
   display: none;
 }
 .advantages__caption {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
   margin-bottom: 13px;
   font-size: 18px;
@@ -1081,7 +1087,7 @@ body {
     border-radius: 50%;
   }
   .effect__wrapper::after {
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-weight: bold;
     position: absolute;
     content: "24";
     font-size: 96px;
@@ -1095,8 +1101,7 @@ body {
     text-align: left;
   }
   .effect__caption {
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 30px;
     line-height: 35px;
     width: 170px;
@@ -1168,7 +1173,7 @@ body {
   margin: 0 auto;
 }
 .reviews__author-name {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
   display: inline-block;
   margin-bottom: 13px;
   font-style: normal;
@@ -1292,7 +1297,8 @@ body {
     display: block;
     position: absolute;
     cursor: pointer;
-    top: 213px;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
     width: 45px;
     height: 42px;
     font-size: 0;
@@ -1386,7 +1392,7 @@ body {
   border: none;
 }
 .rates__item-head p {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: lighter;
   font-size: 24px;
   margin: 0;
   margin-top: 5px;
@@ -1521,7 +1527,7 @@ body {
   }
 }
 .contacts {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: lighter;
   padding: 42px 0;
   text-align: center;
 }
@@ -1542,10 +1548,9 @@ body {
   color: #1d2631;
 }
 .contacts__request {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
   margin: 0;
   line-height: 27px;
-  font-weight: normal;
 }
 .contacts__info {
   display: inline-block;
@@ -1799,7 +1804,7 @@ body {
   position: relative;
 }
 .gallery__favorite {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
   position: absolute;
   top: 0;
   right: 0;
@@ -1810,13 +1815,12 @@ body {
   background-color: #d22856;
 }
 .gallery__author-name {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
   display: block;
   font-style: normal;
-  font-weight: 600;
 }
 .gallery__time {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: lighter;
   text-transform: uppercase;
   font-size: 12px;
   color: #949aa1;
@@ -2097,7 +2101,7 @@ body {
   padding-bottom: 42px;
 }
 .my-photo__post-button {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
   display: inline-block;
   border: 3px solid #d22856;
   border-radius: 30px;
@@ -2426,6 +2430,12 @@ body {
 .form__label-checkbox:active::before {
   border-color: #d22856;
 }
+.form__checkbox:focus + .form__label-checkbox::before {
+  border: 2px solid #d22856;
+}
+.form__radio:focus + .form__label-checkbox::before {
+  border: 2px solid #d22856;
+}
 .form__label-checkbox--radio {
   position: relative;
 }
@@ -2499,7 +2509,7 @@ body {
   margin: 0 auto;
 }
 .form__button {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: bold;
   width: 100%;
   padding: 20px;
   background-color: #2aab6d;
@@ -2508,7 +2518,6 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: 600;
   cursor: pointer;
 }
 .form__button:hover {
@@ -2695,11 +2704,10 @@ body {
   .form__button {
     width: 300px;
   }
-  /*@-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form__fieldset {
       position: relative;
     }
-
     .form__fieldset .form__legend {
       position: absolute;
       left: 50%;
@@ -2708,33 +2716,29 @@ body {
       width: 56%;
       background: white;
       transform: translate(-50%, 0);
-
-      &--contacts {
-        position: static;
-        transform: none;
-        padding: 0 29px;
-        width: 43%;
-        margin-left: 29%;
-      }
-
-      &--progress {
-        width: 70%;
-        padding: 0 26px;
-      }
-
-      &--textarea {
-        position: static;
-        transform: none;
-        padding: 0 29px;
-        width: 45%;
-        margin-left: 23%;
-      }
-
-      &--label {
-        width: 32%;
-      }
     }
-  }*/
+    .form__fieldset .form__legend--contacts {
+      position: static;
+      transform: none;
+      padding: 0 29px;
+      width: 43%;
+      margin-left: 29%;
+    }
+    .form__fieldset .form__legend--progress {
+      width: 70%;
+      padding: 0 26px;
+    }
+    .form__fieldset .form__legend--textarea {
+      position: static;
+      transform: none;
+      padding: 0 29px;
+      width: 45%;
+      margin-left: 23%;
+    }
+    .form__fieldset .form__legend--label {
+      width: 32%;
+    }
+  }
 }
 @media (min-width: 660px) and screen and (-ms-high-contrast: active), (min-width: 660px) and (-ms-high-contrast: none) {
   .form__fieldset {
@@ -2909,40 +2913,36 @@ body {
     display: inline;
     color: #283645;
   }
-  /*@-moz-document url-prefix() {
+  @-moz-document url-prefix("") {
     .form__fieldset .form__legend {
       width: 80%;
-
-      &--contacts {
-        width: 28%;
-        margin-left: 36%;
-      }
-
-      &--progress {
-        width: 49%;
-      }
-
-      &--textarea {
-        width: 22%;
-        margin-left: 37%;
-      }
-
-      &--label {
-        width: 26%;
-      }
     }
-  }*/
+    .form__fieldset .form__legend--contacts {
+      width: 28%;
+      margin-left: 36%;
+    }
+    .form__fieldset .form__legend--progress {
+      width: 49%;
+    }
+    .form__fieldset .form__legend--textarea {
+      width: 22%;
+      margin-left: 37%;
+    }
+    .form__fieldset .form__legend--label {
+      width: 26%;
+    }
+  }
 }
 @media (min-width: 960px) and screen and (-ms-high-contrast: active), (min-width: 960px) and (-ms-high-contrast: none) {
   .form__fieldset .form__legend {
     width: 80%;
   }
   .form__fieldset .form__legend--contacts {
-    width: 22%;
+    width: 28%;
     margin-left: 36%;
   }
   .form__fieldset .form__legend--progress {
-    width: 42%;
+    width: 51%;
   }
   .form__fieldset .form__legend--textarea {
     width: 22%;
