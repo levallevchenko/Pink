@@ -22,10 +22,10 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -76,4 +76,4 @@ gulp.task("server", function () {
 
 gulp.task("build", gulp.series("clean",
   "copy", "css", "sprite", "html"));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series("css", "server"));

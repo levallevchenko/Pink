@@ -248,7 +248,7 @@
       <section class="gallery">
         <h3 class="visually-hidden">Галерея</h3>
         <div class="gallery__list">
-          <blockquote class="gallery__item gallery__item--best">
+          <article class="gallery__item gallery__item--best">
             <a class="gallery__photo-link gallery__photo-link--best" href="img/panorama-desktop@1x.jpg">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
@@ -263,13 +263,18 @@
               </cite>
               <p class="gallery__text">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <a class="gallery__like gallery__like--best">
-              Нравится:<span> 215</span>
-              </a>
+              <div class="gallery__like-wrapper gallery__like-wrapper--best">
+                <button class="gallery__button-heart gallery__button-heart--best">
+                  <svg class="gallery__icon-heart" width="13" height="12"><use xlink:href="#icon-heart"></use></svg>
+                </button>
+                <a class="gallery__like gallery__like--best">
+                  Нравится:<span> 215</span>
+                </a>
+              </div>
             </div>
-          </blockquote>
+          </article>
           <div class="gallery__wrapper">
-            <blockquote class="gallery__item">
+            <article class="gallery__item">
               <a class="gallery__photo-link" href="img/photo-car-desktop@1x.jpg">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
@@ -282,11 +287,16 @@
                   <time class="gallery__time" datetime="2018-11-24T13:00:23">(5 часов назад)</time>
                 </cite>
                 <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <a class="gallery__like"> Нравится:<span> 356</span>
-                </a>
+                <div class="gallery__like-wrapper">
+                  <button class="gallery__button-heart">
+                    <svg class="gallery__icon-heart" width="13" height="12"><use xlink:href="#icon-heart"></use></svg>
+                  </button>
+                  <a class="gallery__like"> Нравится:<span> 356</span>
+                  </a>
+                </div>
               </div>
-            </blockquote>
-            <blockquote class="gallery__item">
+            </article>
+            <article class="gallery__item">
               <a class="gallery__photo-link" href="img/photo-drumset-desktop@1x.jpg">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
@@ -299,11 +309,18 @@
                   <time class="gallery__time" datetime="2018-11-24T05:57:33">(12 часов назад)</time>
                 </cite>
                 <p class="gallery__text">Соседи будут рады!</p>
-                <a class="gallery__like"> Нравится:<span> 666</span>
-                </a>
+                <div class="gallery__like-wrapper">
+                  <button class="gallery__button-heart">
+                    <svg class="gallery__icon-heart" width="13" height="12">
+                      <use xlink:href="#icon-heart"></use>
+                    </svg>
+                  </button>
+                  <a class="gallery__like"> Нравится:<span> 666</span>
+                  </a>
+                </div>
               </div>
-            </blockquote>
-            <blockquote class="gallery__item">
+            </article>
+            <article class="gallery__item">
               <a class="gallery__photo-link" href="img/photo-window-desktop@1x.jpg">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
@@ -316,11 +333,18 @@
                   <time class="gallery__time" datetime="2018-11-23T21:03:15">(20 часов назад)</time>
                 </cite>
                 <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <a class="gallery__like"> Нравится:<span> 215</span>
-                </a>
+                <div class="gallery__like-wrapper">
+                  <button class="gallery__button-heart">
+                    <svg class="gallery__icon-heart" width="13" height="12">
+                      <use xlink:href="#icon-heart"></use>
+                    </svg>
+                  </button>
+                  <a class="gallery__like"> Нравится:<span> 215</span>
+                  </a>
+                </div>
               </div>
-            </blockquote>
-            <blockquote class="gallery__item">
+            </article>
+            <article class="gallery__item">
               <a class="gallery__photo-link" href="img/photo-fair-desktop@1x.jpg">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
@@ -333,11 +357,18 @@
                   <time class="gallery__time" datetime="2018-11-23T18:05:18">(25 часов назад)</time>
                 </cite>
                 <p class="gallery__text">Самая кубанская в мире!</p>
-                <a class="gallery__like"> Нравится:<span> 4</span>
+                <div class="gallery__like-wrapper">
+                  <button class="gallery__button-heart">
+                    <svg class="gallery__icon-heart" width="13" height="12">
+                      <use xlink:href="#icon-heart"></use>
+                    </svg>
+                  </button>
+                  <a class="gallery__like"> Нравится:<span> 4</span>
                 </a>
-              </div>
-            </blockquote>
-            <blockquote class="gallery__item">
+              </  div>
+            </div>
+            </article>
+            <article class="gallery__item">
               <a class="gallery__photo-link" href="img/photo-pov-desktop@1x.jpg">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x ">
@@ -350,11 +381,18 @@
                   <time class="gallery__time" datetime="2018-11-22T18:05:18">(40 часов назад)</time>
                 </cite>
                 <p class="gallery__text">Где снег-то?</p>
-                <a class="gallery__like"> Нравится:<span> 150</span>
-                </a>
+                <div class="gallery__like-wrapper">
+                  <button class="gallery__button-heart">
+                    <svg class="gallery__icon-heart" width="13" height="12">
+                      <use xlink:href="#icon-heart"></use>
+                    </svg>
+                  </button>
+                  <a class="gallery__like"> Нравится:<span> 150</span>
+                  </a>
+                </div>
               </div>
-            </blockquote>
-            <blockquote class="gallery__item">
+            </article>
+            <article class="gallery__item">
               <a class="gallery__photo-link" href="img/photo-wing-desktop@1x.jpg">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
@@ -367,10 +405,17 @@
                   <time class="gallery__time" datetime="2018-11-24T18:05:18">(45 часов назад)</time>
                 </cite>
                 <p class="gallery__text">Всем GM и взаимные лайки!</p>
-                <a class="gallery__like"> Нравится:<span> 2560</span>
-                </a>
+                <div class="gallery__like-wrapper">
+                  <button class="gallery__button-heart">
+                    <svg class="gallery__icon-heart" width="13" height="12">
+                      <use xlink:href="#icon-heart"></use>
+                    </svg>
+                  </button>
+                  <a class="gallery__like"> Нравится:<span> 2560</span>
+                  </a>
+                </div>
               </div>
-            </blockquote>
+            </article>
           </div>
         </div>
       </section>
@@ -383,7 +428,7 @@
       <section class="my-photo">
         <h3 class="visually-hidden">Ваше фото</h3>
         <div class="my-photo__wrapper">
-          <a class="gallery__photo-link" href="img/photo-road-desktop@1x.jpg">
+          <a class="my-photo__photo-link" href="img/photo-road-desktop@1x.jpg">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
