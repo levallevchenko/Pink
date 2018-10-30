@@ -2,8 +2,24 @@
   position: relative;
   width: auto;
   margin: 0;
+  overflow: hidden;
+  margin-top: -4px;
 
   &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-image: url("../../img/bg-triangle-white-footer.svg");
+    top: 0;
+    left: 0;
+    height: 220px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 100%;
+  }
+
+  &::after {
     content: " ";
     position: absolute;
     width: 16px;
@@ -17,13 +33,7 @@
   }
 }
 
-.map__bg-triangle {
-  width: 100%;
-  height: auto;
-  fill: #ffffff;
-  position: absolute;
-  top: -7px;
-}
+
 
 .map__iframe {
   max-width: 100%;
@@ -37,7 +47,9 @@
 
 @media (min-width: @tablet-width) {
   .map {
-    &::before {
+    margin-top: -16px;
+
+    &::after {
       top: 50.5%;
     }
   }
@@ -54,15 +66,19 @@
 
 @media (min-width: @desktop-width) {
   .map {
-    margin-top: -45px;
+    margin-top: 5px;
+
+    &::after {
+      top: 52.5%;
+    }
 
     &::before {
-      top: 61.5%;
+      top: -1px;
     }
   }
 
   .map__iframe {
-    max-height: 504px;
+    max-height: 519px;
   }
 
   .map__bg-triangle {

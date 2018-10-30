@@ -7,6 +7,11 @@
   padding: 33px;
   padding-left: 50px;
   width: 81px;
+
+  &--rates {
+    padding: 19px 13px 16px;
+    padding-left: 31px;
+  }
 }
 
 .switch__use-btn {
@@ -26,6 +31,15 @@
   border: 3px solid @text;
   background-color: #ffffff;
   margin-right: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .switch {
+    padding-bottom: 23px;
+    &--rates {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {

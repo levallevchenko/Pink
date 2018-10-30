@@ -1,14 +1,19 @@
 .rates {
   text-transform: uppercase;
-  overflow: auto;
+  width: 100%;
+  overflow: hidden;
   background-color: @bg-light;
   background-image: url(" ../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 101% auto;
   background-position: 50% 0;
+  padding-bottom: 31px;
 }
 
 .rates__table-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 91px;
   padding-bottom: 20px;
 }
@@ -80,8 +85,7 @@
 }
 
 .rates__item-head p {
-  font-weight: lighter;
-  font-size: 24px;
+  font-weight: 300;  font-size: 24px;
   margin: 0;
   margin-top: 5px;
 }
@@ -99,10 +103,10 @@
 .rates-no {
   display: block;
   position: absolute;
-  width: 40px;
-  height: auto;
+  width: 27px;
+  height: 26px;
   top: 14px;
-  right: 12px;
+  right: 18px;
   fill: #f25b26;
 }
 
@@ -110,7 +114,7 @@
   .rates__table-wrapper {
     width: 620px;
     margin: 0 auto;
-    padding-top: 90px;
+    padding-top: 87px;
     padding-bottom: 71px;
   }
 
@@ -118,7 +122,7 @@
     font-size: 16px;
     min-width: 0;
     padding-top: 12px;
-    padding-bottom: 7px;
+    padding-bottom: 13px;
   }
 
   .rates__item-head p {

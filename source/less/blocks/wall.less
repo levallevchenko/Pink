@@ -1,5 +1,6 @@
 .wall {
-  font-weight: lighter;
+  position: relative;
+  font-weight: 300;
   padding-bottom: 60px;
   text-align: center;
 
@@ -16,10 +17,10 @@
 }
 
 .wall__name {
+  font-weight: 300;
   margin: 0;
   padding-top: 30px;
   font-size: 24px;
-  font-weight: normal;
   color: #ffffff;
 
   &--main {
@@ -30,8 +31,8 @@
 .wall__img {
   height: auto;
   position: absolute;
-  transform: translateY(-100%);
-  left: 0;
+  left: -20px;
+  top: -286px;
 }
 
 @media (min-width: @tablet-width) {
@@ -76,23 +77,23 @@
   }
 
   .wall__img {
+    z-index: -1;
     display: inline;
-    bottom: -100px;
     left: -20px;
-    bottom: 0;
-    transform: translateY(0);
+    top: 35px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .wall {
     width: 940px;
+    padding-bottom: 69px;
   }
 
   .wall__img {
     display: inline;
-    bottom: -123px;
     left: 26px;
+    top: 70px;
   }
 
   .wall__wrapper--form {
