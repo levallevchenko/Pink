@@ -81,7 +81,7 @@
   border-color: @pink;
 }
 
-.form__checkbox:focus +  .form__label-checkbox::before {
+.form__checkbox:focus + .form__label-checkbox::before {
   border: 2px solid @pink;
 }
 
@@ -291,15 +291,6 @@
     &--name {
       padding-left: 0;
     }
-
-    &--tel {
-      order: 2;
-    }
-
-    &--email {
-      order: 2;
-      margin-bottom: 28px;
-    }
   }
 
   .form__input {
@@ -314,25 +305,40 @@
     }
   }
 
-  .form__input--tel {
+  .form__input-label--contacts {
     &::after {
       content: " ";
       position: absolute;
-      width: 20;
-      height: 19px;
-      background-image: url(" ../img/icon-phone.svg");
+      width: 62px;
+      height: 59px;
+      background-image: url("../../img/icon-phone.svg");
       background-repeat: no-repeat;
+      background-size: 20px 19px;
+      background-position: 50% 50%;
+      background-color: #e5e5e5;
+      top: -71px;
+      right: 2px;
     }
   }
 
-  .form__input--mail {
+  .form__input-label--tel {
+    order: 2;
+    position: relative;
+
     &::after {
-      content: " ";
-      position: absolute;
-      width: 18;
-      height: 13px;
-      background-image: url(" ../img/icon-mail.svg");
-      background-repeat: no-repeat;
+      background-image: url("../../img/icon-phone.svg");
+      background-size: 20px 19px;
+    }
+  }
+
+  .form__input-label--email {
+    order: 2;
+    margin-bottom: 28px;
+    position: relative;
+
+    &::after {
+      background-image: url("../../img/icon-mail.svg");
+      background-size: 18px 13px;
     }
   }
 

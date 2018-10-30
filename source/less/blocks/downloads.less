@@ -1,10 +1,11 @@
 .download {
   .width-mob();
-  min-height: 254px;
-  padding-top: 16px;
+  min-height: 213px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
+  align-content: space-between;
   color: #ffffff;
   text-decoration: none;
   background-color: #1d2631;
@@ -17,6 +18,7 @@
   border: 3px solid #ffffff;
   border-radius: 30px;
   padding: 10px 35px;
+  padding-bottom: 12px;
 
   &:hover {
     background-color: #ffffff;
@@ -28,14 +30,10 @@
   }
 }
 
-.download__apps-wrapper {
-  display: flex;
-  justify-content: space-around;
-}
-
 .download__availability {
   font-weight: lighter;
   display: inline-block;
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -46,8 +44,11 @@
     min-height: 240px;
     width: auto;
     padding-top: 0;
-    justify-content: space-between;
     background: transparent;
+  }
+
+  .download__button {
+    flex-grow: 1;
   }
 
   .download__availability {

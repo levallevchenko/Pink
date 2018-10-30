@@ -12,6 +12,7 @@
 .wall__wrapper {
   .width-mob();
   position: relative;
+  padding: 27px 0;
 }
 
 .wall__name {
@@ -29,8 +30,8 @@
 .wall__img {
   height: auto;
   position: absolute;
-  bottom: 270px;
-  left: -20px;
+  transform: translateY(-100%);
+  left: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -69,16 +70,17 @@
       line-height: 48px;
       display: block;
       padding: 0 36px;
-      padding-top: 65px;
+      padding-top: 26px;
       margin-bottom: 31px;
     }
   }
 
   .wall__img {
-    z-index: -1;
     display: inline;
     bottom: -100px;
-    left: -40px;
+    left: -20px;
+    bottom: 0;
+    transform: translateY(0);
   }
 }
 
