@@ -34,9 +34,9 @@
 @media (min-width: @desktop-width) {
   .site-list {
     position: relative;
-    width: 650px;
+    flex-basis: 790px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: transparent;
   }
 
@@ -44,6 +44,12 @@
     font-weight: 400;
     border: none;
     text-transform: none;
+    margin-right: 44px;
+
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+    }
 
     &--active {
       border-bottom: 2px solid #ffffff;
@@ -54,5 +60,9 @@
     &:active {
       color: #6a757f;
     }
+  }
+
+  .site-list__item:last-child .site-list__item-link {
+    padding-right: 0;
   }
 }

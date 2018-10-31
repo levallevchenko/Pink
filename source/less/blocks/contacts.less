@@ -107,7 +107,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    padding: 65px 0;
+    padding: 61px 0;
     padding-bottom: 0;
   }
 
@@ -126,6 +126,9 @@
   }
 
   .contacts__item {
+    &:first-child {
+      margin-right: 0;
+    }
     &:nth-child(2) {
       order: 2;
     }
