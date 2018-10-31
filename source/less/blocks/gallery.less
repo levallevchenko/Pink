@@ -95,7 +95,6 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .gallery__list {
@@ -107,11 +106,17 @@
 
   .gallery__item {
     flex-basis: 300px;
+    margin-right: 18px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
 
     &--best {
       flex-basis: 100%;
       margin: 0 auto;
       padding-bottom: 51px;
+      margin-right: 0;
     }
   }
 
@@ -207,10 +212,19 @@
 
 
   .gallery__item {
+    padding-bottom: 54px;
+
+    &:nth-child(2n) {
+      margin-right: 18px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
     &--best {
       padding-bottom: 50px;
     }
-    padding-bottom: 54px;
   }
 
   .gallery__description {
