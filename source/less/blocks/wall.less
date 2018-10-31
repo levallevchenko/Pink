@@ -1,7 +1,6 @@
 .wall {
   position: relative;
   font-weight: 300;
-  padding-bottom: 60px;
   text-align: center;
 
   &--main {
@@ -13,13 +12,12 @@
 .wall__wrapper {
   .width-mob();
   position: relative;
-  padding: 27px 0;
+  padding-top: 32px;
 }
 
 .wall__name {
   font-weight: 300;
   margin: 0;
-  padding-top: 30px;
   font-size: 24px;
   color: #ffffff;
 
@@ -62,7 +60,7 @@
     font-size: 50px;
     line-height: 60px;
     padding: 0 48px;
-    padding-top: 40px;
+    padding-top: 8px;
     margin-bottom: 31px;
     text-align: center;
 
@@ -80,14 +78,14 @@
     z-index: -1;
     display: inline;
     left: -40px;
-    top: 35px;
+    top: 45px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .wall {
     width: 940px;
-    padding-bottom: 69px;
+    padding-bottom: 50px;
   }
 
   .wall__img {
@@ -96,14 +94,18 @@
     top: 70px;
   }
 
-  .wall__wrapper--form {
+  .wall__wrapper {
+    padding-top: 34px;
+    &--form {
     width: 845px;
+    }
   }
+
 
   .wall__name {
     font-size: 50px;
     line-height: 60px;
-    padding-top: 35px;
+    padding-top: 0;
     margin-bottom: 52px;
 
     &--main {
