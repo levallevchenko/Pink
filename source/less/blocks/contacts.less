@@ -68,6 +68,7 @@
 @media (min-width: @tablet-width) {
   .contacts {
     width: auto;
+    padding: 44px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,8 +97,11 @@
   }
 
   .contacts__item {
-    margin-bottom: 23px;
+    margin-bottom: 44px;
     width: 295px;
+    &:first-child {
+      margin-right: 20px;
+    }
   }
 }
 

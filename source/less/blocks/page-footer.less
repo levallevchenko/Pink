@@ -58,7 +58,8 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     width: auto;
-    padding: 36px 0;
+    padding: 0;
+    padding-bottom: 13px;
 
     &--index {
       display: block;
@@ -72,6 +73,16 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  .page-footer__created-by {
+    margin-left: 42px;
+    margin-top: -4px;
+  }
+
+  .page-footer__academy-icon {
+      right: -49px;
+      top: -9px;
+    }
 }
 
 @media (min-width: @desktop-width) {
