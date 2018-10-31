@@ -12,6 +12,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var csso = require("gulp-csso");
 var del = require("del");
+var webp = require("gulp-webp");
 
 
 
@@ -25,7 +26,7 @@ gulp.task("css", function () {
     .pipe(gulp.dest("source/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -44,6 +45,12 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("copy", function () {
@@ -76,4 +83,4 @@ gulp.task("server", function () {
 
 gulp.task("build", gulp.series("clean",
   "copy", "css", "sprite", "html"));
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("build", "server"));
