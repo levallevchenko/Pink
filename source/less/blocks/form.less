@@ -1,15 +1,31 @@
 .form__wrapper-color {
   box-sizing: border-box;
   padding-top: 38px;
-  padding-bottom: 11px;
+  padding-bottom: 17px;
   min-height: 337px;
   background-color: @bg-light;
+
+  &--apps {
+    margin-bottom: 38px;
+  }
 }
 
 .form__fieldset {
   .fieldset();
   .width-mob();
   padding: 28px 0 25px;
+
+  &--contacts {
+    padding-top: 34px;
+  }
+
+  &--apps {
+    padding-top: 24px;
+  }
+
+  &--textarea {
+    padding-top: 17px;
+  }
 }
 
 .form__input-list {
@@ -93,7 +109,7 @@
   position: relative;
 
   &::before {
-    margin-right: 22px;
+    margin-right: 31px;
     border-radius: 50%;
   }
 }
@@ -115,7 +131,6 @@
 
 .form__label-checkbox {
   position: relative;
-  margin-left: 3px;
 }
 
 .form__checkbox-checked {
@@ -135,6 +150,11 @@
   padding: 0 25px;
   text-align: center;
   line-height: 18px;
+
+  &--textarea {
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .form__required span {
@@ -157,11 +177,15 @@
 
 .form__textarea {
   font-family: "Open Sans", "Arial", sans-serif;
-  margin-top: 30px;
-  width: 82%;
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
   border: 2px solid #e5e5e5;
   font-size: 18px;
+  line-height: 28px;
   padding: 19px;
+  padding-top: 15px;
   border-radius: 2px;
 }
 
@@ -172,6 +196,7 @@
 .form__button {
   font-weight: 700;
   width: 100%;
+  margin-bottom: 24px;
   padding: 20px;
   background-color: @green;
   border: none;
