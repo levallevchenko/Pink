@@ -6,6 +6,7 @@
 
 .gallery__description {
   box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 18px 19px 20px;
@@ -22,39 +23,34 @@
 }
 
 .gallery__favorite {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
   position: absolute;
   top: 0;
   right: 0;
   font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 6px 19px;
+  padding: 5px 19px;
   background-color: @pink;
 }
 
 .gallery__author-name {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
   display: block;
   font-style: normal;
-  font-weight: 600;
 }
 
 .gallery__time {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
   font-size: 12px;
   color: #949aa1;
 }
 
 .gallery__text {
-  margin: 0;
-  margin-bottom: 10px;
+  margin: -2px 0 11px;
   min-width: 243px;
-}
-
-.gallery__photo-link {
-  display: inline-block;
+  flex-grow: 1;
 }
 
 .gallery__image {
@@ -66,22 +62,20 @@
 .gallery__like {
   position: relative;
   cursor: pointer;
-  margin-left: 32px;
+  margin-left: 14px;
   text-transform: uppercase;
   font-size: 12px;
   color: @pink;
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 14px;
-    left: -32px;
-    top: 4px;
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
+.gallery__button-heart {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.gallery__button-heart:hover .gallery__icon-heart {
+  stroke: @pink;
 }
 
 @media (min-width: @tablet-width) {
@@ -92,8 +86,8 @@
   }
 
   .gallery__favorite {
-    top: 56px;
-    right: 41px;
+    top: 59px;
+    right: 20px;
   }
 
   .gallery__wrapper {
@@ -101,23 +95,29 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: auto;
+    width: 100%;
   }
 
   .gallery__item {
     flex-basis: 300px;
+    min-height: 455px;
+    margin-right: 18px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
 
     &--best {
       flex-basis: 100%;
       margin: 0 auto;
       padding-bottom: 51px;
+      margin-right: 0;
     }
   }
 
@@ -129,15 +129,16 @@
 
   .gallery__description {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 24px;
     padding-left: 29px;
     padding-right: 29px;
-    min-height: 155px;
 
     &--best {
       flex-direction: row;
+      justify-content: space-between;
       width: 620px;
       min-height: 121px;
       box-sizing: border-box;
@@ -158,19 +159,24 @@
 
     &--favorite {
       width: 100%;
-      height: auto;
+      min-height: 510px;
+    }
+  }
+
+  .gallery__like-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    &--best {
+      order: -1;
+      margin-left: auto;
+      margin-top: 0;
     }
   }
 
   .gallery__like {
-    width: 240px;
-    margin-top: auto;
     margin-left: 0;
-
-    &::after {
-      right: 0;
-      left: unset;
-    }
   }
 
   .gallery__like--best {
@@ -178,10 +184,14 @@
     order: -2;
     margin-top: 0;
     margin-left: auto;
-    margin-right: 33px;
+    margin-right: 16px;
+  }
 
-    &::after {
-      right: -31px;
+  .gallery__button-heart {
+    order: 1;
+
+    &--best {
+      order: -1;
     }
   }
 }
@@ -193,18 +203,34 @@
 
   .gallery__image {
     height: 400px;
+
+    &--favorite {
+      min-height: 506px;
+    }
   }
 
   .gallery__favorite {
+    top: 55px;
     right: 131px;
+    height: auto;
   }
 
 
   .gallery__item {
+    min-height: 555px;
+    padding-bottom: 54px;
+
+    &:nth-child(2n) {
+      margin-right: 18px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
     &--best {
       padding-bottom: 50px;
     }
-    padding-bottom: 54px;
   }
 
   .gallery__description {
@@ -217,7 +243,7 @@
   .gallery__like {
     &--best {
       margin-left: auto;
-      margin-right: 32px;
+      margin-right: 20px;
     }
   }
 }

@@ -84,14 +84,16 @@
 }
 
 .my-photo__post-button {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
   display: inline-block;
+  background-color: transparent;
   border: 3px solid @pink;
   border-radius: 30px;
-  padding: 10px 45px;
+  padding: 14px 45px;
   text-align: center;
   text-decoration: none;
   color: @pink;
+  cursor: pointer;
 
   &:hover {
     background-color: @pink;
@@ -123,6 +125,11 @@
   vertical-align: middle;
   margin-top: 20px;
 }
+
+.my-photo__photo-link {
+  display: inline-block;
+}
+
 
 .my-photo__scale {
   position: relative;
@@ -347,6 +354,12 @@
 
   .my-photo__post-button {
     box-sizing: border-box;
-    min-width: 183px;
+    width: 183px;
+    padding: 14px 38px;
+    margin-left: 10px;
+
+    &--cancel {
+      margin-right: -10px;
+    }
   }
 }

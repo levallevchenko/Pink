@@ -12,8 +12,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 18px 0;
-  border-bottom: 1px solid #010101;
+  padding: 18px 0 16px;
 }
 
 .main-nav__logo:hover .main-nav__logo-svg {
@@ -38,7 +37,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 18px;
+  padding: 0;
+  transform: translateY(0);
   right: 0;
   z-index: 2;
   display: block;
@@ -85,7 +85,7 @@
 }
 
 .main-nav--nojs .main-nav__cross {
-  display: block;
+  display: none;
 }
 
 .main-nav--closed .main-nav__list-wrapper {
@@ -124,7 +124,7 @@
 
   .main-nav__logo-wrapper {
     .width-tab();
-    padding: 40px 0;
+    padding: 25px 0 43px;
   }
 
   .main-nav__logo-svg {
@@ -142,7 +142,7 @@
   }
 
   .main-nav__toggle {
-    top: 43px;
+    transform: translateY(68%);
   }
 }
 
@@ -155,6 +155,7 @@
   .main-nav__wrapper {
     width: 940px;
     margin: 0 auto;
+    padding-top: 21px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -162,13 +163,10 @@
   }
 
   .main-nav__logo-wrapper {
-    padding: 20px 0;
+    padding: 0;
+    padding-bottom: 14px;
     margin: 0;
     width: auto;
-  }
-
-  .main-nav__list-wrapper {
-    padding-top: 20px;
   }
 
   .main-nav__logo-svg {
@@ -195,5 +193,9 @@
 
   .main-nav--nojs .main-nav__wrapper {
     background-color: transparent;
+  }
+
+  .main-nav__list-wrapper {
+    flex-basis: 790px;
   }
 }

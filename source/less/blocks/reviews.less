@@ -20,7 +20,7 @@
 }
 
 .reviews__author-name {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
   display: inline-block;
   margin-bottom: 13px;
   font-style: normal;
@@ -49,7 +49,6 @@
     width: auto;
     margin: 0;
     padding: 0;
-    padding-bottom: 66px;
   }
 
   .reviews__list {
@@ -88,17 +87,12 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    min-height: 414px;
+    position: relative;
+    min-height: 222px;
     padding-bottom: 0;
     background-image: url(" ../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-  }
-
-  .reviews__list {
-    position: relative;
-    width: 940px;
     padding-top: 185px;
-    padding-bottom: 8px;
 
     &::before {
       content: "";
@@ -108,8 +102,16 @@
       width: 80px;
       height: 65px;
       top: 71px;
-      left: 434px;
+      left: 50%;
+      margin-left: -39px;
     }
+  }
+
+  .reviews__list {
+    position: relative;
+    display: flex;
+    width: 940px;
+    padding-bottom: 8px;
   }
 
   .reviews__item {
@@ -119,6 +121,7 @@
 
   .reviews__text {
     padding-top: 0;
+    padding-bottom: 36px;
     width: 695px;
     margin: 0 auto;
   }
@@ -159,7 +162,8 @@
     display: block;
     position: absolute;
     cursor: pointer;
-    top: 213px;
+    top: 50%;
+    margin-top: -69px;
     width: 45px;
     height: 42px;
     font-size: 0;
@@ -169,7 +173,6 @@
     background-repeat: no-repeat;
     background-position: 0 50%;
     background-size: 22px 41px;
-    outline: none;
     z-index: 1;
 
     &--previos {

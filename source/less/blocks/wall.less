@@ -1,7 +1,8 @@
 .wall {
-  font-family: "Open Sans Light", "Arial", sans-serif;
-  padding-bottom: 60px;
+  position: relative;
+  font-weight: 300;
   text-align: center;
+  line-height: 28px;
 
   &--main {
     padding-bottom: 0;
@@ -12,13 +13,18 @@
 .wall__wrapper {
   .width-mob();
   position: relative;
+  padding-top: 32px;
+  padding-bottom: 30px;
+
+  &--index {
+    padding-top: 28px;
+  }
 }
 
 .wall__name {
+  font-weight: 300;
   margin: 0;
-  padding-top: 30px;
   font-size: 24px;
-  font-weight: normal;
   color: #ffffff;
 
   &--main {
@@ -29,8 +35,8 @@
 .wall__img {
   height: auto;
   position: absolute;
-  bottom: 270px;
   left: -20px;
+  top: -286px;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,7 +44,7 @@
     width: 620px;
     background-color: transparent;
     margin: 0 auto;
-    padding-top: 28px;
+    padding-top: 29px;
     padding-bottom: 25px;
 
     &--main {
@@ -48,6 +54,7 @@
 
   .wall__wrapper {
     width: 620px;
+    padding-top: 32px;
 
     &--index {
       z-index: 2;
@@ -60,51 +67,61 @@
     font-size: 50px;
     line-height: 60px;
     padding: 0 48px;
-    padding-top: 40px;
-    margin-bottom: 31px;
+    padding-top: 8px;
+    margin-bottom: 26px;
     text-align: center;
 
     &--main {
       font-size: 40px;
       line-height: 48px;
       display: block;
-      padding: 0 36px;
-      padding-top: 65px;
-      margin-bottom: 31px;
+      margin-bottom: 0;
+      padding: 31px 48px;
     }
   }
 
   .wall__img {
     z-index: -1;
     display: inline;
-    bottom: -100px;
     left: -40px;
+    top: 45px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .wall {
-    width: 960px;
+    width: 940px;
+    padding-bottom: 50px;
   }
 
   .wall__img {
     display: inline;
-    bottom: -123px;
-    left: 26px;
+    left: 16px;
+    top: 71px;
   }
 
-  .wall__wrapper--form {
-    width: 845px;
+  .wall__wrapper {
+    padding-top: 34px;
+    padding-bottom: 0;
+
+    &--index {
+      padding-top: 30px;
+    }
+
+    &--form {
+      width: 845px;
+    }
   }
+
 
   .wall__name {
     font-size: 50px;
     line-height: 60px;
-    padding-top: 35px;
+    padding-top: 0;
     margin-bottom: 52px;
 
     &--main {
-      padding-top: 80px;
+      padding: 48px 33px 0;
     }
   }
 }

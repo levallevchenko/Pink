@@ -14,16 +14,20 @@
 }
 
 .advantages__statement {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: 300;
   margin: 0;
   margin-bottom: 28px;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 29px;
+
+  &--answer {
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list-wrapper {
   width: auto;
-  padding-top: 83px;
+  padding-top: 80px;
   background-color: @bg-light;
   background-image: url(" ../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -38,7 +42,7 @@
 
 .advantages__item {
   &--phone {
-    padding-top: 4px;
+    padding-top: 8px;
     order: 0;
   }
 }
@@ -48,10 +52,9 @@
 }
 
 .advantages__caption {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  font-weight: normal;
+  font-weight: 700;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -60,7 +63,7 @@
 .advantages__paragraph {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .advantages__img-mob {
@@ -70,11 +73,12 @@
 @media (min-width: @tablet-width) {
   .advantages__wrapper {
     width: auto;
-    padding-top: 49px;
+    padding-top: 47px;
   }
 
   .advantages__statement-wrapper {
     width: auto;
+    margin-bottom: 47px;
   }
 
   .advantages__statement {
@@ -112,7 +116,7 @@
     width: 268px;
     height: 481px;
     left: 0;
-    top: -53px;
+    bottom: 0;
     background-image: url(" ../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 25% 0;
@@ -129,6 +133,10 @@
   .advantages__item {
     width: 310px;
     text-align: left;
+
+    &:last-child {
+      margin-bottom: 5px;
+    }
 
     &--phone {
       display: none;
@@ -160,6 +168,10 @@
   .advantages__statement {
     font-size: 50px;
     line-height: 60px;
+
+    &--answer {
+      margin: 0 auto;
+    }
   }
 
   .advantages__list-wrapper {
@@ -177,7 +189,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: inherit;
   }
 
   .advantages__item {

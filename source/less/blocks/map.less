@@ -2,8 +2,24 @@
   position: relative;
   width: auto;
   margin: 0;
+  overflow: hidden;
+  margin-top: -4px;
 
   &::before {
+    position: absolute;
+    content: " ";
+    display: block;
+    background-image: url(" ../img/bg-triangle-white-footer.svg");
+    top: -1px;
+    left: 0;
+    height: 220px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 100%;
+  }
+
+  &::after {
     content: " ";
     position: absolute;
     width: 16px;
@@ -11,22 +27,14 @@
     background-color: @pink;
     border: 11px solid #ffffff;
     border-radius: 50%;
-    top: 45.5%;
+    top: 43.5%;
     left: 50%;
     margin-left: -19px;
   }
 }
 
-.map__bg-triangle {
-  width: 100%;
-  height: auto;
-  fill: #ffffff;
-  position: absolute;
-  top: -7px;
-}
-
 .map__iframe {
-  max-width: 100%;
+  width: 100%;
   max-height: 199px;
   border: none;
 }
@@ -37,14 +45,15 @@
 
 @media (min-width: @tablet-width) {
   .map {
-    &::before {
+    margin-top: -16px;
+
+    &::after {
       top: 50.5%;
     }
   }
 
   .map__iframe {
-    width: 100%;
-    max-height: 378px;
+    max-height: 374px;
   }
 
   .map__bg-triangle {
@@ -54,15 +63,19 @@
 
 @media (min-width: @desktop-width) {
   .map {
-    margin-top: -45px;
+    margin-top: -6px;
+
+    &::after {
+      top: 52.5%;
+    }
 
     &::before {
-      top: 61.5%;
+      top: -1px;
     }
   }
 
   .map__iframe {
-    max-height: 504px;
+    min-height: 513px;
   }
 
   .map__bg-triangle {

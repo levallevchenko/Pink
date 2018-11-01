@@ -33,18 +33,22 @@
 .page-footer__created-by {
   position: relative;
   margin: 0;
-  margin-right: 44px;
-  padding: 16px 24px;
-  padding-bottom: 5px;
+  padding-top: 3px;
+  padding-right: 3px;
+}
+
+.page-footer__created-by a {
+  display: inline-block;
 }
 
 .page-footer__academy-icon {
-  position: absolute;
   fill: @pink;
-  width: 41px;
-  height: auto;
-  right: -25px;
-  top: 5px;
+  width: 40px;
+  height: 46px;
+  margin-top: 4px;
+  margin-right: -8px;
+  margin-left: 3px;
+  vertical-align: middle;
 
   &:hover {
     fill: @text;
@@ -58,7 +62,8 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     width: auto;
-    padding: 36px 0;
+    padding: 0;
+    padding-bottom: 13px;
 
     &--index {
       display: block;
@@ -67,21 +72,57 @@
 
   .page-footer__wrapper {
     margin: 0 auto;
+    padding: 38px 0;
     width: 620px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    &--index {
+      padding: 31px 0;
+    }
+  }
+
+  .page-footer__logo-svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -26px;
+
+    &--desk {
+      display: none;
+    }
+  }
+
+  .page-footer__created-by {
+    margin-left: 20px;
+    margin-right: 2px;
+    margin-top: -7px;
+    padding: 0;
+  }
+
+  .page-footer__academy-icon {
+    right: -49px;
+    top: -9px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    padding: 44px 0;
+    padding: 0;
     font-size: 18px;
   }
 
   .page-footer__wrapper {
     width: 940px;
+    padding: 65px 0;
+
+    &--photo {
+      padding: 104px 0;
+    }
+
+    &--form {
+      padding: 48px 0;
+    }
   }
 
   .page-footer__logo-svg {
@@ -89,6 +130,18 @@
 
     &--desk {
       display: block;
+      margin-top: -24px;
     }
+  }
+
+  .page-footer__created-by {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  .page-footer__academy-icon {
+    margin-right: -8px;
+    margin-left: 3px;
+    vertical-align: middle;
   }
 }

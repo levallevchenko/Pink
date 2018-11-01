@@ -1,10 +1,11 @@
 .apps-list {
   .reset-list;
   display: flex;
-  width: 207px;
+  width: 204px;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  margin: 38px 0 22px;
 }
 
 .apps-list__link {
@@ -17,5 +18,16 @@
 
 .apps-list__item--apple {
   margin-top: -6px;
-  margin-left: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .apps-list {
+    margin: 51px 0 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .apps-list {
+    margin: 74px 0 55px;
+  }
 }

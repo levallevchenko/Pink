@@ -1,16 +1,21 @@
 .rates {
   text-transform: uppercase;
-  overflow: auto;
+  width: 100%;
+  overflow: hidden;
   background-color: @bg-light;
   background-image: url(" ../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 101% auto;
   background-position: 50% 0;
+  padding-bottom: 31px;
 }
 
 .rates__table-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 91px;
-  padding-bottom: 99px;
+  padding-bottom: 20px;
 }
 
 .rates__list {
@@ -34,23 +39,22 @@
   &:nth-child(2) {
     border: none;
   }
+
+  &--hit {
+    overflow: hidden;
+  }
 }
 
-.rates__item-head--hit {
-  background-image: url(" ../img/bg-hit.svg");
-  background-repeat: no-repeat;
-
-  &::before {
-    content: "хит";
-    position: absolute;
-    height: 10px;
-    width: 28px;
-    top: 20px;
-    left: 7px;
-    font-size: 14px;
-    line-height: 14px;
-    transform: rotate(-45deg);
-  }
+.rates__hit {
+  position: absolute;
+  min-width: 104px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: @pink;
+  top: -2px;
+  left: -28px;
+  line-height: 29px;
+  transform: rotate(-45deg);
 }
 
 .rates__list-body {
@@ -79,8 +83,8 @@
   border: none;
 }
 
-.rates__item-head p {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+.rates__price {
+  font-weight: 300;
   font-size: 24px;
   margin: 0;
   margin-top: 5px;
@@ -89,41 +93,50 @@
 .rates-yes {
   display: block;
   position: absolute;
-  right: 15px;
-  top: 19px;
-  width: 34px;
-  height: auto;
+  right: 13px;
+  top: 18px;
+  width: 30px;
+  height: 31px;
   fill: #3dc644;
 }
 
 .rates-no {
   display: block;
   position: absolute;
-  width: 40px;
-  height: auto;
+  width: 27px;
+  height: 26px;
   top: 14px;
-  right: 12px;
+  right: 18px;
   fill: #f25b26;
 }
 
 @media (min-width: @tablet-width) {
+  .rates {
+    padding-bottom: 0;
+  }
+
   .rates__table-wrapper {
     width: 620px;
     margin: 0 auto;
-    padding-top: 90px;
-    padding-bottom: 71px;
+    padding-top: 89px;
+    padding-bottom: 68px;
   }
 
   .rates__item-head {
     font-size: 16px;
     min-width: 0;
     padding-top: 12px;
-    padding-bottom: 7px;
+    padding-bottom: 13px;
   }
 
-  .rates__item-head p {
+  .rates__price {
     font-size: 18px;
     margin-top: 0;
+  }
+
+  .rates__hit {
+    left: -32px;
+    line-height: 24px;
   }
 
   .rates__data {
@@ -162,12 +175,12 @@
 
 @media (min-width: @desktop-width) {
   .rates {
-    padding-top: 65px;
+    padding-top: 74px;
   }
 
   .rates__table-wrapper {
     width: 940px;
-    padding-top: 82px;
+    padding-top: 81px;
     padding-bottom: 97px;
   }
 
@@ -178,8 +191,14 @@
     padding-bottom: 19px;
   }
 
-  .rates__item-head p {
+  .rates__price {
     font-size: 24px;
+  }
+
+  .rates__hit {
+    top: -2px;
+    left: -28px;
+    line-height: 29px;
   }
 
   .rates__empty {
@@ -188,6 +207,6 @@
 
   .rates__data {
     min-width: 235px;
-    padding: 19px 21px;
+    padding: 14px 21px;
   }
 }

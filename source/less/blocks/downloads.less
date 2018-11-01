@@ -1,9 +1,9 @@
 .download {
   .width-mob();
-  min-height: 254px;
-  padding-top: 16px;
+  min-height: 213px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   color: #ffffff;
   text-decoration: none;
@@ -11,12 +11,13 @@
 }
 
 .download__button {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
   color: #ffffff;
   text-decoration: none;
   border: 3px solid #ffffff;
   border-radius: 30px;
   padding: 10px 35px;
+  padding-bottom: 12px;
 
   &:hover {
     background-color: #ffffff;
@@ -28,14 +29,10 @@
   }
 }
 
-.download__apps-wrapper {
-  display: flex;
-  justify-content: space-around;
-}
-
 .download__availability {
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-weight: 300;
   display: inline-block;
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -46,8 +43,11 @@
     min-height: 240px;
     width: auto;
     padding-top: 0;
-    justify-content: space-between;
     background: transparent;
+  }
+
+  .download__button {
+    flex-grow: 1;
   }
 
   .download__availability {
