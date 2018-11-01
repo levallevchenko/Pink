@@ -13,7 +13,12 @@
 .wall__wrapper {
   .width-mob();
   position: relative;
-  padding-top: 26px;
+  padding-top: 32px;
+  padding-bottom: 30px;
+
+  &--index {
+    padding-top: 28px;
+  }
 }
 
 .wall__name {
@@ -39,7 +44,7 @@
     width: 620px;
     background-color: transparent;
     margin: 0 auto;
-    padding-top: 28px;
+    padding-top: 29px;
     padding-bottom: 25px;
 
     &--main {
@@ -63,14 +68,15 @@
     line-height: 60px;
     padding: 0 48px;
     padding-top: 8px;
-    margin-bottom: 31px;
+    margin-bottom: 26px;
     text-align: center;
 
     &--main {
       font-size: 40px;
       line-height: 48px;
       display: block;
-      padding-top: 34px;
+      margin-bottom: 0;
+      padding: 31px 48px;
     }
   }
 
@@ -91,11 +97,16 @@
   .wall__img {
     display: inline;
     left: 16px;
-    top: 70px;
+    top: 71px;
   }
 
   .wall__wrapper {
     padding-top: 34px;
+    padding-bottom: 0;
+
+    &--index {
+      padding-top: 30px;
+    }
 
     &--form {
       width: 845px;
@@ -110,7 +121,7 @@
     margin-bottom: 52px;
 
     &--main {
-      padding: 46px 33px 0;
+      padding: 48px 33px 0;
     }
   }
 }

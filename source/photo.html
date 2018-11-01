@@ -458,7 +458,7 @@
       </section>
       <section class="my-photo">
         <h3 class="visually-hidden">Ваше фото</h3>
-        <div class="my-photo__wrapper">
+        <form class="my-photo__wrapper" action="echo" method="post">
           <a class="my-photo__photo-link" href="img/photo-road-desktop@1x.jpg">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
@@ -503,11 +503,11 @@
               </div>
             </div>
             <div class="my-photo__post">
-              <a class="my-photo__post-button" href="photo.html">Запостить</a>
-              <a class="my-photo__post-button my-photo__post-button--cancel" href="photo.html">Отмена</a>
+              <button class="my-photo__post-button" type="submit">Запостить</button>
+              <button class="my-photo__post-button my-photo__post-button--cancel" type="reset">Отмена</button>
             </div>
           </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
